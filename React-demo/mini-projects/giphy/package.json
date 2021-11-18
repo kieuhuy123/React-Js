@@ -1,0 +1,24 @@
+{
+  "name": "giphy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve --dist-dir dev styled.html",
+    "build": "parcel build --no-cache --no-source-maps --dist-dir build --public-url ./ index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.1"
+  }
+}

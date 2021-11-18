@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Context</title>
+        <style>
+            .dark {
+                background-color: #333;
+                color: #fff;
+                transition: all 0.3s;
+            }
+            .btn {
+                transition: all 0.3s;
+            }
+
+            .btn-dark {
+                background-color: rgb(57, 28, 28);
+                color: #fff;
+            }
+
+            .btn-light {
+                background-color: #fff;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script
+            crossorigin
+            src="https://unpkg.com/react@17/umd/react.production.min.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+        ></script>
+        <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel" src="Context.jsx"></script>
+    </body>
+</html>
