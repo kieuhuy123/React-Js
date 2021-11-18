@@ -1,0 +1,161 @@
+/* BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+video {
+  width: 100%;
+}
+button,
+input {
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  padding: 50px 0;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+}
+.product-list .row {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+.menu{
+  display: flex;
+}
+.menu-item {
+  
+  margin-right: 20px;
+  
+}
+.product-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .product {
+  flex-basis: calc((100% - 90px) / 4);
+  border: 1px solid #95a5a6;
+} */
+.col-lg-3 {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.product-description {
+  padding: 0 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.product-thumbnail {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-thumbnail img {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.product-thumbnail img:hover {
+  transform: scale(1.1);
+}
+.product-price {
+  font-size: 30px;
+  color: #e74c3c;
+  font-weight: 500;
+}
+.product-name {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3em;
+}
+.product-name a {
+  color: black;
+}
+.product-name a:hover {
+  color: #595a5c;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
