@@ -1,45 +1,26 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { createElement, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addTaskAsync, loadTaskAsync } from "./redux/actions/todoActions";
+import Form from "./Form";
+import List from "./TodoList";
+const App = () => {
+  //TODO: Lay dispatch
+  const dispatch = useDispatch();
 
-function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    dispatch(loadTaskAsync());
+  }, []);
+
+  //TODO: Lay ra state
+  const { todos } = useSelector((state) => state);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
-}
+    <div>
+      <Form />
 
-export default App
+      <List />
+    </div>
+  );
+};
+
+export default App;
