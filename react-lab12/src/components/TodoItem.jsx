@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   completeTaskAsync,
   deleteTaskAsync,
-} from "./redux/actions/todoActions";
+} from "../redux/actions/todoActions";
 export default ({ todo }) => {
   const { completing, deleting } = useSelector((state) => state);
   const dispatch = useDispatch();

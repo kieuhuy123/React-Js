@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTaskAsync } from "./redux/actions/todoActions";
+import { addTaskAsync } from "../redux/actions/todoActions";
 
 export default () => {
   const [task, setTask] = useState("");

@@ -1,8 +1,8 @@
 import { createElement, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTaskAsync, loadTaskAsync } from "./redux/actions/todoActions";
-import Form from "./Form";
-import List from "./TodoList";
+import Form from "./components/Form";
+import List from "./components/TodoList";
 const App = () => {
   //TODO: Lay dispatch
   const dispatch = useDispatch();
@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <div>
+      <h1>Demo Todo React-redux</h1>
       <Form />
 
       <List />
