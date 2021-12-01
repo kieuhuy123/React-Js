@@ -6,7 +6,11 @@ function Home() {
  
   return (
     <main>
-      <h1>Home page</h1>
+      <div className="section-title-wrapper">
+        <h1 className="section-title">
+          Phim bo moi
+        </h1>
+      </div>
       <FilmList />
     </main>
   );

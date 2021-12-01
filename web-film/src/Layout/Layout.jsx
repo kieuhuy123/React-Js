@@ -1,17 +1,18 @@
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 // import { Container } from "react-bootstrap";
 // import { Navbar, Container, NavDropdown } from "react-bootstrap";
 import Navbarf from "../Components/Navbar";
-
+import Search from "../Components/Search";
+import Footer from ".././Pages/Footer/Footer";
 const Layout = () => {
   return (
     <>
-      <Navbarf/>
-      <header>Day la header</header>
+      <Navbarf />
+      <Search />
 
       <Outlet></Outlet>
 
-      <footer>day la footer</footer>
+      <Footer />
     </>
   );
 };

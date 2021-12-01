@@ -11,3 +11,10 @@ li {
 a {
   text-decoration: none;
 }
+
+body {
+  background-color: #081b27;
+}
+img {
+  max-width: 100%;
+}

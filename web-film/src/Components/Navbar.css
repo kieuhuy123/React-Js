@@ -1,3 +1,22 @@
+.logo {
+  position: relative;
+  z-index: 1;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.navbar {
+  padding: 0;
+  background-color: #0c2738;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-collapse a {
   height: 80px;
   margin-left: 45px;
@@ -11,6 +30,7 @@
   font-size: 17px;
   font-weight: 600;
 }
-.navbar-collapse .active {
+.navbar-collapse a:hover {
   color: white;
+  border-bottom: 2px solid #f1b722;
 }
