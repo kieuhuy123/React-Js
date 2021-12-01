@@ -1,0 +1,16 @@
+.navbar-collapse a {
+  height: 80px;
+  margin-left: 45px;
+  padding-top: 27px;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: color 0.2s, border 0.2s;
+  transition: color 0.2s, border 0.2s;
+  color: #899ead;
+  font-size: 17px;
+  font-weight: 600;
+}
+.navbar-collapse .active {
+  color: white;
+}
