@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { getMovieByAlias, getFlims } from "../../db/Product";
+import { getMovieByAlias, getFlims } from "../../db/NewFilm";
 
 const Film = () => {
   const params = useParams();

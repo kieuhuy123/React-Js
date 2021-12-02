@@ -9,7 +9,7 @@ const FilmList = () => {
   const film = useSelector((state) => state);
   console.log(film);
   return (
-    <Container className="item-list-wrapper">
+    <div className="item-list-wrapper">
       <Row className="item-list">
         {/* {movies.map((m) => (
         <div key={m.id}>
@@ -26,7 +26,7 @@ const FilmList = () => {
           </Col>
         ))}
       </Row>
-    </Container>
+    </div>
   );
 };
 

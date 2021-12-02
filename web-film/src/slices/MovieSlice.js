@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getFlims } from "../db/Product";
-import films from "../db/Product";
+import { getFlims } from "../db/NewFilm";
+import films from "../db/NewFilm";
 
 const movieSlice = createSlice({
   name: "movie",

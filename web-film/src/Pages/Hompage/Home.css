@@ -1,12 +1,102 @@
 .section-title-wrapper {
-  margin-top: 20px;
+  margin-top: 100px;
+  margin-bottom: 40px;
   text-align: left;
 }
 .section-title {
-  margin-top: 40px;
-  margin-bottom: 40px;
   color: #f1b722;
   line-height: 38px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.tabs {
+  position: relative;
+}
+
+.tabs-menu {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  z-index: 20;
+  margin-top: -41px;
+  margin-bottom: 80px;
+  text-align: right;
+}
+
+.tab-button {
+  margin-left: 15px;
+  padding: 11px 30px 9px;
+  border-radius: 40px;
+  background-color: #0c2738;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  color: #3b4b57;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  color: #374550;
+}
+
+/*  Side bar*/
+.div-block {
+  overflow: auto;
+  max-height: 555px;
+}
+.sidenav-block-title {
+  font-size: 21px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 1px #000;
+  color: #f1b722;
+}
+.item-number.small {
+  top: -11px;
+  width: 33px;
+  font-size: 11px;
+  line-height: 25px;
+}
+.new-item-block {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding-left: 85px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.small-item-block-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 80px;
+  border-radius: 5px;
+  background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.new-item {
+  margin-top: 32px;
+}
+.item-block-title.in-nav {
+  align-self: auto;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
 }
