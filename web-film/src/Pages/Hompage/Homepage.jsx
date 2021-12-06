@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 //
-import Search from "../../Components/Search";
+
 import FilmList from "../../Components/FilmList";
 import "./Home.css";
 function Home() {
