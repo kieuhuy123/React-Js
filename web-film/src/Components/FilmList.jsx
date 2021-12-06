@@ -1,13 +1,13 @@
 // import { Link } from "react-router-dom";
 // import { getFlims, getMovieByAlias } from "../db/Product";
-import { Container, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import {  Row, Col } from "react-bootstrap";
 import FilmItem from "./FilmItem";
 import "./FilmList.css";
-const FilmList = () => {
+const FilmList = ({ film }) => {
   //   const movies = getFlims();
-  const film = useSelector((state) => state);
-  console.log(film);
+  // const film = useSelector((state) => state);
+  // console.log(film);
   return (
     <div className="item-list-wrapper">
       <Row className="item-list">

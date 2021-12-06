@@ -22,8 +22,8 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />}></Route>
-            <Route path="cinema" element={<Cinema />}></Route>
-            <Route path="series" element={<Series />}></Route>
+            <Route path="the-loai/:type" element={<Cinema />}></Route>
+            {/* <Route path="the-loai/:type" element={<Series />}></Route> */}
             <Route path="film/:alias" element={<DetailFilm />}></Route>
           </Route>
         </Routes>

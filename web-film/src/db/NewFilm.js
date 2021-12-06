@@ -7,6 +7,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6186709007f0cb80056ce432_chung-cu-co-doc.jpg",
     rate: 5,
     genre: "kinh dị",
+    type: "bộ",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618915025072081149ba45c8_poster-joyi.jpeg",
     rate: 6,
     genre: "tình cảm ",
+    type: "bộ",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/619e43459120172cebb67bd4_dan-cast.jpeg",
     rate: 9.8,
     genre: "hành động ",
+    type: "chiếu-rạp",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60e2c4026ee315170dcd1558_anh-muon-chung-ta-o-ben-nhau.jpg",
     rate: 8.5,
     genre: "tình cảm ",
+    type: "bộ",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa644f28a12fbb_dau-truong-ao.jpg",
     rate: 8.1,
     genre: "hành động ",
+    type: "chiếu-rạp",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa643283a1271c_aquaman.jpg",
     rate: 8.5,
     genre: "hành động ",
+    type: "chiếu-rạp",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618de18301b39d2ff559c7d3_poster-bay-gio-chung-ta-dang.jpg",
     rate: 7.9,
     genre: "tình cảm ",
+    type: "bộ",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61741a081793624c035e1480_the-widow.jpg",
     rate: 6.2,
     genre: "kinh dị ",
+    type: "chiếu-rạp",
   },
 
   {
@@ -80,6 +88,7 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60c9663ff6ee4968d0b14ec4_ban-cung-phong-gumiho.jpg",
     rate: 6,
     genre: "tình cảm ",
+    type: "bộ",
   },
   {
     id: 10,
@@ -88,6 +97,8 @@ const films = [
     image:
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa643ce4a12349_ak-47.jpg",
     rate: 6,
+    genre: "hành động",
+    type: "chiếu-rạp",
   },
   {
     id: 11,
@@ -96,7 +107,8 @@ const films = [
     image:
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa644e0fa126e4_avenger-endgame.jpg",
     rate: 10,
-    genre:"hành động"
+    genre: "hành động",
+    type: "chiếu-rạp",
   },
   {
     id: 12,
@@ -106,8 +118,52 @@ const films = [
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg",
     rate: 7.7,
     genre: "tình cảm",
+    type: "bộ",
+  },
+  {
+    id: 13,
+    title: "Shang-chi và huyển thoại thập luân ",
+    alias:
+      "shang-chi-va-huyen-thoai-thap-luan-shang-chi-and-the-legend-of-the-ten-rings",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618ba5a6027e4a85acc3e882_shang-chi.jpg",
+    rate: 8.7,
+    genre: "hành động",
+    type: "chiếu-rạp",
+  },
+  {
+    id: 14,
+    title: "mùa hè yêu dấu của chúng ta ",
+    alias: "mua-he-yeu-dau-cua-chung-ta-our-beloved-summer-2021",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61a842808d87152e64584571_poster-our-beloved-summer.jpg",
+    rate: 10,
+    genre: "tình cảm",
+    type: "bộ",
+  },
+  {
+    id: 15,
+    title: "không phải lúc chết - no time to die",
+    alias: "khong-phai-luc-chet-no-time-to-die",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618bc6e7b5ed7482b22d94c0_no-time-to-die.jpg",
+    rate: 9.2,
+    genre: "hành động",
+    type: "chiếu-rạp",
+  },
+  {
+    id: 16,
+    title: "khi tình yêu gặp nhà khoa học ",
+    alias: "khi-tinh-yeu-gap-nha-khoa-hoc",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/614efaafd49f330932da509c_poster-khi-tinh-yeu-gap.jpg",
+    rate: 8,
+    genre: "tình cảm",
+    type: "bộ",
   },
 ];
 // export default films;
 export const getFlims = () => films;
 export const getMovieByAlias = (alias) => films.find((p) => p.alias === alias);
+//
+export const getMovieByType = (type) => films.filter((p) => p.type === type);
