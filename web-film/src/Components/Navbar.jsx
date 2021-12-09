@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
 // import { useState } from "react";
 import "./Navbar.css";
@@ -21,11 +21,11 @@ const Navbarf = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Link to="/">Phim mới</Link>
+          <NavLink to="/">Phim mới</NavLink>
 
-          <Link to="the-loai/chiếu-rạp" >Phim chiếu rạp</Link>
+          <NavLink to="the-loai/phim-chieu-rap">Phim chiếu rạp</NavLink>
 
-          <Link to="the-loai/bộ" >Phim bộ</Link>
+          <NavLink to="the-loai/phim-bo">Phim bộ</NavLink>
         </Navbar.Collapse>
       </Container>
     </Navbar>

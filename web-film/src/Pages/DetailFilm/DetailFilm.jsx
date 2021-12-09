@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { getMovieByAlias } from "../../db/NewFilm";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./DetailFilm.css";
 import "../../Components/FilmList.css";
 
@@ -10,7 +11,7 @@ const Film = () => {
 
   const movie = getMovieByAlias(params.alias);
   console.log(movie);
-  if (!movie) return <p>404 Page Not Found</p>;
+  if (!movie) return <h1>404 Page Not Found</h1>;
 
   return (
     <>
@@ -35,7 +36,7 @@ const Film = () => {
                   className="info-block-icon"
                   alt=""
                 />
-                <p className="info-title-link">{"Phim " + movie.genre}</p>
+                <p className="info-title-link">{movie.genre.label}</p>
               </div>
               <div className="info-block">
                 <img
@@ -49,7 +50,12 @@ const Film = () => {
 
             <div className="header-button">
               <div className="button_trailer w-button">Trailer</div>
-              <div className="button_xemphim w-button">Xem phim</div>
+              <Link
+                to={"/play/" + movie.alias}
+                className="button_xemphim w-button"
+              >
+                Xem phim
+              </Link>
             </div>
             <div className="header-short-description">
               <p>

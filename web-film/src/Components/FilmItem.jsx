@@ -26,8 +26,8 @@ const FilmItem = ({ film }) => {
             alt=""
             className="info-block-icon"
           />
-          <Link to={"/film/" + film.alias} className="info-title-link">
-            {"Phim " + film.genre}
+          <Link to={"/category/" + film.genre.url} className="info-title-link">
+            {film.genre.label}
           </Link>
         </div>
       </div>
