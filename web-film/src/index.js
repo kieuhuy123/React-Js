@@ -12,7 +12,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./Pages/Hompage/Homepage";
 import Cinema from "./Pages/Cinema/Cinema";
-// import Series from "./Pages/Series/Series";
 import DetailFilm from "./Pages/DetailFilm/DetailFilm";
 import GenreFilm from "./Pages/GenreFilm/GenreFilm.jsx";
 import PlayFilm from "./Pages/PlayFilm/PlayFilm.jsx";
@@ -25,7 +24,6 @@ ReactDOM.render(
             <Route index element={<Home />}></Route>
             <Route path="category/:genre" element={<GenreFilm />}></Route>
             <Route path="the-loai/:type" element={<Cinema />}></Route>
-            {/* <Route path="the-loai/:type" element={<Series />}></Route> */}
             <Route path="film/:alias" element={<DetailFilm />}></Route>
             <Route path="play/:alias" element={<PlayFilm />}></Route>
           </Route>

@@ -62,7 +62,9 @@ h6 {
   cursor: pointer;
   border-radius: 0;
 }
-
+.w-button:hover {
+  color: #fff;
+}
 .button_trailer {
   margin-right: 10px;
   border-radius: 5px;

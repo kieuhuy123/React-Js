@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <>
       <Navbarf  />
-      <Search />
+      {/* <Search /> */}
       <Outlet></Outlet>
 
       <Footer />

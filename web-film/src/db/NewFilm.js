@@ -1,7 +1,7 @@
 const films = [
   {
     id: 1,
-    title: "Hanh phuc: Chung cu co doc ",
+    title: "Hạnh phúc: chung cư có độc (Happiness 2021)",
     alias: "happiness-park-hyung-sik",
     image:
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6186709007f0cb80056ce432_chung-cu-co-doc.jpg",
@@ -17,7 +17,7 @@ const films = [
   },
   {
     id: 2,
-    title: "Ngu su tai ba ",
+    title: "Ngự sử tài ba và quý cô thông thái ",
     alias: "ngu-su-tai-ba-va-quy-co-thong-thai-jo-yi-va-am-hanh-ngu-su",
     image:
       "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618915025072081149ba45c8_poster-joyi.jpeg",
@@ -261,11 +261,12 @@ const films = [
 ];
 // export default films;
 export const getFlims = () => films;
+// Detail film
 export const getMovieByAlias = (alias) => films.find((p) => p.alias === alias);
-//
+//  Type film
 export const getMovieByType = (type) =>
   films.filter((p) => p.type.url === type);
 
-//
+//  Genre film
 export const getMovieByGenre = (genre) =>
   films.filter((p) => p.genre.url === genre);

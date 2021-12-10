@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { getMovieByAlias } from "../../db/NewFilm";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import useTitle from "../../Hook/useTitle";
 import "./DetailFilm.css";
 import "../../Components/FilmList.css";
 
@@ -11,64 +13,77 @@ const Film = () => {
 
   const movie = getMovieByAlias(params.alias);
   console.log(movie);
+  useTitle(`${movie.title}`);
   if (!movie) return <h1>404 Page Not Found</h1>;
 
   return (
     <>
-      <Container style={{ marginTop: "100px" }}>
-        <Row>
-          <Col lg="4">
-            <img src={movie.image} alt="" />
-          </Col>
-          <Col lg="8">
-            <h1 className="header-title">{movie.title}</h1>
-            <div className="info-wrapper on-review-page">
-              <div className="info-block mobile-full">
-                <img
-                  src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64997fa12231_5-sao.png"
-                  alt=""
-                  className="info-block-icon"
-                />
-              </div>
-              <div className="info-block">
-                <img
-                  src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
-                  className="info-block-icon"
-                  alt=""
-                />
-                <p className="info-title-link">{movie.genre.label}</p>
-              </div>
-              <div className="info-block">
-                <img
-                  src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647cf1a11d0b_clock.svg"
-                  alt=""
-                  className="info-block-icon"
-                />
-                <div className="info-title">3/12/2021</div>
-              </div>
-            </div>
+      <div
+        className="background-page-header"
+        style={{
+          backgroundImage: `url(${movie.image})`,
+        }}
+      >
+        <div className="background-overlay">
+          <Container>
+            <Row>
+              <Col md="4">
+                <div className="header-thumnail-img">
+                  <img src={movie.image} alt="" />
+                </div>
+              </Col>
+              <Col md="7" className="header-info">
+                <h1 className="header-title">{movie.title}</h1>
+                <div className="info-wrapper on-review-page">
+                  <div className="info-block mobile-full">
+                    <img
+                      src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64997fa12231_5-sao.png"
+                      alt=""
+                      className="info-block-icon"
+                    />
+                  </div>
+                  <div className="info-block">
+                    <img
+                      src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                      className="info-block-icon"
+                      alt=""
+                    />
+                    <p className="info-title-link">{movie.genre.label}</p>
+                  </div>
+                  <div className="info-block">
+                    <img
+                      src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647cf1a11d0b_clock.svg"
+                      alt=""
+                      className="info-block-icon"
+                    />
+                    <div className="info-title">3/12/2021</div>
+                  </div>
+                </div>
 
-            <div className="header-button">
-              <div className="button_trailer w-button">Trailer</div>
-              <Link
-                to={"/play/" + movie.alias}
-                className="button_xemphim w-button"
-              >
-                Xem phim
-              </Link>
-            </div>
-            <div className="header-short-description">
-              <p>
-                Thoi luong 60 phut <br /> So tap: 16 <br /> Nam san xuat: 2021{" "}
-                <br />
-                Ngay phat song: 17/11 <br /> Quoc gia: Han Quoc <br /> The loai:
-                Hanh dong <br />
-                Dien vien: Lalalisa
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+                <div className="header-button">
+                  <div className="button_trailer w-button">Trailer</div>
+                  <Link
+                    to={"/play/" + movie.alias}
+                    className="button_xemphim w-button"
+                  >
+                    Xem phim
+                  </Link>
+                </div>
+                <div className="header-short-description">
+                  <p>
+                    Thoi luong 60 phut <br /> So tap: 16 <br /> Nam san xuat:
+                    2021 <br />
+                    Ngay phat song: 17/11 <br /> Quoc gia: Han Quoc <br /> The
+                    loai: Hanh dong <br />
+                    Dien vien: Lalalisa
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
       <div className="section review-section">
         <Container>
           <div className="review-wrapper" id="review">

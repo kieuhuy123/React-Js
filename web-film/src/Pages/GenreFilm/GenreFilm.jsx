@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router";
 import { useSelector } from "react-redux";
 import { getMovieByGenre } from "../../db/NewFilm";
+import useTitle from "../../Hook/useTitle";
 import FilmList from "../../Components/FilmList";
 
 const GenreFilm = () => {
@@ -9,6 +10,8 @@ const GenreFilm = () => {
   console.log(param);
 
   const genre = getMovieByGenre(param.genre);
+  console.log(genre)
+  useTitle(`Thể loại  - ${genre[0].genre.label} - SS Phim`);
   // const film = useSelector((state) => state);
   // console.log(film);
   return (

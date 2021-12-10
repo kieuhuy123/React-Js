@@ -15,12 +15,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80px;
 }
-.navbar-collapse a.active {
+.nav-menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-menu a.active {
   color: white;
   border-bottom: 2px solid #f1b722;
 }
-.navbar-collapse a {
+.nav-menu a {
+  display: flex;
   height: 80px;
   margin-left: 45px;
   padding-top: 27px;
@@ -33,7 +43,48 @@
   font-size: 17px;
   font-weight: 600;
 }
-.navbar-collapse a:hover {
+.nav-menu a:hover {
   color: white;
   border-bottom: 2px solid #f1b722;
+}
+
+.menu-icon {
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar.container {
+    position: relative;
+  }
+
+  .nav-menu {
+    position: absolute;
+    justify-content: center;
+    top: 80px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background: #1c2237;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 }

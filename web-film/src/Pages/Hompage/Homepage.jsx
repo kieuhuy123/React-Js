@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import Search from "../../Components/Search";
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <Container>
-      {/* <Search /> */}
+      <Search />
       <Row>
         <Col lg="9">
           <div className="section-title-wrapper">
@@ -21,15 +21,15 @@ function Home() {
           </div>
           <div className="tabs">
             <div className="tabs-menu">
-              <a href="/" className="tab-button tab-link active">
-                Tat ca phim{" "}
-              </a>
-              <a href="/" className="tab-button tab-link">
-                Sap chieu{" "}
-              </a>
-              <a href="/" className="tab-button tab-link">
-                Phim moi{" "}
-              </a>
+              <Link to="/" className="tab-button tab-link active">
+                Tất cả phim
+              </Link>
+              <Link to="/" className="tab-button tab-link">
+                Sắp chiếu
+              </Link>
+              <Link to="/" className="tab-button tab-link">
+                Phim mới
+              </Link>
             </div>
             <div className="tabs-content">
               <FilmList film={film} />

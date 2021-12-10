@@ -1,12 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
-// import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 import "./Navbar.css";
 const Navbarf = () => {
-  // const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false);
 
-  // const handleClick = () => setClick(!click);
-
+  const handleClick = () => setClick(!click);
+  const closeMobileClick = () => setClick(!click);
   return (
     <Navbar>
       <Container>
@@ -19,14 +20,27 @@ const Navbarf = () => {
             />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <NavLink to="/">Phim mới</NavLink>
 
-          <NavLink to="the-loai/phim-chieu-rap">Phim chiếu rạp</NavLink>
-
-          <NavLink to="the-loai/phim-bo">Phim bộ</NavLink>
-        </Navbar.Collapse>
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? <FaTimes /> : <FaBars />}
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <NavLink to="/" onClick={closeMobileClick}>
+              Phim mới
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="the-loai/phim-chieu-rap" onClick={closeMobileClick}>
+              Phim chiếu rạp
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="the-loai/phim-bo" onClick={closeMobileClick}>
+              Phim bộ
+            </NavLink>
+          </li>
+        </ul>
       </Container>
     </Navbar>
   );

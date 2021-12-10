@@ -70,3 +70,10 @@
 .item {
   padding-bottom: 50px;
 }
+
+@media screen and (max-width: 992px) {
+  .info-block-icon.block {
+    display: block;
+  }
+}
+

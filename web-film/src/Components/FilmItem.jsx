@@ -11,7 +11,7 @@ const FilmItem = ({ film }) => {
         <div className="item-number">{film.rate}</div>
       </Link>
       <img
-        className="info-block-icon"
+        className="info-block-icon block"
         src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa647a78a1222c_4-sao.png"
         alt=""
       />
