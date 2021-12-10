@@ -7,7 +7,7 @@ import useTitle from "../../Hook/useTitle";
 import "./DetailFilm.css";
 import "../../Components/FilmList.css";
 
-const Film = () => {
+const DetailFilm = () => {
   const params = useParams();
   console.log(params);
 
@@ -151,4 +151,4 @@ const Film = () => {
   );
 };
 
-export default Film;
+export default DetailFilm;

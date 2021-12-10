@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router";
-import { useSelector } from "react-redux";
+
 import { getMovieByGenre } from "../../db/NewFilm";
 import useTitle from "../../Hook/useTitle";
 import FilmList from "../../Components/FilmList";
@@ -12,8 +12,7 @@ const GenreFilm = () => {
   const genre = getMovieByGenre(param.genre);
   console.log(genre)
   useTitle(`Thể loại  - ${genre[0].genre.label} - SS Phim`);
-  // const film = useSelector((state) => state);
-  // console.log(film);
+
   return (
     <Container>
       <Row>
@@ -21,6 +20,7 @@ const GenreFilm = () => {
           <div className="section-title-wrapper">
             <h1 className="section-title">{genre[0].genre.label}</h1>
           </div>
+          
           <div className="tabs">
             <div className="tabs-content">
               <FilmList film={genre} />

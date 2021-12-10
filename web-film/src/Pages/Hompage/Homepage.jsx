@@ -1,6 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
+
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search";
 import FilmList from "../../Components/FilmList";
@@ -11,6 +12,7 @@ function Home() {
   useTitle("SS Phim | Xem phim mới | Phim Online | Full HD - Vietsub");
   const film = useSelector((state) => state);
 
+ 
   return (
     <Container>
       <Search />
