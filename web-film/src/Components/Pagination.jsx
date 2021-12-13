@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 export const Pagination = ({ postPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
 

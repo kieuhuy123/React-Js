@@ -9,7 +9,6 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
-import { MdFingerprint } from "react-icons/md";
 import { ImFilm } from "react-icons/im";
 
 function Footer() {

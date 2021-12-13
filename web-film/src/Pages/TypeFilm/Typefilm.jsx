@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 import { getMovieByType } from "../../db/NewFilm";
 import FilmList from "../../Components/FilmList";
 import useTitle from "../../Hook/useTitle";
-import Search from "../../Components/Search";
 const Cinema = () => {
   const param = useParams();
 
@@ -20,25 +19,21 @@ const Cinema = () => {
   }
 
   return (
-    <>
-      <Search />
+    <Container>
+      <Row>
+        <Col>
+          <div className="section-title-wrapper">
+            <h1 className="section-title">{cinema[0].type.label}</h1>
+          </div>
 
-      <Container>
-        <Row>
-          <Col>
-            <div className="section-title-wrapper">
-              <h1 className="section-title">{cinema[0].type.label}</h1>
+          <div className="tabs">
+            <div className="tabs-content">
+              <FilmList film={cinema} />
             </div>
-
-            <div className="tabs">
-              <div className="tabs-content">
-                <FilmList film={cinema} />
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

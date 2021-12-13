@@ -15,7 +15,7 @@ import Cinema from "./Pages/TypeFilm/Typefilm";
 import DetailFilm from "./Pages/DetailFilm/DetailFilm";
 import GenreFilm from "./Pages/GenreFilm/GenreFilm.jsx";
 import PlayFilm from "./Pages/PlayFilm/PlayFilm.jsx";
-
+import SearchFilm from "./Pages/SearchFilm/SearchFilm.jsx";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -27,6 +27,7 @@ ReactDOM.render(
             <Route path="the-loai/:type" element={<Cinema />}></Route>
             <Route path="film/:alias" element={<DetailFilm />}></Route>
             <Route path="play/:alias" element={<PlayFilm />}></Route>
+            <Route path="search" element={<SearchFilm />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

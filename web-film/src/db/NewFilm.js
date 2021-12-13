@@ -34,6 +34,8 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FG2EiCIyY54I%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DG2EiCIyY54I&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FG2EiCIyY54I%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_457584435708120_416393465412976277_n.mp4?_nc_cat=1&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=UIDH6QszBsIAX_iSiNR&rl=1500&vabr=789&_nc_ht=scontent-ams4-1.xx&oh=bfed558fc657b9b595a7a1e81839eace&oe=61B9C4B4",
   },
 
   {
@@ -71,6 +73,8 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWIvYJZHihmo%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWIvYJZHihmo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWIvYJZHihmo%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_294399179247369_4236470226983452850_n.mp4?_nc_cat=100&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE4ODEsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=e4YvcJUVq5kAX--Cs_F&rl=1881&vabr=1254&_nc_ht=scontent-ams4-1.xx&oh=00_AT8RLlmDi4Dv7DXbYyvnXvgl_8y4Zygkb3ZF9akprhIb4w&oe=61BBFA01",
   },
 
   {
@@ -107,6 +111,7 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5VYb3B1ETlk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5VYb3B1ETlk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5VYb3B1ETlk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -143,6 +148,7 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FdpdGaqJcPxk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdpdGaqJcPxk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FdpdGaqJcPxk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -178,6 +184,7 @@ const films = [
       t4: "Nhìn chung, Đấu trường ảo : Ready Player One thực sự là một bộ phim đáng xem để được đắm mình trong không gian âm nhạc của thế giới ảo đẹp mắt và sống động, với phần âm thanh bắt tai và nội dung lôi cuốn. Phim cũng mang đến những nhân vật của văn hoá đại chúng khổng lồ, giúp bạn như được sống trong thế giới tuổi thơ đầy sắc màu.",
       video: "https://www.youtube.com/embed/cSp1dM2Vj48",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -214,6 +221,7 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_ShCXYAUs9A%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_ShCXYAUs9A&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F_ShCXYAUs9A%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -248,6 +256,7 @@ const films = [
       t3: "Nhìn chung, Bây Giờ Chúng Ta Đã Chia Tay sẽ mang đến cho người xem những cảm xúc về tình yêu từ ngọt, mặn, chua, cay có đủ. Phim sẽ nói rõ lên được thực tế của mỗi con người sau khi chia tay, liệu họ sẽ đối mặt với tình yêu mới như thế nào. Những câu chuyện tình yêu tan vỡ sẽ được mở ra trong phim và từ đó cho thấy nhiều khía cạnh của các mối quan hệ khi tình cảm đôi lứa không còn qua sự thể hiện của Song Hye Kyo và Jang Ki Yong",
       video: "https://www.youtube.com/embed/NHnnBucjCjg",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -283,6 +292,8 @@ const films = [
       t4: "Bộ phim trở nên đáng sợ với bối cảnh khu rừng tối tăm cùng một số hình tượng rơm kỳ quặc để xây dựng bầu không khí. Thật không may, các tình tiết khá chậm chạp khiến mọi người cứ loay hoay như phong cách của Phù thuỷ bóng tối. Mãi cho đến nửa sau của bộ phim, những điều siêu nhiên bắt đầu lộ diện, tuy nhiên không có các phân cảnh đặc biệt đáng sợ. Khi tác phẩm dần đi đến hồi kết, bộ phim bù đắp cho sự chờ đợi. Và một số phân cảnh được phát lại bằng chiếc điện thoại di động mà họ tìm thấy ở trong rừng.",
       video: "https://www.youtube.com/embed/8OXjFDLezrw",
     },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_906800216619563_210662349962517126_n.mp4?_nc_cat=101&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=XBwE31ijNiYAX8Ff-dk&rl=1500&vabr=985&_nc_ht=scontent-amt2-1.xx&edm=APRAPSkEAAAA&oh=e913c7e6a47dd6da3a2ab27ce1003c51&oe=61B99DB4",
   },
 
   {
@@ -318,6 +329,8 @@ const films = [
       t1: "Bạn Cùng Phòng Của Tôi Là Gumiho (My Roommate is a Gumiho 2021) phim truyền hình Hàn Quốc do đạo diễn Baek Seung Ryong cầm trịch. Phim xoay quanh nữ sinh viên đại học vô tình nuốt phải quả cầu của cửu vĩ hồ khiến cô rơi vào thảm kịch chỉ sống được một nằm và quả cầu sẽ vỡ ra để ngăn cản hồ ly đó trở thành con người",
       video: "https://www.youtube.com/embed/MOvM9V_QIl4",
     },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_906800216619563_210662349962517126_n.mp4?_nc_cat=101&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=XBwE31ijNiYAX8Ff-dk&rl=1500&vabr=985&_nc_ht=scontent-amt2-1.xx&edm=APRAPSkEAAAA&oh=e913c7e6a47dd6da3a2ab27ce1003c51&oe=61B99DB4",
   },
 
   {
@@ -353,6 +366,7 @@ const films = [
       t4: "Trong cuộc thi năm 1947, súng tiểu liên của Kalashnikov đã vượt qua các đối thủ ở nhiều phần thi khác nhau về độ bền, hiệu quả hoạt động cũng như độ tin cậy, sau đó Ak-47 đã được khuyến nghị sản xuất hàng loạt. Năm 1949, nhà thiết kế Kalashnikov đã được trao giải thưởng chính phủ đầu tiên vào năm 30 tuổi, đồng thời lô AK-47 đầu tiên cũng đã được cấp cho quân đội.",
       video: "https://www.youtube.com/embed/DBqZv1_WGjQ",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
   {
     id: 11,
@@ -388,6 +402,7 @@ const films = [
       t4: "Trên trang tổng hợp kết quả đánh giá Rotten Tomatoes, Avengers : Endgame giữ tỷ lệ đánh giá tích cực là 94% dựa trên 451 bài đánh giá, với tỷ lệ trung bình 8.3/10. Kết quả khác cũng cho thấy 88% người thích xem phim này dựa vào 31,351 lượt đánh giá cho ra tỷ lệ 4.5/5. Các chuyên gia của trang web nhận định  “Thú vị, giải trí và tác động nhiều về mặt cảm xúc là những gì mà Avengers  : Endgame đã làm được, tạo nên một kết thúc Infinity Saga tuyệt vời của Marvel”. Trên trang Metacritic, phim được đánh giá 78/100 điểm dựa trên 56 nhà phê bình với những đánh giá hầu như tích cực. CinemaScore cũng đã cho phim điểm A+ hiếm hoi dựa trên ý kiến của khán giả, đây cũng là bộ phim thứ 3 của Marvel nhận được điểm số này.",
       video: "https://www.youtube.com/embed/TcMBFSGVi1c",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -423,6 +438,7 @@ const films = [
       t4: "Trong phim Anh Là Mùa Xuân Của Em còn có hai nhân vật phụ không kém phần quan trọng chính là Ahn Ga Young (Nam Gyu Ri đóng) một nữ diễn viên có vẻ ngoài ưa nhìn, nhưng vì có quá khứ bị người yêu cũ và cũng là quản lý của cô lợi dụng nên cô luôn mang trong mình nỗi sợ hãi với tình yêu. Mặt khác, nhân vật Chae Joon (Yoon Park thủ vai) là một anh chàng hoàn hảo và là giám đốc điều hành của một công ty đầu tư. Một ngày kia, anh bị thu hút bởi sự tự tin, xinh đẹp của Da Jung và lên kế hoạch để bày tỏ tình cảm với cô.",
       video: "https://www.youtube.com/embed/L_0DGgryPKo",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -460,6 +476,7 @@ const films = [
       t4: "Tác phẩm gần đây của Marvel là Black Widow đã làm tốt hơn ở mảng này, một nhân vật chính nổi bật và dàn nhân vật phụ hỗ trợ xây dựng hình ảnh cho cô. Còn trong Shang-Chi thì Shaun bị bao quanh, hay có phần lu mờ trước sự uy nghiêm, quyết đoán của người cha Leung, chiến binh Xiangling và thậm chí là khiếu hài hước của cô bạn thân.",
       video: "https://www.youtube.com/embed/giWIr7U1deA",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -495,6 +512,7 @@ const films = [
       t4: "Dù là thể loại thanh xuân vườn trường nhưng Our Beloved Summer lại mang đến một làn gió mới, cặp đôi chính Choi Woong và Kook Yeon Soo vì một thước phim ở quá khứ hơn 10 năm không chỉ được hàn gắn mối quan hệ trước kia mà còn được có cơ hội bày tỏ tình cảm của mình với đối phương. Cả hai chính thức bước vào mối quan hệ yêu đương lúc lên đại học để rồi chia tay trong đau đớn và cuối cùng gặp lại nhau sau 10 năm đó chính là điểm hay lớn nhất của bộ phim tình cảm Hàn Quốc này",
       video: "https://www.youtube.com/embed/wpW6aVWgvMc",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -530,6 +548,7 @@ const films = [
       t4: "Bộ phim cũng lồng ghép nhiệm vụ tiêu diệt kẻ thù cùng chuyện tình rắc rối của Bond cùng người đẹp Madeleine. Sự hòa trộn các sắc thái tình cảm khiến phim mang nhiều màu sắc tươi sáng hơn, thậm chí là một cái cớ hợp lý để kết thúc phim. Bước sang tuổi 50, vẻ già dặn của Daniel Craig đã giúp anh lột tả chân thực hơn những chuyển biến tâm lý trong đời sống tình cảm của nhân vật. Bên cạnh nhân vật chính, nhân vật phụ cũng để lại nhiều ấn tượng tốt cho khán giả.",
       video: "https://www.youtube.com/embed/N_gD9-Oa0fg",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -566,6 +585,7 @@ const films = [
       t4: "Châu Vũ Đồng là nữ diễn viên “siêng diễn” nhất màn ảnh Hoa ngữ trong 2 năm trở lại đây. Có lẽ vì điều đó mà cô được đánh giá là người có khả năng thay thế Chương Tử Di hoặc Châu Tấn cho ngôi “ảnh hậu” nhờ khả năng diễn xuất sắc của mình. Một kịch bản mới lạ cùng bạn diễn gạo cội trong phim Khi Tình Yêu Gặp Nhà Khoa Học hẳn sẽ đưa tên tuổi của Châu Vũ Đồng tiếp tục bay xa hơn trong năm 2021",
       video: "https://www.youtube.com/embed/VzNsv1tRCA8",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
   {
     id: 17,
@@ -601,6 +621,7 @@ const films = [
       t4: "Phần 3 : Cún yêu. Hình ảnh những chú cún đi dạo cùng chủ đã làm cho chú Minion cảm thấy thích thú, chú cũng muốn tìm một con cún con để dắt đi dạo. Nhưng chú chó của cậu lại là một chú chó ngoài hành tinh, không giống như những chú chó khác. Thú cưng của cậu là con robot có laser và các tính năng cơ học khác. Tuy vậy họ đã chơi đùa rất vui vẻ, và chú cún của cậu Minions cũng rất thông minh. Nhưng sau khi biết về nguồn gốc quê hương của chú cún ngoài hành tinh, chú Minions đã quyết định trả anh chàng lại hành tinh xa xôi, đổi lại, cậu nhận được một con bọ cánh cam khổng lồ bầu bạn, cũng là con cún mới của cậu",
       video: "https://www.youtube.com/embed/Uds1H3HS68I",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -636,6 +657,7 @@ const films = [
       t4: "Hai Jerry quan sát 22 và tự hỏi khi nào cô ấy sẽ đến Trái đất và khám phá ý nghĩa của cuộc sống. Một Jerry hỏi ý nghĩa của cuộc sống là gì? ",
       video: "https://www.youtube.com/embed/VJUnC2j9rgo",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -671,6 +693,7 @@ const films = [
       t4: "Thế giới hư cấu của One Piece được bao quanh bởi hai đại dương lớn, phân cách bằng một dãy núi khổng lồ có tên là Red Line - Hồng Tuyến. Grand Line - Đại Hải Trình là một vùng biển chạy vuông góc với Red Line, chúng chia thành bốn biển khác nhau:  East Blue - Higashi no Umi, West Blue - Nishi no Umi, North Blue - Kita no Umi và South Blue - Minami no Umi.",
       video: "https://www.youtube.com/embed/vUSunPAO-nw",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -704,9 +727,9 @@ const films = [
       t2: "Miyazaki tiết lộ, kịch bản phim được lấy cảm hứng từ cô con gái 10 tuổi của người bạn tên là Okuda Seiji - là trợ lý sản xuất của ông - người vẫn thường đến thăm ông vào mỗi dịp hè. Lúc đó, Miyazaki đang phát triển hai dự án khác của riêng ông nhưng cả hai đều bị huỷ bỏ. Kinh phí cho bộ phim từ 15 - 19 triệu đô, Vùng đất linh hồn được bắt đầu sản xuất năm 2000. Trong quá trình sản xuất, ông nhận ra bộ phim có độ dài hơn 3 tiếng nên đã lược bỏ một số phần ra khỏi kịch bản gốc.",
       t3: "CWalt Disney Pictures đã mời John Lasseter - đạo diễn của xưởng phim Pixar cùng một người hâm mộ Miyazaki - giám sát quá trình lồng tiếng Anh cho bộ phim trước khi phát hành tại khu vực Bắc Mĩ. Lasseter đã thuê Kirk Wise làm đạo diễn và Donald W. Ernst làm nhà sản xuất cho bản dịch tiếng Anh. Nhà biên kịch Cindy Davis và Donald H. Hewitt là những người viết lời thoại bằng Tiếng Anh sao cho trùng với khẩu hình của nhân vật nói tiếng Nhật. Bộ phim nhận được rất nhiều đánh giá tích cực và được xếp vào danh sách những bộ phim hoạt hình vĩ đại nhất từng được thực hiện. Tác phẩm đã giành được giải Oscar cho danh mục phim hoạt hình hay nhất tại lễ trao giải lần thứ 75, qua đó trở thành bộ phim hoạt hình vẽ bằng tay và có ngôn ngữ không phải bằng tiếng Anh đầu tiên đoạt được danh hiệu này. Phim còn nhận được giải Gấu Vàng tại liên hoan phim quốc tế Berlin năm 2002 và nằm trong top 10 danh sach phim bạn nên xem khi ở tuổi 14 của viện điện ảnh Anh quốc. Năm 2016, bộ phim đã được lựa chọn là phim điện ảnh hay nhất của thế kỷ 21, từ đánh giá của 177 nhà phê bình điện ảnh từ khắp nơi trên thế giới, qua đó trở thành phim điện ảnh hoạt hình có thứ hạng cao nhất trong danh sách",
       t4: "Vùng đất linh hồn là bộ phim đầy tính nhân văn, phù hợp với mọi lứa tuổi. Với trẻ thơ, nó như là một câu chuyện cổ tích để các cô bé, cậu bé mơ mộng. Còn với người lớn, bộ phim có rất nhiều điều đáng để suy ngẫm, về những thứ ẩn sâu bên trong mỗi con người. Yubaba là phù thuỷ độc ác nhưng hết lòng yêu thương con trai. Hay Kamaji và Rin là người gợi nhớ về hình ảnh gia đình, nơi luôn cho ta cảm giác ấm áp và an toàn.",
-      video:
-        "https://www.youtube.com/embed/ByXuk9QqQkk" ,
+      video: "https://www.youtube.com/embed/ByXuk9QqQkk",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -742,6 +765,7 @@ const films = [
       t4: "Tuy nhiên, mô típ của phim không mới lạ khi vẫn theo lối triển khai quen thuộc : biến cố - mất mát -phép màu - happy ending, Frozen II được đánh giá là khá an toàn và không có quá nhiều điểm bất ngờ xảy ra với Ana và Elsa, sau tất cả, cuộc sống lại quay trở về hiện trạng yên đềm và hạnh phúc. Tuy nhiên, với chủ đích nhắm tới lứa tuổi thiếu nhi và gia đình, một cái kết đẹp như truyện cổ tích cũng là điều hiển nhiên.",
       video: "https://www.youtube.com/embed/PCK1929UvvQ",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -775,9 +799,9 @@ const films = [
       t2: "Mô típ của những bộ phim hoạt hình thường thấy là sự tưởng tượng phong phú, cho khán giả thấy nhiều hơn và thêm thắt những biến cố để nhân vật có thể vươn lên và đấu tranh vì mục tiêu của mình. Đó luôn là công thức thành công để thu hút khán giả ở lại với bộ phim. Tuy nhiên, đạo diễn Hayao Miyazaki lại lựa chọn một hướng đi khác cho đứa con cưng của mình. Ông vẽ nên một bức tranh yên bình vùng quê nước Nhật, nơi mà tuổi thơ của bọn trẻ gắn liền với những con đường làng, cánh đồng lúa trải dài nằm dưới những ngọn núi nhấp nhô, những mái nhà lấp ló sau lưng quả đồi. Chính những thước phim ấy đã tái hiện một xã hội Nhật Bản đang vực dậy sau thế chiến 2 một cách chân thực và chi tiết. ",
       t3: "Đúng như tinh thần mà Hayao Miyazaki muốn truyền tải xuyên suốt tác phẩm - sự giản dị và trong trẻo của tuổi thần tiên. Cùng với khung cảnh bình yên trong thế giới My Neighbor Totoro là những con người nhân hậu và giàu tình thương yêu. Cô em gái Mei 4 tuổi hoạt bát, tinh nghịch, vô tư và luôn tò mò về mọi thứ. Mei đại diện cho những gì dễ thương, hồn nhiên và trong sáng của tuổi thơ ngây. Cô bé yêu quý chị, thương ba và vẫn luôn cầu nguyện để mẹ sớm khỏi bệnh. Chị gái Satsuki 11 tuổi đầy cá tính, một cô bé hiểu chuyện, biết chăm lo việc nhà chu đáo khi mẹ đang bị ốm, hết mực yêu thương em gái và luôn bảo vệ em mình. Nhân vật chính không thể thiếu là Totoro, một con thú vốn với hình hài được nhào nặn nên khớp với trí tưởng tượng của nhiều đứa trẻ : Thân hình ú nu, to lớn, dáng vẻ ngây ngô, bộ lông mềm mại, hiền lành và có sức mạnh. Tạo hình của Totoro hoàn hảo đến mức tác giả đã không muốn thêm lời thoại nào cho nhân vật này, Totoro không chỉ là nhân vật hoạt hình bình thường, mà nó đã xuất hiện trong giấc mơ của hàng triệu trẻ em trên khắp thế giới. Khi bộ phim được công chiếu trên toàn thế giới, Totoro như là một phần đại diện để truyền bá văn hoá Nhật Bản. Sau thành công của bộ phim, hãng Studio Ghibli đã quyết định lấy hình ảnh Totoro làm biểu tượng đại diện độc quyền.",
       t4: "My Neighbor Totoro không hề xuất hiện nhân vật phản diện, như kịch bản được định sẵn là lấy từ góc nhìn của những đứa trẻ hồn nhiên, một cuộc sống bình yên, mọi người đều thiện lương và luôn có những phép màu giữa cuộc sống thường nhật. Một trong những điều làm nên thành công lớn cho bộ phim có lẽ chính là cảm xúc bồi hồi khó tả của khán giả khi theo dõi câu chuyện. Một sự thành công mà không phải bộ phim tầm cỡ nào cũng có được. Không thể phủ nhận rằng, My Neighbor Totoro đã truyền tải những năng lượng tích cực kỳ lạ, mang đến những cảm xúc hạnh phúc, nhịp phim nhẹ nhàng giúp xoa dịu đi những muộn phiền, lo lắng trong cuộc sống thường nhật.",
-      video:
-        "https://www.youtube.com/embed/92a7Hj0ijLs",
+      video: "https://www.youtube.com/embed/92a7Hj0ijLs",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -810,9 +834,10 @@ const films = [
       t1: "Phim được đặt trong bối cảnh giai đoạn cuối của Chiến tranh thế giới thứ 2 tại Nhật Bản, với câu chuyện chua xót nhưng đầy cảm động về tình anh em của hai đứa trẻ mồ côi, hai anh em đã mất mẹ sau cuộc thả bom dữ dội của không quân mỹ vào thành phố Kobe, trong khi cha của hai đứa cũng mất sau đó trong trận chiến của Hải quân đế quốc Nhật Bản. Người anh trai tên là Seita và cô em gái tên là Setsuko, cả hai phải vật lộn để tồn tại giữa một bên là nạn đói hoành hành và một bên là sự vô tâm, thờ ơ của những người xung quanh, trong đó có cả những người thân và cụ thể là người dì ích kỷ, khó chịu của 2 đứa trẻ, người vẫn luôn phàn nàn rằng hai đứa trẻ không làm gì nhưng vẫn được ăn đầy đủ dù thực phẩm ngày càng khan hiếm",
       t2: "Sau khoảng thời gian ở nhà dì, 2 anh em phải sống trong sự mắng chửi và phân biệt đối xử, bị gò bó và tù túng, cậu bé Seita phải đối diện với lựa chọn là ở lại với người ích kỷ, làm việc và đối diện với hiện thực tàn khốc, hai là chạy trốn để được tự do dù sẽ rất khó khăn, thiếu thốn nhưng cả hai anh em sẽ được thoải mái làm những điều mình thích.",
       t3: "Sau cùng, cả hai anh em quyết định rời khỏi nhà của người dì, sau đó chuyển tới một căn hầm trú bom đã bị bỏ hoang. Sự thiếu thốn lương thực đã buộc Seita phải ăn cắp đồ, thức ăn nhưng đã bị bắt lại và bị đánh đập dã man. Setsuko bị ốm nặng, Seita vội vàng đưa em đến bệnh viện, bác sĩ thông báo với cậu rằng cô bé bị thiếu dinh dưỡng trầm trọng. Trong sự lo lắng tột độ, cậu đã vội vàng tới ngân hàng để rút toàn bộ số tiền còn lại trong tài khoản ngân hàng của mẹ để mua thức ăn. Tuy nhiên, sau khi rời ngân hàng, Seita rất sốc và tuyệt vọng khi nghe tin Nhật Bản đã đầu hàng vô điều kiện quân Đồng Minh, và ba cậu cũng đã tử nạn sau một cuộc công kích trên biển. Cậu quay về nhà với rất nhiều thức ăn, nhưng Setsuko đã không qua khỏi. Seita hỏa táng thi hài của cô bé, bỏ vào hộp kẹo trái cây và mang nó đi cùng với bức ảnh của cha mình, cho đến khi cậu qua đời tại nhà ga Sannomiya",
-      t4:"Bộ phim kết thúc với cảnh Seita và Setsuko ngồi bên nhau vui vẻ với những con đom đóm xung quanh, và họ nhìn xuống thành phố Kobe đang phát triển trở lại sau chiến tranh với khung cảnh thanh bình và đèn đóm sáng rực.",
+      t4: "Bộ phim kết thúc với cảnh Seita và Setsuko ngồi bên nhau vui vẻ với những con đom đóm xung quanh, và họ nhìn xuống thành phố Kobe đang phát triển trở lại sau chiến tranh với khung cảnh thanh bình và đèn đóm sáng rực.",
       video: "https://www.youtube.com/embed/fLHG-GJZb3o",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -848,6 +873,7 @@ const films = [
       t4: "Về hình ảnh, đồ hoạ trong phim được thể hiện một cách rất chi tiết, từ sợi lông của chú mèo tới những đồ vật trang trí, màu đổ bóng, trang phục,...đều được tái hiện một cách chân thực đáng kinh ngạc. Mọi thứ hiện lên rất tự nhiên, nhẹ nhàng mang tới cảm xúc khó tả. Không thể không nhắc đến phần âm thanh với những giai điệu du dương, bắt tai được cài cắm trong suốt bộ phim. Bộ phim mang tới nhiều thông điệp ý nghĩa, đặc biệt là với những ai cảm thấy mất phương hướng trong cuộc sống, hay công việc gặp nhiều trắc trở, chán nản thì bộ phim hoạt hình này sẽ giúp bạn lấy lại động lực hiệu quả đấy",
       video: "https://www.youtube.com/embed/D6zVlPKn2AI",
     },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 ];
 

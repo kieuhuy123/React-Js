@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import {
   Player,
   BigPlayButton,
-  PosterImage,
   LoadingSpinner,
   ControlBar,
   ReplayControl,
@@ -21,14 +20,14 @@ const PlayFilm = () => {
   console.log(movie);
   // Error
   if (!movie) return <h1>404 Error</h1>;
-  
+
   return (
     <Container>
       <Player
         width="500px"
         playsInline
         poster={movie.image}
-        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+        src={movie.video}
         className="video-container"
       >
         <BigPlayButton position="center" />

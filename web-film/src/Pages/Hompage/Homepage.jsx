@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 import { Link } from "react-router-dom";
-import Search from "../../Components/Search";
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
@@ -12,7 +11,7 @@ import "./Home.css";
 function Home() {
   useTitle("SS Phim | Xem phim mới | Phim Online | Full HD - Vietsub");
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(16);
   //
@@ -29,7 +28,6 @@ function Home() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <Container>
-      <Search />
       <Row>
         <Col lg="9">
           <div className="section-title-wrapper">
