@@ -12,7 +12,7 @@ const Navbarf = () => {
     <Navbar>
       <Container>
         <Navbar.Brand>
-          <Link to="/">
+          <Link to="/" >
             <img
               src="//i0.wp.com/i.imgur.com/GvLWtFD.png"
               className="logo"
@@ -21,7 +21,7 @@ const Navbarf = () => {
           </Link>
         </Navbar.Brand>
 
-        <div className="menu-icon" onClick={handleClick}>
+        <div className="menu-icon" onClick={closeMobileClick}>
           {click ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -33,6 +33,11 @@ const Navbarf = () => {
           <li className="nav-item">
             <NavLink to="the-loai/phim-chieu-rap" onClick={closeMobileClick}>
               Phim chiếu rạp
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="the-loai/phim-hoat-hinh" onClick={closeMobileClick}>
+              Phim hoạt hình
             </NavLink>
           </li>
           <li className="nav-item">

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
@@ -7,12 +7,26 @@ import Search from "../../Components/Search";
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
+import { Pagination } from "../../Components/Pagination";
 import "./Home.css";
 function Home() {
   useTitle("SS Phim | Xem phim mới | Phim Online | Full HD - Vietsub");
+
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(16);
+  //
+
   const film = useSelector((state) => state);
 
- 
+  // Get current posts
+  const indexOfLastPost = currentPage * postPerPage;
+  const indexOfFirtPost = indexOfLastPost - postPerPage;
+  const currentPosts = film.slice(indexOfFirtPost, indexOfLastPost);
+  console.log(film);
+  console.log(currentPosts);
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <Container>
       <Search />
@@ -34,7 +48,7 @@ function Home() {
               </Link>
             </div>
             <div className="tabs-content">
-              <FilmList film={film} />
+              <FilmList film={currentPosts} />
             </div>
           </div>
         </Col>
@@ -43,16 +57,21 @@ function Home() {
           <div className="sidenav-block-title">Phim bộ hot</div>
 
           <div className="div-block">
-            <NewFilmList film={film} />
+            <NewFilmList film={currentPosts} />
           </div>
 
           <div className="sidenav-block-title">Phim lẻ hot</div>
 
           <div className="div-block">
-            <NewFilmList film={film} />
+            <NewFilmList film={currentPosts} />
           </div>
         </Col>
       </Row>
+      <Pagination
+        postPerPage={postPerPage}
+        totalPosts={film.length}
+        paginate={paginate}
+      />
     </Container>
   );
 }

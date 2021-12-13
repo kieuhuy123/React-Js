@@ -10,11 +10,14 @@ const Cinema = () => {
 
   const cinema = getMovieByType(param.type);
 
-  useTitle(
-    `[Tuyển tập]  ${cinema[0].type.label}, Phim bộ hay nhất 2021 | SS Phim`
-  );
-
   if (cinema.length === 0) return <h1>404 Error</h1>;
+
+  if (cinema) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useTitle(
+      `[Tuyển tập]  ${cinema[0].type.label}, Phim bộ hay nhất 2021 | SS Phim`
+    );
+  }
 
   return (
     <>
@@ -26,7 +29,7 @@ const Cinema = () => {
             <div className="section-title-wrapper">
               <h1 className="section-title">{cinema[0].type.label}</h1>
             </div>
-            
+
             <div className="tabs">
               <div className="tabs-content">
                 <FilmList film={cinema} />

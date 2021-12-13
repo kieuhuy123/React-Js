@@ -56,6 +56,9 @@
   color: #cad3da;
   text-decoration: underline;
 }
+.info-title-link:hover {
+  color: #f1b722;
+}
 .info-title {
   display: inline-block;
 }
@@ -68,7 +71,9 @@
   font-size: 16px;
   line-height: 31px;
 }
-
+.header-short-description p {
+  text-align: justify;
+}
 /* Section */
 
 .section {
@@ -96,7 +101,11 @@
   font-size: 16px;
   line-height: 23px;
 }
-
+.rtb img {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 /* Trailer  */
 .trailer-video-block {
   margin-top: 35px;

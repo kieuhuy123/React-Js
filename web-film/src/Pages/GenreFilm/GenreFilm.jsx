@@ -10,8 +10,12 @@ const GenreFilm = () => {
   console.log(param);
 
   const genre = getMovieByGenre(param.genre);
-  console.log(genre)
-  useTitle(`Thể loại  - ${genre[0].genre.label} - SS Phim`);
+  if (genre.length === 0) return <h1>404 Error</h1>;
+
+  if (genre) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useTitle(`Thể loại  - ${genre[0].genre.label} - SS Phim`);
+  }
 
   return (
     <Container>
@@ -20,7 +24,7 @@ const GenreFilm = () => {
           <div className="section-title-wrapper">
             <h1 className="section-title">{genre[0].genre.label}</h1>
           </div>
-          
+
           <div className="tabs">
             <div className="tabs-content">
               <FilmList film={genre} />

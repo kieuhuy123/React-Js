@@ -13,9 +13,13 @@ const DetailFilm = () => {
 
   const movie = getMovieByAlias(params.alias);
   console.log(movie);
-  useTitle(`${movie.title}`);
+
   if (!movie) return <h1>404 Page Not Found</h1>;
 
+  if (movie) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useTitle(`${movie.title}`);
+  }
   return (
     <>
       <div
@@ -48,7 +52,7 @@ const DetailFilm = () => {
                       className="info-block-icon"
                       alt=""
                     />
-                    <p className="info-title-link">{movie.genre.label}</p>
+                    <Link to={"/category/" + movie.genre.url}className="info-title-link">{movie.genre.label}</Link>
                   </div>
                   <div className="info-block">
                     <img
@@ -61,7 +65,9 @@ const DetailFilm = () => {
                 </div>
 
                 <div className="header-button">
-                  <div className="button_trailer w-button">Trailer</div>
+                  <Link to="#trailer" className="button_trailer w-button">
+                    Trailer
+                  </Link>
                   <Link
                     to={"/play/" + movie.alias}
                     className="button_xemphim w-button"
@@ -71,11 +77,19 @@ const DetailFilm = () => {
                 </div>
                 <div className="header-short-description">
                   <p>
-                    Thoi luong 60 phut <br /> So tap: 16 <br /> Nam san xuat:
-                    2021 <br />
-                    Ngay phat song: 17/11 <br /> Quoc gia: Han Quoc <br /> The
-                    loai: Hanh dong <br />
-                    Dien vien: Lalalisa
+                    {"Thời lượng: " + movie.info.time}
+                    <br />
+                    {"Số tập: " + movie.info.episode}
+                    <br />
+                    {"Năm xuất bản: " + movie.info.Publishing}
+                    <br />
+                    {"Diễn viên: " + movie.info.actors}
+                    <br />
+                    {"Đạo diễn: " + movie.info.directors}
+                    <br />
+                    {"Quốc gia: " + movie.info.nation}
+                    <br />
+                    {"Thể loại: " + movie.info.genre}
                   </p>
                 </div>
               </Col>
@@ -88,42 +102,12 @@ const DetailFilm = () => {
         <Container>
           <div className="review-wrapper" id="review">
             <div className="rtb">
-              <p>
-                <strong>
-                  Biệt Đội Siêu Anh Hùng 4&nbsp;: Hồi kết ( Avengers : Endgame )
-                </strong>{" "}
-                là bộ phim siêu anh hùng của Mỹ được ra mắt vào năm 2019, được
-                sản xuất bởi Marvel Studios và Walt Disney Studios Motion
-                Picture phát hành. Phim là phần thứ 4 trong loạt phim Avengers,
-                và cũng là phần phim thứ 22 thuộc vũ trụ điện ảnh Marvel, đồng
-                thời cùng là phim áp chót của giai đoạn 3 trong loạt series siêu
-                anh hùng.&nbsp;
-              </p>
-              <p>
-                Anh em nhà Russo quay trở lại ghế đạo diễn, với biên kịch được
-                chắp bút bởi Christopher Markus và Stephen McFeely. Các nhân vật
-                trong phim được lấy theo nhân vật gốc trong Biệt đội Avenger
-                trong truyện tranh Marvel. Tựa đề phim Avengers : Endgame chính
-                thức được công bố vào ngày 7 tháng 12 năm 2018. Trong phim, các
-                thành viên còn sống sót ở phần phim trước và các đồng minh cùng
-                hợp tác để đảo ngược thiệt hại do Thanos gây ra, đồng thời diệt
-                trừ hắn một lần và mãi mãi.
-              </p>
-              <p>
-                Trên trang tổng hợp kết quả đánh giá Rotten Tomatoes, Avengers :
-                Endgame giữ tỷ lệ đánh giá tích cực là 94% dựa trên 451 bài đánh
-                giá, với tỷ lệ trung bình 8.3/10. Kết quả khác cũng cho thấy 88%
-                người thích xem phim này dựa vào 31,351 lượt đánh giá cho ra tỷ
-                lệ 4.5/5. Các chuyên gia của trang web nhận định&nbsp; “Thú vị,
-                giải trí và tác động nhiều về mặt cảm xúc là những gì mà
-                Avengers&nbsp; : Endgame đã làm được, tạo nên một kết thúc
-                Infinity Saga tuyệt vời của Marvel”. Trên trang Metacritic, phim
-                được đánh giá 78/100 điểm dựa trên 56 nhà phê bình với những
-                đánh giá hầu như tích cực. CinemaScore cũng đã cho phim điểm A+
-                hiếm hoi dựa trên ý kiến của khán giả, đây cũng là bộ phim thứ 3
-                của Marvel nhận được điểm số này.
-                <br />
-              </p>
+              <div className="trailer-title">{movie.review.title}</div>
+              <p>{movie.review.t1}</p>
+              <img src={movie.review.img} alt="" />
+              <p>{movie.review.t2}</p>
+              <p>{movie.review.t3}</p>
+              <p>{movie.review.t4}</p>
             </div>
             <div className="trailer-video-block" id="trailer">
               <div className="trailer-title">Official trailer:</div>
@@ -133,7 +117,7 @@ const DetailFilm = () => {
               >
                 <iframe
                   className="embedly-embed"
-                  src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5VYb3B1ETlk%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5VYb3B1ETlk&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5VYb3B1ETlk%2Fhqdefault.jpg&amp;key=c4e54deccf4d4ec997a64902e9a30300&amp;type=text%2Fhtml&amp;schema=youtube"
+                  src={movie.review.video}
                   width="854"
                   height="480"
                   scrolling="no"
