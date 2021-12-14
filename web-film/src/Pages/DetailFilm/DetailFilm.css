@@ -22,11 +22,10 @@
   margin-left: 60px;
 }
 .header-title {
-  max-width: 70%;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Nunito, sans-serif;
-  font-size: 68px;
+
   line-height: 60px;
   font-weight: 800;
   text-transform: uppercase;
@@ -115,7 +114,7 @@
 .trailer-title {
   margin-bottom: 20px;
   color: #f1b722;
-  font-size: 29px;
+  
 }
 
 .review-video {

@@ -52,7 +52,12 @@ const DetailFilm = () => {
                       className="info-block-icon"
                       alt=""
                     />
-                    <Link to={"/category/" + movie.genre.url}className="info-title-link">{movie.genre.label}</Link>
+                    <Link
+                      to={"/category/" + movie.genre.url}
+                      className="info-title-link"
+                    >
+                      {movie.genre.label}
+                    </Link>
                   </div>
                   <div className="info-block">
                     <img
@@ -71,6 +76,7 @@ const DetailFilm = () => {
                   <Link
                     to={"/play/" + movie.alias}
                     className="button_xemphim w-button"
+                    onClick={window.XMLHttpRequestUpload}
                   >
                     Xem phim
                   </Link>
@@ -102,7 +108,7 @@ const DetailFilm = () => {
         <Container>
           <div className="review-wrapper" id="review">
             <div className="rtb">
-              <div className="trailer-title">{movie.review.title}</div>
+              <h2 className="trailer-title">{movie.review.title}</h2>
               <p>{movie.review.t1}</p>
               <img src={movie.review.img} alt="" />
               <p>{movie.review.t2}</p>
@@ -110,7 +116,7 @@ const DetailFilm = () => {
               <p>{movie.review.t4}</p>
             </div>
             <div className="trailer-video-block" id="trailer">
-              <div className="trailer-title">Official trailer:</div>
+              <h2 className="trailer-title">Official trailer:</h2>
               <div
                 className="review-video w-video"
                 style={{ paddingTop: "56.20608899297424%" }}

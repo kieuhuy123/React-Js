@@ -23,7 +23,7 @@ const Cinema = () => {
       <Row>
         <Col>
           <div className="section-title-wrapper">
-            <h1 className="section-title">{cinema[0].type.label}</h1>
+            <h2 className="section-title">{cinema[0].type.label}</h2>
           </div>
 
           <div className="tabs">

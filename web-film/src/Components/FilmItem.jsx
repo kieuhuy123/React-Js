@@ -15,7 +15,7 @@ const FilmItem = ({ film }) => {
         src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa647a78a1222c_4-sao.png"
         alt=""
       />
-      <Link to={"/film/" + film.alias} className="item-block-title">
+      <Link to={"/film/" + film.alias} className="item-block-title sub-title">
         {film.title}
       </Link>
 

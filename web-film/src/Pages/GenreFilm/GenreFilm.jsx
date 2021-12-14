@@ -22,7 +22,7 @@ const GenreFilm = () => {
       <Row>
         <Col>
           <div className="section-title-wrapper">
-            <h1 className="section-title">{genre[0].genre.label}</h1>
+            <h2 className="section-title">{genre[0].genre.label}</h2>
           </div>
 
           <div className="tabs">

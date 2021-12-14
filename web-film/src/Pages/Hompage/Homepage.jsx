@@ -31,7 +31,7 @@ function Home() {
       <Row>
         <Col lg="9">
           <div className="section-title-wrapper">
-            <h1 className="section-title">Phim mới</h1>
+            <h2 className="section-title">Phim mới</h2>
           </div>
           <div className="tabs">
             <div className="tabs-menu">

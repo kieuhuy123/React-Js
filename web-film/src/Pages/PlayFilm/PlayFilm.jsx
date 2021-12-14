@@ -42,101 +42,43 @@ const PlayFilm = () => {
       </Player>
 
       <Row className="align-items-center">
-        <Col md="9" className="play-title">
-          {movie.title}
+        <Col lg="8" className="play-title">
+          <h2>{movie.title}</h2>
         </Col>
-        <Col md="3" className="cloumn-right">
+        <Col lg="4" className="cloumn-right">
           <div className="back">
             <IoReturnDownBackOutline />
-            <Link to={"/film/" + movie.alias}>Ve trang gioi thieu phim</Link>
+            <Link to={"/film/" + movie.alias} className="sub-title">
+              Về trang giới thiệu phim
+            </Link>
           </div>
         </Col>
       </Row>
-
-      {/* <div className="comment-wrapper">
-        <div className="comment-title">Bình luận về phim</div>
-
+      <div
+        class="fb-like"
+        data-href="https://developers.facebook.com/docs/plugins/"
+        data-width=""
+        data-layout="standard"
+        data-action="like"
+        data-size="large"
+        data-share="true"
+      ></div>
+      <div className="comment-header">
+        <h4 className="comment-title">Bình luận về phim: </h4>
+        <img
+          src="//i0.wp.com/i.imgur.com/GvLWtFD.png"
+          loading="lazy"
+          alt="film hay ne!"
+        ></img>
+      </div>
+      <div className="comment-wrapper">
         <div
           className="fb-comments"
-          data-href="https://www.facebook.com/hunghaihuocc"
-          data-width="800"
-          data-numposts="1"
+          data-href="https://www.facebook.com/ourbelovedsummervnfp"
+          data-width="750"
+          data-numposts="5"
         ></div>
-      </div> */}
-      {/* <Comment.Group>
-        <Header as="h3" dividing>
-          Comments
-        </Header>
-
-        <Comment>
-          <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/matt.jpg" />
-          <Comment.Content>
-            <Comment.Author as="a">Matt</Comment.Author>
-            <Comment.Metadata>
-              <div>Today at 5:42PM</div>
-            </Comment.Metadata>
-            <Comment.Text>How artistic!</Comment.Text>
-            <Comment.Actions>
-              <Comment.Action>Reply</Comment.Action>
-            </Comment.Actions>
-          </Comment.Content>
-        </Comment>
-
-        <Comment>
-          <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/elliot.jpg" />
-          <Comment.Content>
-            <Comment.Author as="a">Elliot Fu</Comment.Author>
-            <Comment.Metadata>
-              <div>Yesterday at 12:30AM</div>
-            </Comment.Metadata>
-            <Comment.Text>
-              <p>This has been very useful for my research. Thanks as well!</p>
-            </Comment.Text>
-            <Comment.Actions>
-              <Comment.Action>Reply</Comment.Action>
-            </Comment.Actions>
-          </Comment.Content>
-          <Comment.Group>
-            <Comment>
-              <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/jenny.jpg" />
-              <Comment.Content>
-                <Comment.Author as="a">Jenny Hess</Comment.Author>
-                <Comment.Metadata>
-                  <div>Just now</div>
-                </Comment.Metadata>
-                <Comment.Text>Elliot you are always so right :)</Comment.Text>
-                <Comment.Actions>
-                  <Comment.Action>Reply</Comment.Action>
-                </Comment.Actions>
-              </Comment.Content>
-            </Comment>
-          </Comment.Group>
-        </Comment>
-
-        <Comment>
-          <Comment.Avatar src="https://react.semantic-ui.com/images/avatar/small/joe.jpg" />
-          <Comment.Content>
-            <Comment.Author as="a">Joe Henderson</Comment.Author>
-            <Comment.Metadata>
-              <div>5 days ago</div>
-            </Comment.Metadata>
-            <Comment.Text>Dude, this is awesome. Thanks so much</Comment.Text>
-            <Comment.Actions>
-              <Comment.Action>Reply</Comment.Action>
-            </Comment.Actions>
-          </Comment.Content>
-        </Comment>
-
-        <Form reply>
-          <Form.TextArea />
-          <Button
-            content="Add Reply"
-            labelPosition="left"
-            icon="edit"
-            primary
-          />
-        </Form>
-      </Comment.Group> */}
+      </div>
     </Container>
   );
 };

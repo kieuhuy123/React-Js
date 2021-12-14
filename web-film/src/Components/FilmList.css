@@ -27,10 +27,8 @@
   overflow: hidden;
   display: block;
   margin-top: 5px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .item-number {
@@ -66,9 +64,6 @@
   text-decoration: underline;
 }
 
-.item-block-title {
-  text-transform: capitalize;
-}
 .item {
   padding-bottom: 50px;
 }
