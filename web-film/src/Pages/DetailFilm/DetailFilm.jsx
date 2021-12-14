@@ -65,9 +65,9 @@ const DetailFilm = () => {
                 </div>
 
                 <div className="header-button">
-                  <Link to="#trailer" className="button_trailer w-button">
+                  <a href="#trailer" className="button_trailer w-button">
                     Trailer
-                  </Link>
+                  </a>
                   <Link
                     to={"/play/" + movie.alias}
                     className="button_xemphim w-button"

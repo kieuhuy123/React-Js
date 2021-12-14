@@ -23,7 +23,7 @@
     inset 0 1px 0 0 hsl(0deg 0% 100% / 10%);
 }
 .item-block-title {
-  height: 100px;
+  height: 90px;
   overflow: hidden;
   display: block;
   margin-top: 5px;

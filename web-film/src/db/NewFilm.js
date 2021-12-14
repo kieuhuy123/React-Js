@@ -512,7 +512,8 @@ const films = [
       t4: "Dù là thể loại thanh xuân vườn trường nhưng Our Beloved Summer lại mang đến một làn gió mới, cặp đôi chính Choi Woong và Kook Yeon Soo vì một thước phim ở quá khứ hơn 10 năm không chỉ được hàn gắn mối quan hệ trước kia mà còn được có cơ hội bày tỏ tình cảm của mình với đối phương. Cả hai chính thức bước vào mối quan hệ yêu đương lúc lên đại học để rồi chia tay trong đau đớn và cuối cùng gặp lại nhau sau 10 năm đó chính là điểm hay lớn nhất của bộ phim tình cảm Hàn Quốc này",
       video: "https://www.youtube.com/embed/wpW6aVWgvMc",
     },
-    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_1823358831202182_417202013115246684_n.mp4?_nc_cat=1&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=D9km9V6OMhcAX98jkKI&rl=1500&vabr=656&_nc_ht=scontent-ams4-1.xx&oh=00_AT-jfR8orpcanp_1O_YoMKI5hL_bVMm2Gyflk06V26UWtA&oe=61BB1607",
   },
 
   {
@@ -693,7 +694,8 @@ const films = [
       t4: "Thế giới hư cấu của One Piece được bao quanh bởi hai đại dương lớn, phân cách bằng một dãy núi khổng lồ có tên là Red Line - Hồng Tuyến. Grand Line - Đại Hải Trình là một vùng biển chạy vuông góc với Red Line, chúng chia thành bốn biển khác nhau:  East Blue - Higashi no Umi, West Blue - Nishi no Umi, North Blue - Kita no Umi và South Blue - Minami no Umi.",
       video: "https://www.youtube.com/embed/vUSunPAO-nw",
     },
-    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_593001655097053_8515413795012555397_n.mp4?_nc_cat=100&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjI0NTUsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=qv7mXBX8Z7IAX-_pome&rl=2455&vabr=1637&_nc_ht=scontent-ams4-1.xx&edm=APRAPSkEAAAA&oh=563110084a22da0ac19d5ab8ee55ded5&oe=61BB7D5B",
   },
 
   {
