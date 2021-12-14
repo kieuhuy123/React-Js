@@ -5,7 +5,35 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.play-title {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.back {
+  margin-top: 10px;
+}
+.back svg {
+  margin-right: 5px;
+  font-size: 30px;
+  color: #fff;
+}
+.back a {
+  color: #f1b722;
+}
+.comment-title {
+  font-size: 32px;
+  color: #f1b722;
+}
+.comments {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+.comments .header{
+  font-size: 32px;
+}
 @media screen and (max-width: 992px) {
   .video-react {
     padding-top: 56.25% !important;

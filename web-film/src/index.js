@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./store";
 //  CSS
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "semantic-ui-css/semantic.min.css";
 import "./index.css";
 
 // Them cac Route
