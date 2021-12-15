@@ -8,7 +8,8 @@ import store from "./store";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "semantic-ui-css/semantic.min.css";
 import "./index.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // Them cac Route
 import Layout from "./Layout/Layout";
 import Home from "./Pages/Hompage/Homepage";
