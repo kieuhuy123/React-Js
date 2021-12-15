@@ -1,6 +1,5 @@
 .video-react {
-  padding-top: 40% !important;
-  max-width: 80% !important;
+  max-width: 90% !important;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +30,7 @@
 }
 .comment-title {
   color: #f1b722;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .comment-wrapper {

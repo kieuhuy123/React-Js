@@ -52,13 +52,13 @@ function Home() {
         </Col>
 
         <Col lg="3" className="sidebar">
-          <div className="sidenav-block-title">Phim bộ hot</div>
+          <div className="sidenav-block-title sub-title">Phim bộ hot</div>
 
           <div className="div-block">
             <NewFilmList film={currentPosts} />
           </div>
 
-          <div className="sidenav-block-title">Phim lẻ hot</div>
+          <div className="sidenav-block-title sub-title">Phim lẻ hot</div>
 
           <div className="div-block">
             <NewFilmList film={currentPosts} />

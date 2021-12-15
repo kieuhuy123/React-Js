@@ -329,8 +329,7 @@ const films = [
       t1: "Bạn Cùng Phòng Của Tôi Là Gumiho (My Roommate is a Gumiho 2021) phim truyền hình Hàn Quốc do đạo diễn Baek Seung Ryong cầm trịch. Phim xoay quanh nữ sinh viên đại học vô tình nuốt phải quả cầu của cửu vĩ hồ khiến cô rơi vào thảm kịch chỉ sống được một nằm và quả cầu sẽ vỡ ra để ngăn cản hồ ly đó trở thành con người",
       video: "https://www.youtube.com/embed/MOvM9V_QIl4",
     },
-    video:
-      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_906800216619563_210662349962517126_n.mp4?_nc_cat=101&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=XBwE31ijNiYAX8Ff-dk&rl=1500&vabr=985&_nc_ht=scontent-amt2-1.xx&edm=APRAPSkEAAAA&oh=e913c7e6a47dd6da3a2ab27ce1003c51&oe=61B99DB4",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {

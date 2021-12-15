@@ -18,7 +18,7 @@ import GenreFilm from "./Pages/GenreFilm/GenreFilm.jsx";
 import PlayFilm from "./Pages/PlayFilm/PlayFilm.jsx";
 import SearchFilm from "./Pages/SearchFilm/SearchFilm.jsx";
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
@@ -33,7 +33,7 @@ ReactDOM.render(
         </Routes>
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById("root")
 );
 
