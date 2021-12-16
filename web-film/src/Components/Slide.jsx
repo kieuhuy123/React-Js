@@ -14,7 +14,7 @@ const Slide = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
   };
   return (
     <div className="hero-section">
@@ -25,7 +25,6 @@ const Slide = () => {
           id="hero-carousel"
         >
           <div className="hero-slide-item">
-            <h2>Hello</h2>
             <img src={black} alt="" />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
