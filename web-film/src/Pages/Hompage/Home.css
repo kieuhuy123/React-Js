@@ -8,7 +8,9 @@
   text-align: left;
 }
 .section-title {
-  color: #f1b722;
+  color: var(--text-color);
+  border-left: 4px solid var(--main-color);
+  padding-left: 20px;
   line-height: 38px;
   font-weight: 900;
   text-transform: uppercase;
@@ -59,7 +61,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   border: 1px #000;
-  color: #f1b722;
+  color: var(--main-color);
 }
 .item-number.small {
   top: -11px;

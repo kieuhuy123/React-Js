@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { BiTimeFive } from "react-icons/bi";
 const NewFilmList = ({ film }) => {
   return (
     <div className="new-item-list">
@@ -19,11 +19,6 @@ const NewFilmList = ({ film }) => {
             >
               <div className="item-block-title in-nav">{f.title}</div>
             </Link>
-            <img
-              src="//static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa647a78a1222c_4-sao.png"
-              alt=""
-              className="info-block-icon stars"
-            ></img>
           </div>
         </div>
       ))}

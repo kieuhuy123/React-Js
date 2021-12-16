@@ -7,10 +7,11 @@ import transformer from "./transformer-banner.jpg";
 import { FaPlay } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
+import Slide2 from "./Slide2";
 import "./Slide.css";
 const Slide = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -128,6 +129,9 @@ const Slide = () => {
             </div>
           </div>
         </Slider>
+      </div>
+      <div className="top-movies-slide">
+        <Slide2 />
       </div>
     </div>
   );

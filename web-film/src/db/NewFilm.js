@@ -879,7 +879,7 @@ const films = [
 ];
 
 // export default films;
-export const getFlims = () => films;
+export const getFilms = () => films;
 // Detail film
 export const getMovieByAlias = (alias) => films.find((p) => p.alias === alias);
 //  Type film

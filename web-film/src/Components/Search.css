@@ -50,14 +50,14 @@
 .search-title {
   display: block;
   font-size: 34px;
-  color: #f1b722;
+  color: var(--main-color);
   text-transform: uppercase;
 }
 .search-title:hover {
   color: #fff;
 }
 .search-info {
-  color: #f1b722;
+  color: var(--main-color);
 }
 .search-text {
   color: #979797;

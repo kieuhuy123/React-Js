@@ -1,5 +1,5 @@
 footer {
-  background-color: #0c2738;
+  background-color: var(--box-bg);
 }
 .footer-container {
   padding: 4rem 0 2rem 0;
@@ -82,7 +82,7 @@ footer {
 }
 
 .footer-link-items a:hover {
-  color: #f1b722;
+  color: var(--main-color);
   transition: 0.3s ease-out;
 }
 
@@ -100,7 +100,7 @@ footer {
   font-size: 24px;
 }
 .social-icon-link:hover {
-  color: #f1b722;
+  color: var(--main-color);
 }
 
 .social-media {
@@ -136,7 +136,7 @@ footer {
   margin-bottom: 16px;
 }
 .social-logo:hover {
-  color: #f1b722;
+  color: var(--main-color);
 }
 .website-rights {
   color: #fff;

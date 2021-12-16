@@ -8,6 +8,7 @@ import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
 import { Pagination } from "../../Components/Pagination";
 import Slide from "../../Components/Slide";
+
 // Css
 import "./Home.css";
 
@@ -32,6 +33,7 @@ function Home() {
   return (
     <>
       <Slide />
+      
       <Container>
         <Row>
           <Col lg="9">

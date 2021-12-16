@@ -3,11 +3,19 @@
   z-index: 1;
   height: 28px;
   margin-left: 10px;
+  font-size: 32px;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
 }
-
+.logo:hover {
+  color: #fff;
+}
+.main-color {
+  color: var(--main-color);
+}
 .navbar {
   padding: 0;
-  background-color: #0c2738;
+  background-color: #000000;
   width: 100%;
   position: sticky;
   top: 0;
@@ -27,7 +35,7 @@
 }
 .nav-menu a.active {
   color: white;
-  border-bottom: 2px solid #f1b722;
+  border-bottom: 2px solid var(--main-color);
 }
 .nav-menu a {
   display: flex;
@@ -45,7 +53,7 @@
 }
 .nav-menu a:hover {
   color: white;
-  border-bottom: 2px solid #f1b722;
+  border-bottom: 2px solid var(--main-color);
 }
 
 .menu-icon {

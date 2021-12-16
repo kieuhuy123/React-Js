@@ -1,3 +1,13 @@
+:root {
+  --main-color: #c0392b;
+  --body-bg: #181616;
+  --box-bg: #080202;
+  --text-color: #ffffff;
+
+  --nav-height: 60px;
+  --space-top: 30px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +23,7 @@ a {
 }
 
 body {
-  background-color: #081b27;
+  background-color: var(--body-bg);
 }
 img {
   max-width: 100%;

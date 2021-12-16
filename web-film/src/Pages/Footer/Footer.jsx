@@ -50,12 +50,15 @@ function Footer() {
         <section className="social-media">
           <div className="social-media-wrap">
             <div className="footer-logo">
-              <Link to="/" className="social-logo">
-                <ImFilm className="navbar-icon" />
-                SSPHIM
+              <Link to="/" className="logo">
+                <ImFilm className="main-color" />
+                CE F<span class="main-color">IL</span>M
               </Link>
             </div>
-            <small className="website-rights">SS PHIM © 2021</small>
+            <small className="website-rights">
+              {" "}
+              CE F<span class="main-color">IL</span>M © 2021
+            </small>
             <div className="social-icons">
               <Link
                 className="social-icon-link"

@@ -11,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { getMovieByType } from "../../db/NewFilm";
+import { ImFilm } from "react-icons/im";
 import "./PlayFilm.css";
 import "video-react/dist/video-react.css";
 
@@ -72,11 +73,10 @@ const PlayFilm = () => {
           ></div>
           <div className="comment-header">
             <h4 className="comment-title">Bình luận về phim: </h4>
-            <img
-              src="//i0.wp.com/i.imgur.com/GvLWtFD.png"
-              loading="lazy"
-              alt="film hay ne!"
-            ></img>
+            <Link to="/" className="logo">
+              <ImFilm className="main-color" />
+              CE F<span class="main-color">IL</span>M
+            </Link>
           </div>
           <div className="comment-wrapper">
             <div

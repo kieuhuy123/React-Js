@@ -20,7 +20,7 @@
   color: #fff;
 }
 .back a {
-  color: #f1b722;
+  color: var(--main-color);;
 }
 /*  */
 .comment-header {
@@ -29,7 +29,7 @@
   margin-bottom: 20px;
 }
 .comment-title {
-  color: #f1b722;
+  color: var(--main-color);;
   margin-right: 50px;
 }
 

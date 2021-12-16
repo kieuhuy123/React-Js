@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom";
 import { getMovieByAlias } from "../../db/NewFilm";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import { BsFillTagsFill } from "react-icons/bs";
+import { BiTimeFive } from "react-icons/bi";
 import useTitle from "../../Hook/useTitle";
 import "./DetailFilm.css";
 import "../../Components/FilmList.css";
@@ -39,19 +40,8 @@ const DetailFilm = () => {
               <Col md="7" className="header-info">
                 <h1 className="header-title">{movie.title}</h1>
                 <div className="info-wrapper on-review-page">
-                  <div className="info-block mobile-full">
-                    <img
-                      src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64997fa12231_5-sao.png"
-                      alt=""
-                      className="info-block-icon"
-                    />
-                  </div>
                   <div className="info-block">
-                    <img
-                      src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
-                      className="info-block-icon"
-                      alt=""
-                    />
+                    <BsFillTagsFill className="info-block-icon" />
                     <Link
                       to={"/category/" + movie.genre.url}
                       className="info-title-link"
@@ -60,12 +50,8 @@ const DetailFilm = () => {
                     </Link>
                   </div>
                   <div className="info-block">
-                    <img
-                      src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647cf1a11d0b_clock.svg"
-                      alt=""
-                      className="info-block-icon"
-                    />
-                    <div className="info-title">3/12/2021</div>
+                    <BiTimeFive className="info-block-icon" />
+                    <div className="info-title">16/12/2021</div>
                   </div>
                 </div>
 

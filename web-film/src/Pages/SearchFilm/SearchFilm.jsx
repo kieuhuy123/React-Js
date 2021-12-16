@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Search from "../../Components/Search";
-import { getFlims } from "../../db/NewFilm";
+import { getFilms } from "../../db/NewFilm";
 const SearchFilm = () => {
-  const film = getFlims();
+  const film = getFilms();
 
   const [searchTerm, setSearchTerm] = useState("");
 

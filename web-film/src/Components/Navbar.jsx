@@ -3,6 +3,7 @@ import { Navbar, Container } from "react-bootstrap";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
+import { ImFilm } from "react-icons/im";
 import "./Navbar.css";
 const Navbarf = () => {
   const [click, setClick] = useState(false);
@@ -13,12 +14,9 @@ const Navbarf = () => {
     <Navbar>
       <Container>
         <Navbar.Brand>
-          <Link to="/">
-            <img
-              src="//i0.wp.com/i.imgur.com/GvLWtFD.png"
-              className="logo"
-              alt=""
-            />
+          <Link to="/" className="logo">
+            <ImFilm className="main-color" />
+            CE F<span class="main-color">IL</span>M
           </Link>
         </Navbar.Brand>
 
