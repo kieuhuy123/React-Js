@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Search.css";
 import "./FilmList.css";
+
 const Search = ({ val }) => {
   return (
     <Row>

@@ -21,7 +21,9 @@ li {
 a {
   text-decoration: none;
 }
-
+a:hover {
+  transition: 0.3s ease-in-out;
+}
 body {
   background-color: var(--body-bg);
 }

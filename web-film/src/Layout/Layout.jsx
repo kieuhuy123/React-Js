@@ -3,13 +3,13 @@ import { Outlet } from "react-router-dom";
 // import { Navbar, Container, NavDropdown } from "react-bootstrap";
 import Navbarf from "../Components/Navbar";
 import Footer from ".././Pages/Footer/Footer";
-import ScrollToTop from "../Components/ScrollToTop";
+import ScrollToTop from "../Hook/ScrollToTop";
 const Layout = () => {
   return (
     <>
       <ScrollToTop />
       <Navbarf />
-      
+
       <Outlet></Outlet>
 
       <Footer />

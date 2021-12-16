@@ -9,9 +9,12 @@ import {
   ForwardControl,
 } from "video-react";
 import { Link } from "react-router-dom";
-import { IoReturnDownBackOutline } from "react-icons/io5";
+// Components
 import { getMovieByType } from "../../db/NewFilm";
+import { IoReturnDownBackOutline } from "react-icons/io5";
 import { ImFilm } from "react-icons/im";
+import { IoAddSharp } from "react-icons/io5";
+// CSS
 import "./PlayFilm.css";
 import "video-react/dist/video-react.css";
 
@@ -71,6 +74,11 @@ const PlayFilm = () => {
             data-size="large"
             data-share="true"
           ></div>
+          <div className="collection w-button">
+            <IoAddSharp style={{ color: "#fff" }} />
+            Bộ sưu tập
+          </div>
+
           <div className="comment-header">
             <h4 className="comment-title">Bình luận về phim: </h4>
             <Link to="/" className="logo">
@@ -78,6 +86,7 @@ const PlayFilm = () => {
               CE F<span class="main-color">IL</span>M
             </Link>
           </div>
+
           <div className="comment-wrapper">
             <div
               className="fb-comments"
@@ -87,6 +96,7 @@ const PlayFilm = () => {
             ></div>
           </div>
         </Col>
+
         <Col md="3" className="sidebar">
           <div className="sidenav-block-title sub-title">
             {movie.type.label + " hot"}

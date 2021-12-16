@@ -1,9 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import black from "./black-banner.png";
-import wanda from "./wanda-banner.jpg";
-import transformer from "./transformer-banner.jpg";
 import { FaPlay } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
@@ -26,34 +23,37 @@ const Slide = () => {
           id="hero-carousel"
         >
           <div className="hero-slide-item">
-            <img src={black} alt="" />
+            <img src="https://wallpaperaccess.com/full/3413086.jpg" alt="" />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
-                <div className="item-content-title top-down">Black Panther</div>
+                <div className="item-content-title top-down">One-piece</div>
                 <div className="movie-infos top-down delay-2">
                   <div className="movie-info">
                     <AiFillStar />
-                    <span>9.5</span>
+                    <span>9.3</span>
                   </div>
                   <div className="movie-info">
                     <BiTimeFive />
-                    <span>120 mins</span>
+                    <span>23 phút</span>
                   </div>
                   <div className="movie-info">
-                    <span>16+</span>
+                    <span>13+</span>
                   </div>
                 </div>
                 <div className="item-content-description top-down delay-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sequi cum eveniet aliquid quo molestiae mollitia nulla commodi
-                  amet nostrum nihil, doloribus facere numquam iure consectetur.
-                  Reprehenderit nobis incidunt unde labore!
+                  Tác phẩm kể về Monkey D. Luffy, một chàng trai trẻ tuổi được
+                  thần tượng thủa thơ ấu là Shanks tóc đỏ truyền cảm hứng để trở
+                  thành một hải tặc thực thụ, bắt đầu ra khởi tại East Blue để
+                  tìm kho báu gianh giá và trở thành Vua hải tặc.
                 </div>
                 <div className="item-action top-down delay-6">
-                  <Link to="#" className="btn btn-hover">
+                  <Link
+                    to="/film/vua-hai-tac-one-piece"
+                    className="btn btn-hover"
+                  >
                     <FaPlay />
-                    <span>Watch now</span>
+                    <span>Xem ngay</span>
                   </Link>
                 </div>
               </div>
@@ -61,68 +61,85 @@ const Slide = () => {
           </div>
 
           <div className="hero-slide-item">
-            <img src={wanda} alt="" />
+            <img
+              src="https://image.thanhnien.vn/w1024/Uploaded/2021/zxaijr/2021_11_26/choiwoosikvakimdamiphimourbelovedsummer1-55.jpg"
+              alt=""
+            />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
-                <div className="item-content-title top-down">Wanda vision</div>
+                <div className="item-content-title top-down">
+                  Our beloved summer
+                </div>
                 <div className="movie-infos top-down delay-2">
                   <div className="movie-info">
                     <AiFillStar />
-                    <span>9.5</span>
+                    <span>10</span>
                   </div>
                   <div className="movie-info">
                     <BiTimeFive />
-                    <span>120 mins</span>
+                    <span>60 phút</span>
                   </div>
                   <div className="movie-info">
                     <span>16+</span>
                   </div>
                 </div>
                 <div className="item-content-description top-down delay-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sequi cum eveniet aliquid quo molestiae mollitia nulla commodi
-                  amet nostrum nihil, doloribus facere numquam iure consectetur.
-                  Reprehenderit nobis incidunt unde labore!
+                  "Chuyện phim Mùa Hè Yêu Dấu Của Chúng Ta bắt đầu từ một câu
+                  nói của cặp đôi đang yêu nhau Choi Woong (Choi Woo-sik thủ
+                  vai) và Gook Yeon Soo (Kim Da-mi đảm nhận) rằng: “Đó là một
+                  khoảng thời gian tăm tối với bạn và chúng ta đừng bao giờ gặp
+                  lại nhau nữa!”
                 </div>
                 <div className="item-action top-down delay-6">
-                  <Link to="#" className="btn btn-hover">
+                  <Link
+                    to="/film/mua-he-yeu-dau-cua-chung-ta-our-beloved-summer-2021"
+                    className="btn btn-hover"
+                  >
                     {/* <i className="bx bxs-right-arrow"></i> */}
-                    <span>Watch now</span>
+                    <span>Xem ngay</span>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="hero-slide-item">
-            <img src={transformer} alt="" />
+            <img
+              src="https://i.ytimg.com/vi/wIODn0OnPUY/maxresdefault.jpg"
+              alt=""
+            />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
-                <div className="item-content-title top-down">Tranformer</div>
+                <div className="item-content-title top-down">The widow</div>
                 <div className="movie-infos top-down delay-2">
                   <div className="movie-info">
                     <AiFillStar />
-                    <span>9.5</span>
+                    <span>6.2</span>
                   </div>
                   <div className="movie-info">
                     <BiTimeFive />
-                    <span>120 mins</span>
+                    <span>80 phút</span>
                   </div>
                   <div className="movie-info">
-                    <span>16+</span>
+                    <span>18+</span>
                   </div>
                 </div>
                 <div className="item-content-description top-down delay-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sequi cum eveniet aliquid quo molestiae mollitia nulla commodi
-                  amet nostrum nihil, doloribus facere numquam iure consectetur.
-                  Reprehenderit nobis incidunt unde labore!
+                  Mở đầu phim là bối cảnh hơn 300 người biến mất trong các khu
+                  rừng xung quanh St.Petersburg mỗi năm. Một số được tìm thấy đã
+                  chết trong trạng thái khỏa thân. Một số khác đã không còn được
+                  tìm thấy. Điều này có liên quan đến các cuộc phỏng vấn với
+                  người địa phương, khi họ nói rằng cảm thấy có gì đó ở trong
+                  khu rừng, nơi mà họ gọi là The Lame Widow
                 </div>
                 <div className="item-action top-down delay-6">
-                  <Link to="#" className="btn btn-hover">
+                  <Link
+                    to="/film/da-quy-rung-sau-the-widow-2020"
+                    className="btn btn-hover"
+                  >
                     {/* <i className="bx bxs-right-arrow"></i> */}
-                    <span>Watch now</span>
+                    <span>Xem ngay</span>
                   </Link>
                 </div>
               </div>

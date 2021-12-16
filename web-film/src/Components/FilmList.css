@@ -10,6 +10,10 @@
   padding-left: 10px;
   text-align: left;
 }
+.item-block a:hover {
+  transition: 0.3s;
+}
+
 .item-block-img {
   display: inline-block;
   position: relative;

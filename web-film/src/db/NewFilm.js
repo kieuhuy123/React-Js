@@ -889,3 +889,6 @@ export const getMovieByType = (type) =>
 //  Genre film
 export const getMovieByGenre = (genre) =>
   films.filter((p) => p.genre.url === genre);
+
+// phim hanh dong
+

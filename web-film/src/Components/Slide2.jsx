@@ -1,9 +1,10 @@
-import React, { Component } from "react";
 import Slider from "react-slick";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import { getFilms } from "../db/NewFilm";
 import { Link } from "react-router-dom";
+
+
 const Slide2 = () => {
   const settings = {
     autoplay: true,
@@ -13,9 +14,41 @@ const Slide2 = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
+    dotsClass: "dots-pagination slick-dots",
+    customPaging: (i) => (
+      <div
+        style={{
+          position: "absolute",
+          width: "100%",
+          top: "-10px",
+          opacity: "0",
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
+
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-  const film = getFilms();
-  console.log(film);
+  const film = getFilms().slice(10, 18);
+
   return (
     <>
       <Slider {...settings}>
