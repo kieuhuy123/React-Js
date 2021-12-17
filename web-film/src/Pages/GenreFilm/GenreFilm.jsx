@@ -14,7 +14,7 @@ const GenreFilm = () => {
 
   if (genre) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    useTitle(`Thể loại  - ${genre[0].genre.label} - SS Phim`);
+    useTitle(`Thể loại  - ${genre[0].genre.label} - CE FILM`);
   }
 
   return (

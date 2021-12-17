@@ -17,7 +17,7 @@ const SearchFilm = () => {
         <input
           type="search"
           className="search-input"
-          placeholder="Ban muon tim  phim gi"
+          placeholder="Bạn muốn tìm phim gì"
           onChange={(event) => {
             setSearchTerm(event.target.value);
           }}

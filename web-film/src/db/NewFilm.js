@@ -511,8 +511,7 @@ const films = [
       t4: "Dù là thể loại thanh xuân vườn trường nhưng Our Beloved Summer lại mang đến một làn gió mới, cặp đôi chính Choi Woong và Kook Yeon Soo vì một thước phim ở quá khứ hơn 10 năm không chỉ được hàn gắn mối quan hệ trước kia mà còn được có cơ hội bày tỏ tình cảm của mình với đối phương. Cả hai chính thức bước vào mối quan hệ yêu đương lúc lên đại học để rồi chia tay trong đau đớn và cuối cùng gặp lại nhau sau 10 năm đó chính là điểm hay lớn nhất của bộ phim tình cảm Hàn Quốc này",
       video: "https://www.youtube.com/embed/wpW6aVWgvMc",
     },
-    video:
-      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_1823358831202182_417202013115246684_n.mp4?_nc_cat=1&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=D9km9V6OMhcAX98jkKI&rl=1500&vabr=656&_nc_ht=scontent-ams4-1.xx&oh=00_AT-jfR8orpcanp_1O_YoMKI5hL_bVMm2Gyflk06V26UWtA&oe=61BB1607",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -693,8 +692,7 @@ const films = [
       t4: "Thế giới hư cấu của One Piece được bao quanh bởi hai đại dương lớn, phân cách bằng một dãy núi khổng lồ có tên là Red Line - Hồng Tuyến. Grand Line - Đại Hải Trình là một vùng biển chạy vuông góc với Red Line, chúng chia thành bốn biển khác nhau:  East Blue - Higashi no Umi, West Blue - Nishi no Umi, North Blue - Kita no Umi và South Blue - Minami no Umi.",
       video: "https://www.youtube.com/embed/vUSunPAO-nw",
     },
-    video:
-      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_593001655097053_8515413795012555397_n.mp4?_nc_cat=100&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjI0NTUsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=qv7mXBX8Z7IAX-_pome&rl=2455&vabr=1637&_nc_ht=scontent-ams4-1.xx&edm=APRAPSkEAAAA&oh=563110084a22da0ac19d5ab8ee55ded5&oe=61BB7D5B",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -876,6 +874,293 @@ const films = [
     },
     video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
+
+  {
+    id: 25,
+    title: "Bà đồng (2021)",
+    alias: "ba-dong-the-medium-2021-r2",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/615b2cb4595d1783cb55a20e_ba-dong.jpg",
+    rate: 7.0,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: " 131 phút",
+      episode: "1 Tập",
+      nation: "Thái Lan, Hàn Quốc",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "Banjong Pisanthanakun",
+      actors: "Nariliya, Sawanee Utoomma,...",
+    },
+    review: {
+      title: "Review phim Bà đồng - The medium (2021)",
+      img: "http://icdn.dantri.com.vn/zoom/1200_630/2021/08/20/hqdefault-1629433584534.jpg",
+      t1: "Bộ phim được tái hiện như là một bộ phim tài liệu hư cấu về hiện tượng bí ẩn mà một gia đình có truyền thông làm thầy mo, thầy cúng tại Isan, Thái Lan đã trải qua. Một nhóm làm phim tài liệu đã theo chân một pháp sư có tên là Rang Song ở tại vùng nông thôn Isan phía bắc Thái Lan. Tại đây họ đã gặp cháu gái của Shaman là Ming tại đám tang của cha cô. Ming sau đó đã bắt đầu biểu hiện những triệu chứng kỳ lạ của việc thừa kế đạo giáo, nhưng cũng có thể là do thế lực tà ác nào đó. Liệu Ming có thực sự là người được chọn bởi thần linh, hay kẻ đang chiếm giữ linh hồn của cô là ma quỷ chứ không phải là nữ thần mà họ đang tôn sùng?",
+      t2: "Đạo diễn của phim là Banjong Pisanthanakun đã mở ra một chân trời mới cho dòng phim ma Thái Lan với bộ phim kinh dị nổi tiếng Tình người duyên ma. còn Na Hong-jin là đạo diễn phim kinh dị nổi tiếng của Hàn Quốc được quốc tế biết đến với tác phẩm The Wailing. Chính vì sự kết hợp này mà tác phẩm The medium được rất nhiều khán giả mong chờ. Với cách chế tác theo dòng phim tài liệu hư cấu, tác phẩm dường như trở thành một bộ phim “dựa theo sự kiện có thật” trong mắt khán giả, điều này làm tăng độ rùng rợn lên gấp nhiều lần.",
+      t3: "Bộ phim đã được thực hiện dưới dạng phim tài liệu, ký sự và khám phá. Nhiều sự kiện được ghi lại bởi nhóm phim tài liệu, theo dạng chương trình thực tế mời khán giả tới với vùng quê xa xôi của Thái Lan, nơi chứa nhiều điều thần bí. Họ tới để tìm hiểu về cuộc sống và phong tục của những thầy cùng nơi đây. Những góc máy rất đời thường, từ cảnh sinh hoạt của gia đình, hay theo chân Ming ở đám tang của ba, trong lễ trừ tà của cô, giống như chính bạn đang tham gia vào chuyến hành trình ấy, trải qua những thứ kỳ dị và không biết tiếp theo sẽ xảy ra chuyện gì. Điều đó khiến bộ phim không cần những cảnh máu me hay hù doạ mà vẫn khiến khán giả rợn tóc gáy",
+      t4: "Nếu bạn yêu thích thể loại phim kinh dị, đặc biệt là fan của dòng phim ma Thái Lan thì đây lại tiếp tục là một sản phẩm rất chất lượng và đáng để theo dõi. Đừng bỏ lỡ Bà đồng - The Medium bạn nhé, đảm bảo bạn sẽ phải để đèn khi ngủ đấy.",
+      video: "https://www.youtube.com/embed/Pocm3bgvhkI",
+    },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_906800216619563_210662349962517126_n.mp4?_nc_cat=101&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=XBwE31ijNiYAX8Ff-dk&rl=1500&vabr=985&_nc_ht=scontent-amt2-1.xx&edm=APRAPSkEAAAA&oh=e913c7e6a47dd6da3a2ab27ce1003c51&oe=61B99DB4",
+  },
+
+  {
+    id: 26,
+    title: "Bản Án Từ Địa Ngục - Hellbound (2021) ",
+    alias: "ban-an-tu-dia-nguc-hellbound-2021",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6189fb2dc1514147ba93eb9f_poster-hellbound.jpg",
+    rate: 6.2,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim bộ",
+      url: "phim-bo",
+    },
+    info: {
+      time: " 60 phút/tập",
+      episode: "6 tập",
+      nation: "Hàn Quốc",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "Yeon Sang Ho",
+      actors: "Yoo Ah In, Park Jung Min, Kim Hyun Joo, Won Jin Ah,…",
+    },
+    review: {
+      title: "Review phim Hellbound (2021)",
+      img: "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6189fc7ed4a214547ecdf8f2_hellboud-kinh-di.jpg",
+      t1: "Chuyện phim Hellbound bắt đầu từ việc con người tin vào dự đoán về thời điểm họ sẽ chết và khi thời điểm đó đến, một tử thần xuất hiện trước mặt họ và giết họ. Lúc này, có một tổ chức tôn giáo được hồi sinh “Saejinrihwe” và những người cố gắng tiết lộ sự thật đằng sau những sự kiện xảy ra liên quan đến nhóm tôn giáo bí ẩn. Jung Jin Soo (Yoo Ah In thủ vai), người đứng đầu tôn giáo với nhiệm vụ truyền bá sự xuất hiện của các sứ giả địa ngục là một sự sắp đặt của Chúa. Nhờ vậy mà Jung Jin Soo có sức hút mãnh liệt và một khía cạnh bí ẩn mang tên “Hellbound”",
+      t2: "Bae Young Jae (Park Jung Min đóng) là giám đốc chương trình cho một đài phát thanh truyền hình. Anh đang cố gắng tìm ra sự thật về nhóm tôn giáo Saejinrihwe và “Hellbound”. Còn Min Hye Jin (Kim Hyun Joo đảm nhận) là một luật sư, cô đứng lên chống lại nhóm “Hwasalchok” (‘Arrowhead’), gồm những người đi theo Saejinrihwe một cách mù quáng.",
+      t3: "Bae Young Jae có một người vợ là Song So Hyun (Won Jin Ah thủ vai), người đang trong tình trạng gục ngã chìm trong nỗi đau tình cảm mà cô không thể giải quyết được. Nhân vật cuối cùng trong phim Hellbound là Jin Kyung Hoon (Yang Ik Jun đảm nhận), là một thám tử và điều tra các vụ án liên quan đến sự xuất hiện của các thiên thần chết chóc.",
+      t4: "Nhìn chung, bộ phim Hàn Hellbound là phiên bản live-action sẽ tái hiện cuộc đấu tranh giữa con người với con người và giữa quỷ dữ với con người, bắt đầu từ việc những sứ giả địa ngục được cử lên trần gian để gieo rắc cái chết, nỗi sợ hãi cho con người. Với các thế lực siêu nhiên đưa ra lời kết tội đẫm máu, đày con người xuống địa ngục và nâng đỡ nhóm tôn giáo được thành lập dựa trên ý tưởng công lý của thần thánh “Bản Án Từ Địa Ngục” hứa hẹn sẽ đậm chất kinh dị nhất từ trước đến nay, soán ngôi cả bom tấn “Train To Busan”.",
+      video: "https://www.youtube.com/embed/JbRiuqg6Sy4",
+    },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_642259620467922_5570044646471151344_n.mp4?_nc_cat=104&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=KWlus_vqe3cAX85_LI9&rl=1500&vabr=983&_nc_ht=scontent-ams4-1.xx&oh=00_AT-0WyWMuBYryPR9SxsqWsQP_0IGPakH7YfgJFX_vDdPrw&oe=61C031C6",
+  },
+  {
+    id: 27,
+    title: "Cá Mập Sát Thủ - Shark Huntress",
+    alias: "ca-map-sat-thu-shark-huntress",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6178064fe8633b219877bba4_ca-map-sat-thu.jpg",
+    rate: 6.2,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: " 82 phút",
+      episode: "1 Tập",
+      nation: "Mỹ",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "John Riggins",
+      actors: "Bonnie Zellerbach, Dean Alexandrou,...",
+    },
+    review: {
+      title: "Review phim Cá mập sát thủ - Shark Huntress",
+      img: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/08/14/the-widow-01.jpg?width=1200",
+      t1: "Cá mập sát thủ - Shark Huntress là bộ phim thuộc thể loại hành động, phiêu lưu, giật gân của Mỹ. Tác phẩm do John Riggins chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Katrina Grey, Dean Alexandrou và Russell Geoffrey Banks.",
+      t2: "Sheila (Katrina Grey) là một nhà môi trường mạo hiểm lặn xuống biển sau để điều tra cái chết của mẹ cô cùng ngành công nghiệp nhựa trị giá hàng tỷ đô la thì không may gặp phải một con cá mập.",
+      t3: "Có lẽ cô ấy đã nhận ra rằng con cá mập là nguyên nhân dẫn đến cái chết của mẹ cô, con cá mập hung hãn luôn tìm kiếm những con mồi. Nó khát máu và hung bạo, khi thấy sự xuất hiện của con người liền lập tức tìm cách tấn công. Cô muốn trả thù cho mẹ của mình, còn con cá mập thì muốn bắt được con mồi mới.",
+      t4: "",
+      video: "https://www.youtube.com/embed/RJbZ3sdT_AE",
+    },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_266719095487458_7600276789712668188_n.mp4?_nc_cat=103&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE4MzksInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=-f-XAd0y0vIAX-Y0Gnj&rl=1839&vabr=1226&_nc_ht=scontent-ams4-1.xx&edm=APRAPSkEAAAA&oh=00_AT871s3BTTtDFwAKKUQbiGwSKJhbKpIB4OchWpOyORuh1A&oe=61C27DD6",
+  },
+  {
+    id: 28,
+    title: "Già - Old (2021) ",
+    alias: "gia-old-2021",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/614c8a24adff8c86ed843233_old.jpg",
+    rate: 6.5,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: " 108 phút",
+      episode: "1 Tập",
+      nation: "Mỹ",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "M. Night Shyamalan",
+      actors: "M. Night Shyamalan, Thomasin McKenzie...",
+    },
+    review: {
+      title: "Review phim Già - Old (2021)",
+      img: "https://baoquocte.vn/stores/news_dataimages/phamthuan/072021/29/08/phim-kinh-di-old-thanh-cong-nho-ke-sinh-loi-cua-dao-dien-phu-thuy-mnight-shyamalan.jpg?rt=20210729083323",
+      t1: "Bộ phim theo chân bốn nhóm người lạ đi nghỉ cùng nhau, họ tới nghỉ dưỡng tại một bãi biển riêng đặc biệt của khu nghỉ mát, và họ chợt nhận ra có điều gì đó rất kỳ lạ. Một gia đình bốn người gồm bố hi họ nhận ra rằng có điều gì đó không thể sửa chữa được. Một gia đình bốn người - bố Guy (Gael García Bernal), mẹ Prisca (Vicky Krieps), Maddox 11 tuổi (Alexa Swinton) và Trent 6 tuổi (Nolan) tới khu nghỉ mát nhiệt đới ở một vị trí không xác định.",
+      t2: "Người quản lý đã đề xuất một chuyến du ngoạn độc quyền trên bãi biển gần đó của khu bảo tồn thiên nhiên tư nhân. Họ tham gia cuộc vui với một gia đình giàu có nhiều thế hệ gồm một trưởng khoa phẫu thuật người Anh (Rufus Sewell), mẹ của anh ấy (Kathleen Chalfant), người vợ Chrystal (Abbey Lee) và cô gái 5 tuổi của họ, Kara.",
+      t3: "Họ cũng nhận ra rằng có một người đàn ông duy nhất tại đó, người mà Maddox xác định là rapper Mid-Sized Sedan (Aaron Pierre). Ngay sau đó, chàng trai trẻ Trent phát hiện ra một phụ nữ chết dưới nước, người cùng đi nghỉ mát đã đi biển với chiếc Sedan cỡ trung buổi sáng.",
+      t4: "Một cặp vợ chồng cuối cùng là y tá Jarin (Ken Leung) và nhà tâm lý học Patricia (Nikki Amuka-Bird) xuất hiện giữa sự hỗn loạn, và rõ ràng là bãi biển có những tác động không thể tưởng tượng nổi đối với mọi người. Tất cả người ở đây đều già đi khoảng 2 tuổi mỗi giờ, khiến lũ trẻ nhanh chóng biến thành phiên bản tuổi teen mà không rõ nguyên do, một sự hoang mang tột độ bắt đầu ập đến.",
+      video: "https://www.youtube.com/embed/A4U2pMRV9_k",
+    },
+    video:
+      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_274763447945407_1686320551704909309_n.mp4?_nc_cat=111&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MzEsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=EW1PLbWDvCkAX_9pF9w&rl=1531&vabr=1021&_nc_ht=scontent-amt2-1.xx&edm=APRAPSkEAAAA&oh=00_AT973chjhB-ZUkO6cxt595ex1Coox7RqSlTAMVjNW1GU0Q&oe=61BF5741",
+  },
+  {
+    id: 29,
+    title: "Gạc - Antlers (2021) ",
+    alias: "gac-antlers-2021",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61b74d0c0bed69fcbee26295_gac.jpg",
+    rate: 6.2,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: "100 phút",
+      episode: "1 Tập",
+      nation: "Mỹ",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "Scott Cooper",
+      actors: "Keri Russell, Jesse plemons,...",
+    },
+    review: {
+      title: "Review phim Gạc - Antlers (2021)",
+      img: "http://image.tmdb.org/t/p/original/g7TgdL48ZGzhBgrKHHFdozUGIc8.jpg",
+      t2: "Julia cũng đã quay lại công việc giảng dạy, nơi cô quan tâm đến những đứa trẻ ít nói trong lớp tên là Lucas (Jeremy T. Thomas). Anh ấy là một trong những câu bé có vẻ hơi quá ít nói và lầm lì, cho thấy có lẽ đã có điều gì đó không ổn ở nhà. Julia biết rằng mẹ của Lucas đã qua đời cách đây không lâu, để lại cha cậu là Frank (Scott Haze) chăm sóc cho cậu và anh trai Aiden ( Sawyer Jones)",
+      t1: "Gạc - Antlers (2021) là bộ phim thuộc thể loại chính kịch, kinh dị, bí ẩn của Mỹ. Tác phẩm do đạo diễn Scott Cooper chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Keri Russell, Jesse Plemons và Jeremy T. Thomas.",
+      t3: "Mọi người đều tỏ ra nghi ngờ đây có thể là một động cơ xấu, nhưng họ không có ý kiến gì. Trong cảnh mở đầu có tông màu rất hiệu quả, Frank và một đồng nghiệp đang sản xuất ma tuý bị một thứ gì đó tấn công. Kể từ đó, anh ta bị nhốt trong nhà của mình, thể xác tách ra từng đường nối. Cậu bé gần như hoá thú tính, lai giữa người sói và thây ma, và Lucas chỉ khoá cửa vào ban đêm với hy vọng mình sẽ không trở nên tồi tệ thêm.",
+      t4: "",
+      video: "https://www.youtube.com/embed/ng5eyOfL8qM",
+    },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+  },
+  {
+    id: 30,
+    title: "Lưỡi Cưa 9 - Spiral: From the Book Of Saw ",
+    alias: "uoi-cua-9-spiral-from-the-book-of-saw",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60b840fc97220dc491d90bba_spiral.jpg",
+    rate: 6.2,
+    genre: {
+      label: "Phim kinh dị",
+      url: "kinh-di",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: " 95 phút",
+      episode: "1 Tập",
+      nation: "Mỹ",
+      Publishing: "2021",
+      genre: "kinh dị",
+      directors: "Darren Lynn Bousman",
+      actors: "Chris Rock, Marisol Nichols,...",
+    },
+    review: {
+      title: "Review phim Lưỡi cưa 9 - Spiral: From the Book of Saw",
+      img: "https://i3.wp.com/image.bongngocdn.com/upload/bg-luoi-cua-9-2021.jpg",
+      t1: "Bộ phim mở đầu với một thám tử tên là Boswick (Dan Petronijevic), người được cử đi điều tra trên một tàu điện ngầm khó chịu. Bạn của anh ấy là Det. Zeke Banks ( Chris Rock ), người dẫn đầu vụ án nhanh chóng tìm thấy các dấu hiệu giết người theo phương pháp của Jigsaw nhắm đến các cảnh sát. Không chỉ là con trai của cảnh sát trưởng ( Samuel L.Jackson ) đáng kính, hiện đã nghỉ hưu, mà Zeke còn trở thành một cảnh sát tồi từ 12 năm trước và bị tẩy chay từ đó.",
+      t2: "Cảm thấy yên tâm khi có những đồng nghiệp tốt, nhưng anh lại bị áp lực bởi người đứng đầu hiện tại (Marisol Nichols), và được cảnh báo bởi cha mình về những hậu quả nghiêm trọng nếu kẻ sát nhân thực sự là một người bắt chước Jigsaw. Zeke sau đó bắt đầu nhận được những tin nhắn với những vật lưu niệm rùng rợn trong thư từ kẻ giết người, càng củ cố thêm sự thật rằng một nhân vật mới như là bản sao của Jigsaw đang ở ngoài vòng pháp luật và kẻ tâm thần này đang giao những bản án đạo đức cho toàn bộ lực lượng cảnh sát.",
+      t3: "Bằng cách tập trung vào cuộc điều tra của Zeke, Spiral đã tạo ra cảm giác như một trường hợp giết người hàng loạt thông thường. Đó là sự đảo ngược công thức thường thấy của những tác phẩm Saw. Tất nhiên, vì kẻ sát nhân này chỉ nhắm mục tiêu vào cảnh sát, điều đó có nghĩa là chúng ta biết nhiều hơn về các nhân vật trước khi điều tồi tệ xảy ra. Mặc dù nạn nhân là cảnh sát, và các anh hùng cũng là cảnh sát, nhưng tất cả đều kết thúc ở một nơi không quá sốc, với việc tiết lộ kẻ giết người và động cơ không quá sốc. Những âm mưu có vẻ lằng nhằng và phức tạp hơn bình thường.",
+      t4: "Với Chris Rock, anh ấy vẫn luôn thu hút mỗi khi xuất hiện trên màn ảnh, nhưng với nhân vật có nhiều khía cạnh u ám và ám ảnh trong việc thể hiện nội tâm của mình, anh ấy có vẻ không thực sự diễn đạt được hết chuyển biến nội tâm của nhân vật. Samuel L.Jackson chỉ xuất hiện một số ít cảnh trong phim nên không có nhiều đất diễn trong tác phẩm.",
+      video: "https://www.youtube.com/embed/gzy6ORqE9IY",
+    },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+  },
+  {
+    id: 31,
+    title: "Cổ Tay Áo Màu Đỏ - The Red Sleeve (2021) ",
+    alias: "co-tay-ao-mau-do-the-red-sleeve-2021",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6178d3e2a1b109801de4d5f6_poster-co-tay-ao-mau-do.jpg",
+    rate: 9.0,
+    genre: {
+      label: "Phim tình cảm",
+      url: "tinh-cam",
+    },
+    type: {
+      label: "phim bộ",
+      url: "phim-bo",
+    },
+    info: {
+      time: " 70 phút/tập",
+      episode: "16 Tập",
+      nation: "Hàn Quốc",
+      Publishing: "2021",
+      genre: "tình cảm",
+      directors: "Jung Ji In",
+      actors:
+        "Lee Jun Ho, Lee Se Young, Kang Hoon, Lee Deok Hwa, Jang Hee Jin, Kang Mal Geum",
+    },
+    review: {
+      title: "Review phim Cổ Tay Áo Màu Đỏ",
+      img: "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6178d63688a645098277e8eb_cap-chinh.jpg",
+      t1: "Chuyện phim Cổ Tay Áo Màu Đỏ lấy bối cảnh Hàn Quốc vào thế kỉ 18, Lee San (Lee Junho thủ vai) là một hoàng tử trẻ được sinh ra trong dòng dõi quý tộc và là cháu trai lớn của nhà Vua thời bấy giờ. Anh luôn nỗ lực không ngừng để trở thành một vị vua giỏi và khôn ngoan, nhờ vào tính cách cần mẫn nhưng cũng không kém phần kiêu hãnh đã giúp anh gần như đạt được điều mình mong muốn nhưng lại bị suy sụp hoàn toàn khi chứng kiến cái chết bất ngờ của cha anh.",
+      t2: "Cuộc đời của Lee San tưởng chừng đã chấm dứt cuộc đời bằng sự buông xuôi thì bất chợt Seong Deok Im (Lee Se Young đóng) nàng cung nữ tươi sáng xuất hiện và làm thay đổi cuộc đời anh. Nàng như một tia nắng ấm áp trong lòng chàng hoàng tử tăm tối, anh bắt đầu thể hiện tình cảm một cách vụng về khi đứng trước cung nữ này. Chuyện tình Cổ Tay Áo Màu Đỏ chính thức bắt đầu với những khía cạnh lãng mạn mà bản thân Lee San không hề nhận ra khi ở cạnh Seong Deok Im.",
+      t3: "Tuy nhiên khi tình cảm của Lee San trở nên nồng cháy hơn với Seong Deok thì đó cũng là lúc mà anh bắt đầu gặp trắc trở khi chính thức trở thành vua Jeongjo của triều đại Joseon. Seong Deok Im nàng vốn mơ ước một cuộc sống riêng mà bản thân cô muốn hướng tới thay vì tham gia vào giới chính trị. Điều này khiến Lee San mắc kẹt giữa tình cảm và công việc của một nhà lãnh đạo đặt đất nước lên hàng đầu.",
+      t4: "VLee San mong muốn được kết hôn với Seong Deok Im và đưa lên làm phi tần nhưng nữ chính Cổ Tay Áo Màu Đỏ chỉ muốn trải qua một cuộc sống hạnh phúc, tự do tự tại không thích hợp với vị trí vợ của nhà vua cao quý. Nhưng rồi sau một thời gian nàng bắt đầu cảm nhận được tình yêu của Lee San dành cho mình là thật lòng, và nàng bắt đầu hiểu rằng việc kết hợp với anh ấy cuối cùng có thể mang lại lợi ích cho vương quốc đầy khó khăn này.",
+      video: "https://www.youtube.com/embed/_WE3Xz61IxU",
+    },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+  },
+  {
+    id: 32,
+    title: "47 Lãng Nhân (47 Ronin)",
+    alias: "47-lang-nhan-47-ronin",
+    image:
+      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64ea38a12788_47-ronin.jpg",
+    rate: 8.5,
+    genre: {
+      label: "Phim hành động",
+      url: "hanh-dong",
+    },
+    type: {
+      label: "phim chiếu rạp",
+      url: "phim-chieu-rap",
+    },
+    info: {
+      time: " 128 phút",
+      episode: "1 Tập",
+      nation: "Mỹ",
+      Publishing: "2013",
+      genre: "hành động",
+      directors: " Carl Rinsch",
+      actors: "Keanu Reeves, Sanada Hiroyuki,...",
+    },
+    review: {
+      title: "Review phim 47 Ronin - 47 lãng nhân",
+      img: "https://doanhnhanplus.vn/wp-content/uploads/2013/12/dnp-47-ronin.jpg",
+      t1: "Truyền thuyết kể về nhóm đạo sĩ vào đầu những năm của thế kỷ 18 mất đi chủ tướng Asano. Vị chủ tướng này bị ép phải thực hiện nghi thức mổ bụng do bị buộc tội tấn công viên quan chức Kira, do trước đó bị ông này sỉ nhục. 47 lãng nhân vẫn luôn kiên trì tìm kế hoạch để báo thù cho chủ tướng trong nhiều năm. Hollywood đã quyết định đưa câu chuyện này lên màn ảnh rộng với những yếu tố mới mẻ như siêu nhiên, ác quỷ",
+      t2: "C47 Ronin kể về câu chuyện phiêu lưu đầy trắc trở và sóng gió của các lãng nhân sau khi chủ nhân Asano ra đi. Họ lên đường vượt qua vạn dặm để tìm kiếm sự giúp sức của Kai - do Keanu Reeves thủ vai - một võ sĩ mang hai dòng máu Anh và Nhật từng bị họ từ chối khi muốn gia nhập hội võ sĩ. Nhưng Ronin nay phải đối mặt với các thế lực ma quỷ, hắc ám đầy quyền năng luôn tìm cách hãm hại. Kai cũng phải ra mặt để đấu tranh bảo vệ cho tiểu thư Mika - con gái của chủ tướng Asano hiện đang bị lãnh chúa Kira độc ác bắt giữ.",
+      t3: "Ngoài những pha hành động mãn nhãn, điểm nhấn của phim còn có sự song tấu của câu chuyện tình giữa Kai và tiểu thư Mika. Hai nhân vật có những câu thoại tình tứ, đẫm lệ khi thể hiện một chuyện tình ngang trái trong thời kỳ phong kiến của nước Nhật trên màn ảnh lớn. 47 Ronin dường như không phải là bộ phim có thể làm hài lòng đại đa số bộ phận khán giả châu Á, vì đạo diễn Carl Rinsch là người châu Âu nên cách nhìn về văn hoá châu Á cũng khác so với câu chuyện 47 Ronin của người Nhật, nên một số phần thoại và tiết tấu dài dòng được cho là không phù hợp, yếu đuối so với tinh thần của người Nhật. Tuy nhiên, đây lại là bom tấn của Hollywood nên yếu tố giải trí được chú trọng và khai thác mạnh cùng hình ảnh và màu sắc của câu chuyện được khai thác theo phong cách của Mỹ",
+      t4: "Với những yếu tố giải trí của phim bom tấn kết hợp với những nét độc đáo trong văn hoá của người Nhật Bản cùng cái kết có phần đặc biệt so với những mô típ thường thấy của gã khổng lồ. 47 Ronin là bộ phim đáng để thưởng thức dịp cuối năm.",
+      video: "https://www.youtube.com/embed/-yPggTO5OBc",
+    },
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+  },
 ];
 
 // export default films;
@@ -891,4 +1176,3 @@ export const getMovieByGenre = (genre) =>
   films.filter((p) => p.genre.url === genre);
 
 // phim hanh dong
-

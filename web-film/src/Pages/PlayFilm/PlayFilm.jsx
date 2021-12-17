@@ -10,16 +10,17 @@ import {
 } from "video-react";
 import { Link } from "react-router-dom";
 // Components
-import { getMovieByType } from "../../db/NewFilm";
+import { getMovieByType, getMovieByGenre } from "../../db/NewFilm";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { ImFilm } from "react-icons/im";
-import { IoAddSharp } from "react-icons/io5";
+// import { IoAddSharp } from "react-icons/io5";
 // CSS
 import "./PlayFilm.css";
 import "video-react/dist/video-react.css";
 
 import { getMovieByAlias } from "../../db/NewFilm";
 import NewFilmList from "../../Components/NewItemList";
+import Slide3 from "../../Components/Slide3";
 
 const PlayFilm = () => {
   const param = useParams();
@@ -29,6 +30,7 @@ const PlayFilm = () => {
 
   const typeFilm = getMovieByType(movie.type.url);
   console.log(typeFilm);
+  const genreFilm = getMovieByGenre(movie.genre.url);
   // Error
   if (!movie) return <h1>404 Error</h1>;
 
@@ -74,10 +76,10 @@ const PlayFilm = () => {
             data-size="large"
             data-share="true"
           ></div>
-          <div className="collection w-button">
+          {/* <div className="collection w-button">
             <IoAddSharp style={{ color: "#fff" }} />
             Bộ sưu tập
-          </div>
+          </div> */}
 
           <div className="comment-header">
             <h4 className="comment-title">Bình luận về phim: </h4>
@@ -106,6 +108,14 @@ const PlayFilm = () => {
             <NewFilmList film={typeFilm} />
           </div>
         </Col>
+        <div className="section">
+          <div className="section-title-wrapper">
+            <h2 className="section-title">Có thể bạn muốn xem</h2>
+          </div>
+          <div className="movies-slide">
+            <Slide3 listFilm={genreFilm} />
+          </div>
+        </div>
       </Row>
     </Container>
   );

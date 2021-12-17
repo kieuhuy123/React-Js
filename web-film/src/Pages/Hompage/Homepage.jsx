@@ -13,7 +13,7 @@ import Slide from "../../Components/Slide";
 import "./Home.css";
 
 function Home() {
-  useTitle("SS Phim | Xem phim mới | Phim Online | Full HD - Vietsub");
+  useTitle("CE FILM | Xem phim mới | Phim Online | Full HD - Vietsub");
 
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

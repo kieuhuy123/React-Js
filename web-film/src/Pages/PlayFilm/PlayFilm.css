@@ -46,6 +46,12 @@
   font-size: 24px;
   margin-right: 5px;
 }
+.section {
+  margin-top: 50px;
+}
+.movies-slide .slick-slide {
+  padding: 10px;
+}
 @media screen and (max-width: 992px) {
   .video-react {
     padding-top: 56.25% !important;
