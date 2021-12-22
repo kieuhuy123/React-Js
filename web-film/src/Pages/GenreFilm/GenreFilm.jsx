@@ -10,6 +10,7 @@ const GenreFilm = () => {
   console.log(param);
 
   const genre = getMovieByGenre(param.genre);
+  
   if (genre.length === 0) return <h1>404 Error</h1>;
 
   if (genre) {

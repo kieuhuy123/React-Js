@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 // Components
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
@@ -26,6 +25,7 @@ function Home() {
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirtPost = indexOfLastPost - postPerPage;
   const currentPosts = film.slice(indexOfFirtPost, indexOfLastPost);
+  
   console.log(film);
   console.log(currentPosts);
   // Change page
