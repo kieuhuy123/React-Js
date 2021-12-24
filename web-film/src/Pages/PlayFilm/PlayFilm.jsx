@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+// import { useEffect } from "react";
 import {
   Player,
   BigPlayButton,
@@ -10,29 +11,29 @@ import {
 } from "video-react";
 import { Link } from "react-router-dom";
 // Components
-import { getMovieByType, getMovieByGenre } from "../../db/NewFilm";
+import NewFilmList from "../../Components/NewItemList";
+import Slide3 from "../../Components/Slide3";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { ImFilm } from "react-icons/im";
-// import { IoAddSharp } from "react-icons/io5";
+import BtnDropDown from "../../Components/BtnDropDown";
+
 // CSS
 import "./PlayFilm.css";
 import "video-react/dist/video-react.css";
 
+// Actions
+import { getMovieByType, getMovieByGenre } from "../../db/NewFilm";
 import { getMovieByAlias } from "../../db/NewFilm";
-import NewFilmList from "../../Components/NewItemList";
-import Slide3 from "../../Components/Slide3";
 
 const PlayFilm = () => {
   const param = useParams();
-  console.log(param);
-  const movie = getMovieByAlias(param.alias);
-  console.log(movie);
 
-  const typeFilm = getMovieByType(movie.type.url);
-  console.log(typeFilm);
-  const genreFilm = getMovieByGenre(movie.genre.url);
+  // Get film
+  const film = getMovieByAlias(param.alias);
+  const typeFilm = getMovieByType(film.type.url);
+  const genreFilm = getMovieByGenre(film.genre.url);
   // Error
-  if (!movie) return <h1>404 Error</h1>;
+  if (!film) return <h1>404 Error</h1>;
 
   return (
     <Container>
@@ -41,8 +42,8 @@ const PlayFilm = () => {
           <Player
             width="500px"
             playsInline
-            poster={movie.image}
-            src={movie.video}
+            poster={film.image}
+            src={film.video}
             className="video-container"
           >
             <BigPlayButton position="center" />
@@ -53,14 +54,16 @@ const PlayFilm = () => {
             </ControlBar>
           </Player>
 
+          <BtnDropDown film={film}></BtnDropDown>
+
           <Row className="align-items-center">
             <Col lg="8" className="play-title">
-              <h2>{movie.title}</h2>
+              <h2>{film.title}</h2>
             </Col>
             <Col lg="4" className="cloumn-right">
               <div className="back">
                 <IoReturnDownBackOutline />
-                <Link to={"/film/" + movie.alias} className="sub-title">
+                <Link to={"/film/" + film.alias} className="sub-title">
                   Về trang giới thiệu phim
                 </Link>
               </div>
@@ -76,10 +79,6 @@ const PlayFilm = () => {
             data-size="large"
             data-share="true"
           ></div>
-          {/* <div className="collection w-button">
-            <IoAddSharp style={{ color: "#fff" }} />
-            Bộ sưu tập
-          </div> */}
 
           <div className="comment-header">
             <h4 className="comment-title">Bình luận về phim: </h4>
@@ -101,7 +100,7 @@ const PlayFilm = () => {
 
         <Col md="3" className="sidebar">
           <div className="sidenav-block-title sub-title">
-            {movie.type.label + " hot"}
+            {film.type.label + " hot"}
           </div>
 
           <div className="div-block">

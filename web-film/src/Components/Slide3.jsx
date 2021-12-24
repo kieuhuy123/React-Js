@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
-import { getFilms } from "../db/NewFilm";
 import { Link } from "react-router-dom";
 
 const Slide3 = ({listFilm}) => {

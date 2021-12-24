@@ -16,7 +16,7 @@ const Navbarf = () => {
         <Navbar.Brand>
           <Link to="/" className="logo">
             <ImFilm className="main-color" />
-            CE F<span class="main-color">IL</span>M
+            CE F<span className="main-color">IL</span>M
           </Link>
         </Navbar.Brand>
 
@@ -50,6 +50,11 @@ const Navbarf = () => {
           <li className="nav-item">
             <NavLink to="the-loai/phim-bo" onClick={closeMobileClick}>
               Phim bộ
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="watchlist" onClick={closeMobileClick}>
+              Bộ sưu tập
             </NavLink>
           </li>
         </ul>

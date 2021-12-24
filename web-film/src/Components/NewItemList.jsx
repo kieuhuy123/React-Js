@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { BiTimeFive } from "react-icons/bi";
 const NewFilmList = ({ film }) => {
   return (
     <div className="new-item-list">

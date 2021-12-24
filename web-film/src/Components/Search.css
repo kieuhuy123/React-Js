@@ -57,7 +57,7 @@
   color: #fff;
 }
 .search-info {
-  color: var(--main-color);
+  color: var(--text-color);
 }
 .search-text {
   color: #979797;

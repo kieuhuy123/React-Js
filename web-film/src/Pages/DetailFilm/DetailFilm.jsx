@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
-import { getMovieByAlias } from "../../db/NewFilm";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import BtnDropDown from "../../Components/BtnDropDown";
+// Action
+import { getMovieByAlias } from "../../db/NewFilm";
+import useTitle from "../../Hook/useTitle";
+// Css
 import { BsFillTagsFill } from "react-icons/bs";
 import { BiTimeFive } from "react-icons/bi";
-import useTitle from "../../Hook/useTitle";
 import "./DetailFilm.css";
 import "../../Components/FilmList.css";
 
@@ -62,11 +65,13 @@ const DetailFilm = () => {
                   <Link
                     to={"/play/" + movie.alias}
                     className="button_xemphim w-button"
-                    onClick={window.XMLHttpRequestUpload}
+                    // onClick={window.XMLHttpRequestUpload}
                   >
                     Xem phim
                   </Link>
+                  <BtnDropDown film={movie} />
                 </div>
+
                 <div className="header-short-description">
                   <p>
                     {"Thời lượng: " + movie.info.time}

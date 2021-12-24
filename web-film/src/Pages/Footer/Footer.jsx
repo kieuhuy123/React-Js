@@ -52,12 +52,12 @@ function Footer() {
             <div className="footer-logo">
               <Link to="/" className="logo">
                 <ImFilm className="main-color" />
-                CE F<span class="main-color">IL</span>M
+                CE F<span className="main-color">IL</span>M
               </Link>
             </div>
             <small className="website-rights">
               {" "}
-              CE F<span class="main-color">IL</span>M © 2021
+              CE F<span className="main-color">IL</span>M © 2021
             </small>
             <div className="social-icons">
               <Link

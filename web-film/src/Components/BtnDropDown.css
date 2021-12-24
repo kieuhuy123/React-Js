@@ -1,0 +1,7 @@
+.dropdown {
+    margin-top: 20px;
+  }
+  .dropdown .w-button {
+    width: 100%;
+    display: flex;
+  }

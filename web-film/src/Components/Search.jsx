@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Search.css";
 import "./FilmList.css";
-
+import BtnDropDown from "./BtnDropDown";
 const Search = ({ val }) => {
   return (
     <Row>
@@ -23,7 +23,8 @@ const Search = ({ val }) => {
           {"Thời lượng: " + val.info.time + "; "}
         </span>
         <span className="search-info">{"Diễn viên: " + val.info.actors}</span>
-        <p className="search-text">{val.review.t1}</p>
+        
+        <BtnDropDown film={val} />
       </Col>
     </Row>
   );

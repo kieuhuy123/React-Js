@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { getFilms } from "../../db/NewFilm";
 // Components
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
@@ -19,13 +19,13 @@ function Home() {
   const [postPerPage, setPostPerPage] = useState(16);
   //
 
-  const film = useSelector((state) => state);
+  const film = getFilms();
 
   // Get current posts
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirtPost = indexOfLastPost - postPerPage;
   const currentPosts = film.slice(indexOfFirtPost, indexOfLastPost);
-  
+
   console.log(film);
   console.log(currentPosts);
   // Change page
@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       <Slide />
-      
+
       <Container>
         <Row>
           <Col lg="9">

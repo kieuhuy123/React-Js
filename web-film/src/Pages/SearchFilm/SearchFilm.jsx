@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Search from "../../Components/Search";
 import { getFilms } from "../../db/NewFilm";
+
 const SearchFilm = () => {
   const film = getFilms();
 
