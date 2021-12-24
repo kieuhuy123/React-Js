@@ -36,7 +36,7 @@ const Watchlist = () => {
           {watched.length > 0 ? (
             <div className="tabs">
               <div className="tabs-content">
-                <FilmList film={watched} type="watchlist" />
+                <FilmList film={watched} type="watched" />
               </div>
             </div>
           ) : (
