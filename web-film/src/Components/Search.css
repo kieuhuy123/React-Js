@@ -86,4 +86,8 @@
     width: 100px;
     height: 150px;
   }
+  .search-title {
+    max-height: 72px;
+    overflow: hidden;
+  }
 }

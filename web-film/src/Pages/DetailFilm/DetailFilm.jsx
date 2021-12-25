@@ -19,11 +19,8 @@ const DetailFilm = () => {
   console.log(movie);
 
   if (!movie) return <h1>404 Page Not Found</h1>;
-
-  if (movie) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useTitle(`${movie.title}`);
-  }
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useTitle(`${movie.title}`);
   return (
     <>
       <div

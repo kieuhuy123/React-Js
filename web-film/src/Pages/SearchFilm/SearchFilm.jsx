@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Search from "../../Components/Search";
 import { getFilms } from "../../db/NewFilm";
-
+import useTitle from "../../Hook/useTitle";
 const SearchFilm = () => {
   const film = getFilms();
 
   const [searchTerm, setSearchTerm] = useState("");
 
+  useTitle("Tìm kiếm phim");
   return (
     <Container>
       <div className="section-title-wrapper">

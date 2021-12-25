@@ -12,3 +12,7 @@
   border-radius: 999px;
   color: var(--text-color);
 }
+
+.watchlist-tab {
+  padding-top: 25px;
+}

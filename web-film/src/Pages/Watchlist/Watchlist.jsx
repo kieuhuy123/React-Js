@@ -2,10 +2,13 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
 import FilmList from "../../Components/FilmList";
+import useTitle from "../../Hook/useTitle";
 import "./Watchlist.css";
+
 const Watchlist = () => {
   const { watchlist, watched } = useSelector((state) => state);
   console.log(watchlist);
+  useTitle("Bộ sưu tập");
 
   return (
     <Container>
@@ -19,8 +22,9 @@ const Watchlist = () => {
           </div>
 
           {watchlist.length > 0 ? (
-            <div className="tabs">
+            <div className="tabs watchlist-tab">
               <div className="tabs-content">
+                
                 <FilmList film={watchlist} type="watchlist" />
               </div>
             </div>
@@ -34,8 +38,9 @@ const Watchlist = () => {
             </span>
           </div>
           {watched.length > 0 ? (
-            <div className="tabs">
+            <div className="tabs watchlist-tab">
               <div className="tabs-content">
+              
                 <FilmList film={watched} type="watched" />
               </div>
             </div>
