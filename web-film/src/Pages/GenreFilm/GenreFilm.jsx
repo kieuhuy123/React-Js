@@ -10,8 +10,10 @@ const GenreFilm = () => {
   console.log(param);
 
   const genre = getMovieByGenre(param.genre);
-  // useTitle(`Thể loại  - ${genre[0].genre.label} - CE FILM`);
+
   if (genre.length === 0) return <h1>404 Error</h1>;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useTitle(`Thể loại  - ${genre[0].genre.label} - CE FILM`);
 
   return (
     <Container>
