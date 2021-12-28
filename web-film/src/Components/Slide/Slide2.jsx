@@ -1,13 +1,12 @@
 import Slider from "react-slick";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
-import { getFilms } from "../db/NewFilm";
+import { getFilms } from "../../db/NewFilm";
 import { Link } from "react-router-dom";
-
 
 const Slide2 = () => {
   const settings = {
-    autoplay: true,
+    // autoplay: true,
     dots: true,
     infinite: true,
     arrows: false,
@@ -30,7 +29,7 @@ const Slide2 = () => {
 
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -54,12 +53,13 @@ const Slide2 = () => {
       <Slider {...settings}>
         {film.map((f) => (
           <div className="movie-item" key={f.id}>
-            <Link to={"/film/" + f.alias}>
-              <img src={f.image} alt="" />
-            </Link>
+            <img src={f.image} alt="" />
 
             <div className="movie-item-content">
-              <div className="movie-item-title">{f.title}</div>
+              <Link to={"/film/" + f.alias}>
+                <div className="movie-item-title">{f.title}</div>
+              </Link>
+
               <div className="movie-infos">
                 <div className="movie-info">
                   <AiFillStar />

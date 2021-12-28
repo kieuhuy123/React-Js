@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import BtnDropDown from "../../Components/BtnDropDown";
+import BtnDropDown from "../../Components/BtnDropDown/BtnDropDown";
 // Action
 import { getMovieByAlias } from "../../db/NewFilm";
 import useTitle from "../../Hook/useTitle";

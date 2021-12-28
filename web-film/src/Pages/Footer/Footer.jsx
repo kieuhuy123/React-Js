@@ -18,14 +18,14 @@ function Footer() {
         <div className="footer-links ">
           <div className="footer-link-wrapper  ">
             <div className="footer-link-items">
-              <h2>Giới thiệu</h2>
+              <h3>Giới thiệu</h3>
 
               <Link to="/">Liên hệ</Link>
               <Link to="/">Sản xuất</Link>
               <Link to="/">Bản quyền</Link>
             </div>
             <div className="footer-link-items">
-              <h2>Thể loại</h2>
+              <h3>Thể loại</h3>
               <Link to="/">Phim bộ</Link>
               <Link to="/">Phim lẻ</Link>
               <Link to="/">Phim chiếu rạp</Link>
@@ -33,13 +33,13 @@ function Footer() {
           </div>
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
-              <h2>Hỗ trợ </h2>
+              <h3>Hỗ trợ </h3>
               <Link to="/">Câu hỏi thường gặp</Link>
               <Link to="/">Điều khoản sử dụng</Link>
               <Link to="/">Thông tin doang nghiệp</Link>
             </div>
             <div className="footer-link-items">
-              <h2>Mạng xã hội </h2>
+              <h3>Mạng xã hội </h3>
               <Link to="/">Instagram</Link>
               <Link to="/">Facebook</Link>
               <Link to="/">Youtube</Link>

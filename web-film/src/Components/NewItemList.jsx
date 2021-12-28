@@ -10,7 +10,7 @@ const NewFilmList = ({ film }) => {
               className="small-item-block-img"
               style={{ backgroundImage: `url(${f.image})` }}
             >
-              <div className="item-number smal">{f.rate}</div>
+              {/* <div className="item-number smal">{f.rate}</div> */}
             </Link>
             <Link
               to={"/film/" + f.alias}

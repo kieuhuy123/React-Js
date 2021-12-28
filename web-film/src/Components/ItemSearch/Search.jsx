@@ -1,8 +1,8 @@
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Search.css";
-import "./FilmList.css";
-import BtnDropDown from "./BtnDropDown";
+import "../FilmList.css";
+import BtnDropDown from "../BtnDropDown/BtnDropDown";
 const Search = ({ val }) => {
   return (
     <Row>
@@ -23,7 +23,7 @@ const Search = ({ val }) => {
           {"Thời lượng: " + val.info.time + "; "}
         </span>
         <span className="search-info">{"Diễn viên: " + val.info.actors}</span>
-        
+
         <BtnDropDown film={val} />
       </Col>
     </Row>

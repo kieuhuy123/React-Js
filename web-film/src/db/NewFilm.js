@@ -1,10 +1,42 @@
+import film1 from "../assets/products/happiness.webp";
+import film2 from "../assets/products/ngu-su.webp";
+import film3 from "../assets/products/hawkeye.jpg";
+import film4 from "../assets/products/anh-muon.jpg";
+import film5 from "../assets/products/dau-truong-ao1.jpg";
+import film6 from "../assets/products/aquaman.jpg";
+import film7 from "../assets/products/bay-gio-chung-ta.jpg";
+import film8 from "../assets/products/the-widow.jpg";
+import film9 from "../assets/products/ban-gumiho.jpg";
+import film10 from "../assets/products/ak47.jpg";
+import film11 from "../assets/products/avenger.jpg";
+import film12 from "../assets/products/anh-la-mua-xuan.jpg";
+import film13 from "../assets/products/shang-chi.jpg";
+import film14 from "../assets/products/our-beloved.jpg";
+import film15 from "../assets/products/007.jpg";
+import film16 from "../assets/products/khi-tinh-yeu.jpg";
+import film17 from "../assets/products/minions1.jpg";
+import film18 from "../assets/products/22-earth.jpg";
+import film19 from "../assets/products/one-piece.jpg";
+import film20 from "../assets/products/vung-dat-linh-hon.jpg";
+import film21 from "../assets/products/frozen.jpg";
+import film22 from "../assets/products/totoro.jpg";
+import film23 from "../assets/products/mo-dom-dom.jpg";
+import film24 from "../assets/products/soul.jpg";
+import film25 from "../assets/products/the-medium.jpg";
+import film26 from "../assets/products/hellbound.jpg";
+import film27 from "../assets/products/ca-map.jpg";
+import film28 from "../assets/products/old.jpg";
+import film29 from "../assets/products/gac.jpg";
+import film30 from "../assets/products/spiral.jpg";
+import film31 from "../assets/products/co-tay-ao.jpg";
+import film32 from "../assets/products/47-ronin.jpg";
+
 const films = [
   {
     id: 1,
     title: "Hạnh phúc: chung cư có độc (Happiness 2021)",
     alias: "happiness-park-hyung-sik",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6186709007f0cb80056ce432_chung-cu-co-doc.jpg",
+    image: film1,
     rate: 5,
     genre: {
       label: "Phim kinh dị",
@@ -34,16 +66,14 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FG2EiCIyY54I%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DG2EiCIyY54I&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FG2EiCIyY54I%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
-    video:
-      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_457584435708120_416393465412976277_n.mp4?_nc_cat=1&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQu00253Du00253D&_nc_ohc=UIDH6QszBsIAX_iSiNR&rl=1500&vabr=789&_nc_ht=scontent-ams4-1.xx&oh=bfed558fc657b9b595a7a1e81839eace&oe=61B9C4B4",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
     id: 2,
     title: "Ngự sử tài ba và quý cô thông thái ",
     alias: "ngu-su-tai-ba-va-quy-co-thong-thai-jo-yi-va-am-hanh-ngu-su",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618915025072081149ba45c8_poster-joyi.jpeg",
+    image: film2,
     rate: 6,
     genre: {
       label: "Phim tình cảm",
@@ -73,16 +103,14 @@ const films = [
       video:
         "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWIvYJZHihmo%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWIvYJZHihmo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWIvYJZHihmo%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube",
     },
-    video:
-      "https://scontent.cdninstagram.com/v/t66.36240-6/10000000_294399179247369_4236470226983452850_n.mp4?_nc_cat=100&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjE4ODEsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=e4YvcJUVq5kAX--Cs_F&rl=1881&vabr=1254&_nc_ht=scontent-ams4-1.xx&oh=00_AT8RLlmDi4Dv7DXbYyvnXvgl_8y4Zygkb3ZF9akprhIb4w&oe=61BBFA01",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
     id: 3,
     title: "Hawkeye 2021 (Marvel)",
     alias: "hawkeye-2021-marvel",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/619e43459120172cebb67bd4_dan-cast.jpeg",
+    image: film3,
     rate: 9.8,
     genre: {
       label: "Phim hành động",
@@ -118,8 +146,7 @@ const films = [
     id: 4,
     title: "Anh muốn chúng ta ở bên nhau  ",
     alias: "anh-muon-chung-ta-o-ben-nhau-love-will-tear-us-apart",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60e2c4026ee315170dcd1558_anh-muon-chung-ta-o-ben-nhau.jpg",
+    image: film4,
     rate: 8.5,
     genre: {
       label: "Phim tình cảm",
@@ -155,8 +182,7 @@ const films = [
     id: 5,
     title: "Đấu trường ảo: ready playerone",
     alias: "dau-truong-ao-ready-player-one",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa644f28a12fbb_dau-truong-ao.jpg",
+    image: film5,
     rate: 8.1,
     genre: {
       label: "Phim hành động",
@@ -191,8 +217,7 @@ const films = [
     id: 6,
     title: "Aquaman: đế vương atlantis ",
     alias: "aquaman-de-vuong-atlantis",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa643283a1271c_aquaman.jpg",
+    image: film6,
     rate: 8.5,
     genre: {
       label: "Phim hành động",
@@ -228,8 +253,7 @@ const films = [
     id: 7,
     title: "Bây giờ, chúng ta đang chia tay  ",
     alias: "bay-gio-chung-ta-dang-chia-tay",
-    image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618de18301b39d2ff559c7d3_poster-bay-gio-chung-ta-dang.jpg",
+    image: film7,
     rate: 7.9,
     genre: {
       label: "Phim tình cảm",
@@ -264,7 +288,7 @@ const films = [
     title: "dạ quỷ rừng sâu - the widow (2020) ",
     alias: "da-quy-rung-sau-the-widow-2020",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61741a081793624c035e1480_the-widow.jpg",
+      film8,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -292,8 +316,7 @@ const films = [
       t4: "Bộ phim trở nên đáng sợ với bối cảnh khu rừng tối tăm cùng một số hình tượng rơm kỳ quặc để xây dựng bầu không khí. Thật không may, các tình tiết khá chậm chạp khiến mọi người cứ loay hoay như phong cách của Phù thuỷ bóng tối. Mãi cho đến nửa sau của bộ phim, những điều siêu nhiên bắt đầu lộ diện, tuy nhiên không có các phân cảnh đặc biệt đáng sợ. Khi tác phẩm dần đi đến hồi kết, bộ phim bù đắp cho sự chờ đợi. Và một số phân cảnh được phát lại bằng chiếc điện thoại di động mà họ tìm thấy ở trong rừng.",
       video: "https://www.youtube.com/embed/8OXjFDLezrw",
     },
-    video:
-      "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   },
 
   {
@@ -301,7 +324,7 @@ const films = [
     title: "Bạn cùng phòng của tôi là gumibo (2021) ",
     alias: "ban-cung-phong-cua-toi-la-gumiho-my-roommate-is-a-gumiho-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60c9663ff6ee4968d0b14ec4_ban-cung-phong-gumiho.jpg",
+    film9,
     rate: 6,
     genre: {
       label: "Phim tình cảm",
@@ -337,7 +360,7 @@ const films = [
     title: "ak-47-kalashnikov (2020) ",
     alias: "ak-47-kalashnikov-2020",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa643ce4a12349_ak-47.jpg",
+      film10,
     rate: 6,
     genre: {
       label: "Phim hành động",
@@ -372,7 +395,7 @@ const films = [
     title: "biệt đội siêu anh hùng: hồi kết (Avengers-endgame) ",
     alias: "avengers-hoi-ket-avengers-endgame",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa644e0fa126e4_avenger-endgame.jpg",
+    film11,
     rate: 10,
     genre: {
       label: "Phim hành động",
@@ -409,7 +432,7 @@ const films = [
     title: "Anh là mùa xuân của em ",
     alias: "anh-la-mua-xuan-cua-em-you-are-my-spring-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60de6d7faa1bb691e514b6d4_poster-anh-la-mua-xuan-cua-em.jpg",
+    film12,
     rate: 7.7,
     genre: {
       label: "Phim tình cảm",
@@ -446,7 +469,7 @@ const films = [
     alias:
       "shang-chi-va-huyen-thoai-thap-luan-shang-chi-and-the-legend-of-the-ten-rings",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618ba5a6027e4a85acc3e882_shang-chi.jpg",
+    film13,
     rate: 8.7,
     genre: {
       label: "Phim hành động",
@@ -483,7 +506,7 @@ const films = [
     title: "mùa hè yêu dấu của chúng ta ",
     alias: "mua-he-yeu-dau-cua-chung-ta-our-beloved-summer-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61a842808d87152e64584571_poster-our-beloved-summer.jpg",
+    film14,
     rate: 10,
     genre: {
       label: "Phim tình cảm",
@@ -519,7 +542,7 @@ const films = [
     title: "không phải lúc chết - no time to die",
     alias: "khong-phai-luc-chet-no-time-to-die",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/618bc6e7b5ed7482b22d94c0_no-time-to-die.jpg",
+    film15,
     rate: 9.2,
     genre: {
       label: "Phim hành động",
@@ -555,7 +578,7 @@ const films = [
     title: "khi tình yêu gặp nhà khoa học ",
     alias: "khi-tinh-yeu-gap-nha-khoa-hoc",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/614efaafd49f330932da509c_poster-khi-tinh-yeu-gap.jpg",
+    film16,
     rate: 8,
     genre: {
       label: "Phim tình cảm",
@@ -591,7 +614,7 @@ const films = [
     title: "Lễ Hội Đặc Biệt Của Minions - Minions Holiday Special",
     alias: "e-hoi-dac-biet-cua-minions-minions-holiday-special",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa642db6a12ee1_minions.jpg",
+    film17,
     rate: 8.5,
     genre: {
       label: "Phim hoạt hình",
@@ -628,7 +651,7 @@ const films = [
     title: "22 vs Earth - 22 vs trái đất ",
     alias: "22-vs-earth-22-vs-trai-dat",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6097f9d92c123649711b75d2_22-vs-earth.jpg",
+    film18,
     rate: 6,
     genre: {
       label: "Phim hoạt hình",
@@ -664,7 +687,7 @@ const films = [
     title: "Vua hải tặc - One Piece",
     alias: "vua-hai-tac-one-piece",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/608ff83b61463980a6fba7fa_one-piece.jpg",
+    film19,
     rate: 9.3,
     genre: {
       label: "Phim hoạt hình",
@@ -700,7 +723,7 @@ const films = [
     title: "Vùng đất linh hồn - Spirited Away",
     alias: "vung-dat-linh-hon-spirited-away",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa643e46a12e9b_vung-dat-linh-hon.jpg",
+    film20,
     rate: 9.5,
     genre: {
       label: "Phim hoạt hình",
@@ -736,7 +759,7 @@ const films = [
     title: "Nữ hoàng băng giá 2 - Frozen 2",
     alias: "nu-hoang-bang-gia-2-frozen-2",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa6476caa122a1_frozen-2-1.jpg",
+    film21,
     rate: 9.0,
     genre: {
       label: "Phim hoạt hình",
@@ -772,7 +795,7 @@ const films = [
     title: "Hàng xóm của tôi là totoro - My Neighbor Totoro ",
     alias: "hang-xom-cua-toi-la-totoro-my-neighbor-totoro",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa647f6ba12e97_my-neighbor-tototro.jpg",
+    film22,
     rate: 8.5,
     genre: {
       label: "Phim hoạt hình",
@@ -808,7 +831,7 @@ const films = [
     title: "Mộ Đom Đóm - Grave Of The Fireflies  ",
     alias: "mo-dom-dom-grave-of-the-fireflies",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa644461a12eb2_mo-dom-dom.jpg",
+    film23,
     rate: 9.8,
     genre: {
       label: "Phim hoạt hình",
@@ -844,7 +867,7 @@ const films = [
     title: "Cuộc sống nhiệm màu (Soul) ",
     alias: "cuoc-song-nhiem-mau-soul",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5ff33e1569749700c69f0e6c_soul.jpg",
+    film24,
     rate: 8.0,
     genre: {
       label: "Phim hoạt hình",
@@ -880,7 +903,7 @@ const films = [
     title: "Bà đồng (2021)",
     alias: "ba-dong-the-medium-2021-r2",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/615b2cb4595d1783cb55a20e_ba-dong.jpg",
+    film25,
     rate: 7.0,
     genre: {
       label: "Phim kinh dị",
@@ -917,7 +940,7 @@ const films = [
     title: "Bản Án Từ Địa Ngục - Hellbound (2021) ",
     alias: "ban-an-tu-dia-nguc-hellbound-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6189fb2dc1514147ba93eb9f_poster-hellbound.jpg",
+    film26,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -953,7 +976,7 @@ const films = [
     title: "Cá Mập Sát Thủ - Shark Huntress",
     alias: "ca-map-sat-thu-shark-huntress",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6178064fe8633b219877bba4_ca-map-sat-thu.jpg",
+    film27,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -989,7 +1012,7 @@ const films = [
     title: "Già - Old (2021) ",
     alias: "gia-old-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/614c8a24adff8c86ed843233_old.jpg",
+    film28,
     rate: 6.5,
     genre: {
       label: "Phim kinh dị",
@@ -1025,7 +1048,7 @@ const films = [
     title: "Gạc - Antlers (2021) ",
     alias: "gac-antlers-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61b74d0c0bed69fcbee26295_gac.jpg",
+    film29,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -1060,7 +1083,7 @@ const films = [
     title: "Lưỡi Cưa 9 - Spiral: From the Book Of Saw ",
     alias: "uoi-cua-9-spiral-from-the-book-of-saw",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60b840fc97220dc491d90bba_spiral.jpg",
+    film30,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -1095,7 +1118,7 @@ const films = [
     title: "Cổ Tay Áo Màu Đỏ - The Red Sleeve (2021) ",
     alias: "co-tay-ao-mau-do-the-red-sleeve-2021",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6178d3e2a1b109801de4d5f6_poster-co-tay-ao-mau-do.jpg",
+    film31,
     rate: 9.0,
     genre: {
       label: "Phim tình cảm",
@@ -1131,7 +1154,7 @@ const films = [
     title: "47 Lãng Nhân (47 Ronin)",
     alias: "47-lang-nhan-47-ronin",
     image:
-      "https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64ea38a12788_47-ronin.jpg",
+    film32,
     rate: 8.5,
     genre: {
       label: "Phim hành động",
@@ -1174,5 +1197,3 @@ export const getMovieByType = (type) =>
 //  Genre film
 export const getMovieByGenre = (genre) =>
   films.filter((p) => p.genre.url === genre);
-
-

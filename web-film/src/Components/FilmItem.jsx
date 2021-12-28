@@ -7,9 +7,9 @@ const FilmItem = ({ film, type }) => {
       <div className="relative">
         <Link
           to={"/film/" + film.alias}
-          style={{ backgroundImage: `url(${film.image})` }}
-          className="item-block-img"
+          // style={{ backgroundImage: `url(${film.image})` }}
         >
+          <img src={film.image} alt="" className="item-block-img" />
           <div className="item-number">{film.rate}</div>
         </Link>
         <FilmControl film={film} type={type} />

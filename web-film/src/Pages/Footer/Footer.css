@@ -48,9 +48,9 @@ footer {
 
 .footer-links {
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .footer-link-wrapper {
@@ -65,6 +65,7 @@ footer {
   text-align: left;
   width: 185px;
   box-sizing: border-box;
+  color: var(--text-color);
 }
 
 .footer-link-items h2 {
@@ -103,17 +104,12 @@ footer {
   color: var(--main-color);
 }
 
-.social-media {
-  max-width: 1000px;
-  width: 100%;
-}
-
 .social-media-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+
   margin: 40px auto 0 auto;
 }
 
@@ -164,5 +160,8 @@ footer {
 @media screen and (max-width: 479px) {
   .footer-link-items {
     width: auto;
+  }
+  .footer-link-items a {
+    font-size: 13px;
   }
 }

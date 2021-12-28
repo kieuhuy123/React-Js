@@ -9,6 +9,7 @@
   padding-right: 10px;
   padding-left: 10px;
   text-align: left;
+  width: 168px;
 }
 
 .item-block a:hover {
@@ -28,7 +29,7 @@
     inset 0 1px 0 0 hsl(0deg 0% 100% / 10%);
 }
 .item-block-title {
-  height: 90px;
+  height: 55px;
   overflow: hidden;
   display: block;
   margin-top: 5px;
@@ -77,5 +78,15 @@
 @media screen and (max-width: 992px) {
   .info-block-icon.block {
     display: block;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .item-block-img {
+    width: 125px;
+    height: 170px;
+  }
+  .item-block {
+    width: 125px;
   }
 }

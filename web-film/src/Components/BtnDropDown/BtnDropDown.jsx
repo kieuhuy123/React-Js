@@ -6,7 +6,7 @@ import { ImFilm } from "react-icons/im";
 import {
   addFilmToWatched,
   addFilmToWatchlist,
-} from "../redux/actions/watchlistSilce";
+} from "../../redux/actions/watchlistSilce";
 import "./BtnDropDown.css";
 
 const BtnDropDown = ({ film }) => {

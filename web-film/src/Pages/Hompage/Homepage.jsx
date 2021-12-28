@@ -6,7 +6,7 @@ import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
 import { Pagination } from "../../Components/Pagination";
-import Slide from "../../Components/Slide";
+import Slide from "../../Components/Slide/Slide";
 
 // Css
 import "./Home.css";

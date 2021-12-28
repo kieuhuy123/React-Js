@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import Search from "../../Components/Search";
+import Search from "../../Components/ItemSearch/Search";
 import { getFilms } from "../../db/NewFilm";
 import useTitle from "../../Hook/useTitle";
 const SearchFilm = () => {

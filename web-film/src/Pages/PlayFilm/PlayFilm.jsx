@@ -12,10 +12,10 @@ import {
 import { Link } from "react-router-dom";
 // Components
 import NewFilmList from "../../Components/NewItemList";
-import Slide3 from "../../Components/Slide3";
+import Slide3 from "../../Components/Slide/Slide3";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { ImFilm } from "react-icons/im";
-import BtnDropDown from "../../Components/BtnDropDown";
+import BtnDropDown from "../../Components/BtnDropDown/BtnDropDown";
 
 // CSS
 import "./PlayFilm.css";

@@ -213,6 +213,10 @@
   color: var(--text-color);
   font-size: 24px;
   position: relative;
+  text-overflow: ellipsis;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .slick-dots li button::before {
   color: #fff;
@@ -236,19 +240,11 @@
   background: #fff;
   width: 50px;
 }
-/* @media only screen and (max-width: 1280px) {
-  .hero-slide-item {
-    padding-top: 50%;
-    height: 400px;
+@media only screen and (max-width: 1280px) {
+  .movie-item-title {
+    width: 350px;
   }
-
-  .item-content-wrapper {
-    width: 50%;
-  }
-  .item-content-wrapper::before {
-    left: 50%;
-  }
-} */
+}
 
 @media screen and (max-width: 992px) {
   .hero-slide-item {
@@ -275,6 +271,7 @@
   }
   .movie-item-title {
     font-size: 20px;
+    width: 250px;
   }
 }
 
@@ -296,5 +293,9 @@
   }
   .item-content-wrapper::before {
     display: none;
+  }
+  .movie-item-title {
+    font-size: 16px;
+    width: 200px;
   }
 }
