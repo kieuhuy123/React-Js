@@ -1,13 +1,22 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+// components
 import FilmList from "../../Components/FilmList";
+// actions
 import useTitle from "../../Hook/useTitle";
+import { loadFilmAsync } from "../../redux/actions/filmlist";
+
 import "./Watchlist.css";
 
 const Watchlist = () => {
-  const { watchlist, watched } = useSelector((state) => state);
-  console.log(watchlist);
+  const { watchlist, watched } = useSelector((state) => state.watchlist);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadFilmAsync());
+  }, []);
   useTitle("Bộ sưu tập");
 
   return (
@@ -24,7 +33,6 @@ const Watchlist = () => {
           {watchlist.length > 0 ? (
             <div className="tabs watchlist-tab">
               <div className="tabs-content">
-                
                 <FilmList film={watchlist} type="watchlist" />
               </div>
             </div>
@@ -40,7 +48,6 @@ const Watchlist = () => {
           {watched.length > 0 ? (
             <div className="tabs watchlist-tab">
               <div className="tabs-content">
-              
                 <FilmList film={watched} type="watched" />
               </div>
             </div>

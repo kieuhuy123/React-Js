@@ -1,7 +1,9 @@
-import { createStore } from "redux";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import watchlistReducer from "./redux/reducers/reducers";
+import thunk from "redux-thunk";
+import reducer from "./redux/reducers/reducer";
 
-const store = createStore(watchlistReducer, composeWithDevTools());
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 export default store;

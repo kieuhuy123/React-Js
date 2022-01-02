@@ -3,7 +3,7 @@ import "./Footer.css";
 
 import { Link } from "react-router-dom";
 import {
-  FaFacebook,
+  FaFacebookF,
   FaInstagram,
   FaYoutube,
   FaTwitter,
@@ -66,7 +66,7 @@ function Footer() {
                 target="_blank"
                 aria-label="Facebook"
               >
-                <FaFacebook />
+                <FaFacebookF />
               </Link>
               <Link
                 className="social-icon-link"

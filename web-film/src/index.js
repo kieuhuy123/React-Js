@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./store";
 //  CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "semantic-ui-css/semantic.min.css";
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,6 +17,8 @@ import GenreFilm from "./Pages/GenreFilm/GenreFilm.jsx";
 import PlayFilm from "./Pages/PlayFilm/PlayFilm.jsx";
 import SearchFilm from "./Pages/SearchFilm/SearchFilm.jsx";
 import Watchlist from "./Pages/Watchlist/Watchlist.jsx";
+import "./server";
+
 ReactDOM.render(
   <React.Fragment>
     <Provider store={store}>

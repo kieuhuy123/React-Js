@@ -14,7 +14,7 @@ export const Pagination = ({ postPerPage, totalPosts, paginate }) => {
           <li
             key={number}
             className="page-item"
-            onClick={window.scrollTo(0, 0)}
+            // onClick={window.scrollTo(0,0)}
           >
             <Link onClick={() => paginate(number)} to="/" className="page-link">
               {number}

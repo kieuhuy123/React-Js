@@ -9,7 +9,7 @@ import {
   addFilmToWatched,
   removeFilmFromWatched,
   moveToWatchlist,
-} from "../redux/actions/watchlistSilce";
+} from "../redux/actions/watchlist";
 export const FilmControl = ({ film, type }) => {
   const dispath = useDispatch();
   return (

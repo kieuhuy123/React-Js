@@ -1,17 +1,26 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { getFilms } from "../../db/NewFilm";
+// import { getFilms } from "../../db/NewFilm";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 // Components
 import FilmList from "../../Components/FilmList";
 import NewFilmList from "../../Components/NewItemList";
 import useTitle from "../../Hook/useTitle";
 import { Pagination } from "../../Components/Pagination";
 import Slide from "../../Components/Slide/Slide";
-
+import { loadFilmAsync } from "../../redux/actions/filmlist";
 // Css
 import "./Home.css";
 
 function Home() {
+  const { films, loading } = useSelector((state) => state.film);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadFilmAsync());
+  }, []);
+
   useTitle("CE FILM | Xem phim mới | Phim Online | Full HD - Vietsub");
 
   // const [loading, setLoading] = useState(false);
@@ -19,17 +28,16 @@ function Home() {
   const [postPerPage, setPostPerPage] = useState(16);
   //
 
-  const film = getFilms();
-
   // Get current posts
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirtPost = indexOfLastPost - postPerPage;
-  const currentPosts = film.slice(indexOfFirtPost, indexOfLastPost);
+  const currentPosts = films.slice(indexOfFirtPost, indexOfLastPost);
 
-  console.log(film);
-  console.log(currentPosts);
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  if (loading) return <h1>Loading...</h1>;
+  if (films.length === 0) return <h1>404 Error</h1>;
   return (
     <>
       <Slide />
@@ -41,17 +49,6 @@ function Home() {
               <h2 className="section-title">Phim mới</h2>
             </div>
             <div className="tabs">
-              {/* <div className="tabs-menu">
-                <Link to="/" className="tab-button tab-link active">
-                  Tất cả phim
-                </Link>
-                <Link to="/" className="tab-button tab-link">
-                  Sắp chiếu
-                </Link>
-                <Link to="/" className="tab-button tab-link">
-                  Phim mới
-                </Link>
-              </div> */}
               <div className="tabs-content">
                 <FilmList film={currentPosts} />
               </div>
@@ -74,7 +71,7 @@ function Home() {
         </Row>
         <Pagination
           postPerPage={postPerPage}
-          totalPosts={film.length}
+          totalPosts={films.length}
           paginate={paginate}
         />
       </Container>

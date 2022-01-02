@@ -1,10 +1,16 @@
 import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BtnDropDown from "../../Components/BtnDropDown/BtnDropDown";
 // Action
 import { getMovieByAlias } from "../../db/NewFilm";
+import { loadFilmAsync, addAliasAsync } from "../../redux/actions/filmlist";
+
 import useTitle from "../../Hook/useTitle";
+// import getMovie from "../../Hook/action";
+
 // Css
 import { BsFillTagsFill } from "react-icons/bs";
 import { BiTimeFive } from "react-icons/bi";
@@ -12,21 +18,31 @@ import "./DetailFilm.css";
 import "../../Components/FilmList.css";
 
 const DetailFilm = () => {
+  const { loading, films } = useSelector((state) => state.film);
   const params = useParams();
-  console.log(params);
+  const dispatch = useDispatch();
 
-  const movie = getMovieByAlias(params.alias);
-  console.log(movie);
+  useEffect(() => {
+    async function loadFilm() {
+      if (films.length === 0) {
+        await dispatch(loadFilmAsync());
+      }
+    }
 
-  if (!movie) return <h1>404 Page Not Found</h1>;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  useTitle(`${movie.title}`);
+    loadFilm();
+  }, []);
+
+  // const movie = getMovieByAlias(params.alias);
+  const filmAlias = films.find((p) => p.alias === params.alias);
+
+  if (!filmAlias) return <h1>404 Error</h1>;
+
   return (
     <>
       <div
         className="background-page-header"
         style={{
-          backgroundImage: `url(${movie.image})`,
+          backgroundImage: `url(${filmAlias.image})`,
         }}
       >
         <div className="background-overlay">
@@ -34,19 +50,19 @@ const DetailFilm = () => {
             <Row>
               <Col md="4">
                 <div className="header-thumnail-img">
-                  <img src={movie.image} alt="" />
+                  <img src={filmAlias.image} alt="" />
                 </div>
               </Col>
               <Col md="7" className="header-info">
-                <h1 className="header-title">{movie.title}</h1>
+                <h1 className="header-title">{filmAlias.title}</h1>
                 <div className="info-wrapper on-review-page">
                   <div className="info-block">
                     <BsFillTagsFill className="info-block-icon" />
                     <Link
-                      to={"/category/" + movie.genre.url}
+                      to={"/category/" + filmAlias.genre.url}
                       className="info-title-link"
                     >
-                      {movie.genre.label}
+                      {filmAlias.genre.label}
                     </Link>
                   </div>
                   <div className="info-block">
@@ -60,30 +76,30 @@ const DetailFilm = () => {
                     Trailer
                   </a>
                   <Link
-                    to={"/play/" + movie.alias}
+                    to={"/play/" + filmAlias.alias}
                     className="button_xemphim w-button"
                     // onClick={window.XMLHttpRequestUpload}
                   >
                     Xem phim
                   </Link>
-                  <BtnDropDown film={movie} />
+                  <BtnDropDown film={filmAlias} />
                 </div>
 
                 <div className="header-short-description">
                   <p>
-                    {"Thời lượng: " + movie.info.time}
+                    {"Thời lượng: " + filmAlias.info.time}
                     <br />
-                    {"Số tập: " + movie.info.episode}
+                    {"Số tập: " + filmAlias.info.episode}
                     <br />
-                    {"Năm xuất bản: " + movie.info.Publishing}
+                    {"Năm xuất bản: " + filmAlias.info.Publishing}
                     <br />
-                    {"Diễn viên: " + movie.info.actors}
+                    {"Diễn viên: " + filmAlias.info.actors}
                     <br />
-                    {"Đạo diễn: " + movie.info.directors}
+                    {"Đạo diễn: " + filmAlias.info.directors}
                     <br />
-                    {"Quốc gia: " + movie.info.nation}
+                    {"Quốc gia: " + filmAlias.info.nation}
                     <br />
-                    {"Thể loại: " + movie.info.genre}
+                    {"Thể loại: " + filmAlias.info.genre}
                   </p>
                 </div>
               </Col>
@@ -96,12 +112,12 @@ const DetailFilm = () => {
         <Container>
           <div className="review-wrapper" id="review">
             <div className="rtb">
-              <h2 className="trailer-title">{movie.review.title}</h2>
-              <p>{movie.review.t1}</p>
-              <img src={movie.review.img} alt="" />
-              <p>{movie.review.t2}</p>
-              <p>{movie.review.t3}</p>
-              <p>{movie.review.t4}</p>
+              <h2 className="trailer-title">{filmAlias.review.title}</h2>
+              <p>{filmAlias.review.t1}</p>
+              <img src={filmAlias.review.img} alt="" />
+              <p>{filmAlias.review.t2}</p>
+              <p>{filmAlias.review.t3}</p>
+              <p>{filmAlias.review.t4}</p>
             </div>
             <div className="trailer-video-block" id="trailer">
               <h2 className="trailer-title">Official trailer:</h2>
@@ -111,7 +127,7 @@ const DetailFilm = () => {
               >
                 <iframe
                   className="embedly-embed"
-                  src={movie.review.video}
+                  src={filmAlias.review.video}
                   width="854"
                   height="480"
                   scrolling="no"

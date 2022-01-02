@@ -4,12 +4,17 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { ImFilm } from "react-icons/im";
+
+//
 import "./Navbar.css";
 const Navbarf = () => {
   const [click, setClick] = useState(false);
 
   // const handleClick = () => setClick(!click);
   const closeMobileClick = () => setClick(!click);
+
+  // Add
+
   return (
     <Navbar>
       <Container>

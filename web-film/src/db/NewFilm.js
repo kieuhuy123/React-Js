@@ -287,8 +287,7 @@ const films = [
     id: 8,
     title: "dạ quỷ rừng sâu - the widow (2020) ",
     alias: "da-quy-rung-sau-the-widow-2020",
-    image:
-      film8,
+    image: film8,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -323,8 +322,7 @@ const films = [
     id: 9,
     title: "Bạn cùng phòng của tôi là gumibo (2021) ",
     alias: "ban-cung-phong-cua-toi-la-gumiho-my-roommate-is-a-gumiho-2021",
-    image:
-    film9,
+    image: film9,
     rate: 6,
     genre: {
       label: "Phim tình cảm",
@@ -359,8 +357,7 @@ const films = [
     id: 10,
     title: "ak-47-kalashnikov (2020) ",
     alias: "ak-47-kalashnikov-2020",
-    image:
-      film10,
+    image: film10,
     rate: 6,
     genre: {
       label: "Phim hành động",
@@ -394,8 +391,7 @@ const films = [
     id: 11,
     title: "biệt đội siêu anh hùng: hồi kết (Avengers-endgame) ",
     alias: "avengers-hoi-ket-avengers-endgame",
-    image:
-    film11,
+    image: film11,
     rate: 10,
     genre: {
       label: "Phim hành động",
@@ -431,8 +427,7 @@ const films = [
     id: 12,
     title: "Anh là mùa xuân của em ",
     alias: "anh-la-mua-xuan-cua-em-you-are-my-spring-2021",
-    image:
-    film12,
+    image: film12,
     rate: 7.7,
     genre: {
       label: "Phim tình cảm",
@@ -468,8 +463,7 @@ const films = [
     title: "Shang-chi và huyển thoại thập luân ",
     alias:
       "shang-chi-va-huyen-thoai-thap-luan-shang-chi-and-the-legend-of-the-ten-rings",
-    image:
-    film13,
+    image: film13,
     rate: 8.7,
     genre: {
       label: "Phim hành động",
@@ -505,8 +499,7 @@ const films = [
     id: 14,
     title: "mùa hè yêu dấu của chúng ta ",
     alias: "mua-he-yeu-dau-cua-chung-ta-our-beloved-summer-2021",
-    image:
-    film14,
+    image: film14,
     rate: 10,
     genre: {
       label: "Phim tình cảm",
@@ -541,8 +534,7 @@ const films = [
     id: 15,
     title: "không phải lúc chết - no time to die",
     alias: "khong-phai-luc-chet-no-time-to-die",
-    image:
-    film15,
+    image: film15,
     rate: 9.2,
     genre: {
       label: "Phim hành động",
@@ -577,8 +569,7 @@ const films = [
     id: 16,
     title: "khi tình yêu gặp nhà khoa học ",
     alias: "khi-tinh-yeu-gap-nha-khoa-hoc",
-    image:
-    film16,
+    image: film16,
     rate: 8,
     genre: {
       label: "Phim tình cảm",
@@ -613,8 +604,7 @@ const films = [
     id: 17,
     title: "Lễ Hội Đặc Biệt Của Minions - Minions Holiday Special",
     alias: "e-hoi-dac-biet-cua-minions-minions-holiday-special",
-    image:
-    film17,
+    image: film17,
     rate: 8.5,
     genre: {
       label: "Phim hoạt hình",
@@ -650,8 +640,7 @@ const films = [
     id: 18,
     title: "22 vs Earth - 22 vs trái đất ",
     alias: "22-vs-earth-22-vs-trai-dat",
-    image:
-    film18,
+    image: film18,
     rate: 6,
     genre: {
       label: "Phim hoạt hình",
@@ -686,8 +675,7 @@ const films = [
     id: 19,
     title: "Vua hải tặc - One Piece",
     alias: "vua-hai-tac-one-piece",
-    image:
-    film19,
+    image: film19,
     rate: 9.3,
     genre: {
       label: "Phim hoạt hình",
@@ -722,8 +710,7 @@ const films = [
     id: 20,
     title: "Vùng đất linh hồn - Spirited Away",
     alias: "vung-dat-linh-hon-spirited-away",
-    image:
-    film20,
+    image: film20,
     rate: 9.5,
     genre: {
       label: "Phim hoạt hình",
@@ -758,8 +745,7 @@ const films = [
     id: 21,
     title: "Nữ hoàng băng giá 2 - Frozen 2",
     alias: "nu-hoang-bang-gia-2-frozen-2",
-    image:
-    film21,
+    image: film21,
     rate: 9.0,
     genre: {
       label: "Phim hoạt hình",
@@ -794,8 +780,7 @@ const films = [
     id: 22,
     title: "Hàng xóm của tôi là totoro - My Neighbor Totoro ",
     alias: "hang-xom-cua-toi-la-totoro-my-neighbor-totoro",
-    image:
-    film22,
+    image: film22,
     rate: 8.5,
     genre: {
       label: "Phim hoạt hình",
@@ -830,8 +815,7 @@ const films = [
     id: 23,
     title: "Mộ Đom Đóm - Grave Of The Fireflies  ",
     alias: "mo-dom-dom-grave-of-the-fireflies",
-    image:
-    film23,
+    image: film23,
     rate: 9.8,
     genre: {
       label: "Phim hoạt hình",
@@ -866,8 +850,7 @@ const films = [
     id: 24,
     title: "Cuộc sống nhiệm màu (Soul) ",
     alias: "cuoc-song-nhiem-mau-soul",
-    image:
-    film24,
+    image: film24,
     rate: 8.0,
     genre: {
       label: "Phim hoạt hình",
@@ -902,8 +885,7 @@ const films = [
     id: 25,
     title: "Bà đồng (2021)",
     alias: "ba-dong-the-medium-2021-r2",
-    image:
-    film25,
+    image: film25,
     rate: 7.0,
     genre: {
       label: "Phim kinh dị",
@@ -939,8 +921,7 @@ const films = [
     id: 26,
     title: "Bản Án Từ Địa Ngục - Hellbound (2021) ",
     alias: "ban-an-tu-dia-nguc-hellbound-2021",
-    image:
-    film26,
+    image: film26,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -975,8 +956,7 @@ const films = [
     id: 27,
     title: "Cá Mập Sát Thủ - Shark Huntress",
     alias: "ca-map-sat-thu-shark-huntress",
-    image:
-    film27,
+    image: film27,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -1011,8 +991,7 @@ const films = [
     id: 28,
     title: "Già - Old (2021) ",
     alias: "gia-old-2021",
-    image:
-    film28,
+    image: film28,
     rate: 6.5,
     genre: {
       label: "Phim kinh dị",
@@ -1047,8 +1026,7 @@ const films = [
     id: 29,
     title: "Gạc - Antlers (2021) ",
     alias: "gac-antlers-2021",
-    image:
-    film29,
+    image: film29,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -1082,8 +1060,7 @@ const films = [
     id: 30,
     title: "Lưỡi Cưa 9 - Spiral: From the Book Of Saw ",
     alias: "uoi-cua-9-spiral-from-the-book-of-saw",
-    image:
-    film30,
+    image: film30,
     rate: 6.2,
     genre: {
       label: "Phim kinh dị",
@@ -1117,8 +1094,7 @@ const films = [
     id: 31,
     title: "Cổ Tay Áo Màu Đỏ - The Red Sleeve (2021) ",
     alias: "co-tay-ao-mau-do-the-red-sleeve-2021",
-    image:
-    film31,
+    image: film31,
     rate: 9.0,
     genre: {
       label: "Phim tình cảm",
@@ -1153,8 +1129,7 @@ const films = [
     id: 32,
     title: "47 Lãng Nhân (47 Ronin)",
     alias: "47-lang-nhan-47-ronin",
-    image:
-    film32,
+    image: film32,
     rate: 8.5,
     genre: {
       label: "Phim hành động",

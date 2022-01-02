@@ -6,12 +6,12 @@ import { ImFilm } from "react-icons/im";
 import {
   addFilmToWatched,
   addFilmToWatchlist,
-} from "../../redux/actions/watchlistSilce";
+} from "../../redux/actions/watchlist";
 import "./BtnDropDown.css";
 
 const BtnDropDown = ({ film }) => {
   const dispatch = useDispatch();
-  const { watched, watchlist } = useSelector((state) => state);
+  const { watched, watchlist } = useSelector((state) => state.watchlist);
   let storedFilm = watchlist.find((p) => p.id === film.id);
   let storeWatchedFilm = watched.find((p) => p.id === film.id);
 

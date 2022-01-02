@@ -6,6 +6,9 @@ import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import Slide2 from "./Slide2";
 import "./Slide.css";
+import banner1 from "../../assets/banner/banner-1.webp";
+import banner2 from "../../assets/banner/banner-2.webp";
+import banner3 from "../../assets/banner/banner-3.webp";
 const Slide = () => {
   const settings = {
     dots: false,
@@ -23,7 +26,7 @@ const Slide = () => {
           id="hero-carousel"
         >
           <div className="hero-slide-item">
-            <img src="https://wallpaperaccess.com/full/3413086.jpg" alt="" />
+            <img src={banner1} alt="" />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
@@ -61,10 +64,7 @@ const Slide = () => {
           </div>
 
           <div className="hero-slide-item">
-            <img
-              src="https://image.thanhnien.vn/w1024/Uploaded/2021/zxaijr/2021_11_26/choiwoosikvakimdamiphimourbelovedsummer1-55.jpg"
-              alt=""
-            />
+            <img src={banner2} alt="" />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
@@ -96,7 +96,7 @@ const Slide = () => {
                     to="/film/mua-he-yeu-dau-cua-chung-ta-our-beloved-summer-2021"
                     className="btn btn-hover"
                   >
-                    {/* <i className="bx bxs-right-arrow"></i> */}
+                    <FaPlay />
                     <span>Xem ngay</span>
                   </Link>
                 </div>
@@ -104,10 +104,7 @@ const Slide = () => {
             </div>
           </div>
           <div className="hero-slide-item">
-            <img
-              src="https://i.ytimg.com/vi/wIODn0OnPUY/maxresdefault.jpg"
-              alt=""
-            />
+            <img src={banner3} alt="" />
             <div className="overlay"></div>
             <div className="hero-slide-item-content">
               <div className="item-content-wrapper">
@@ -138,7 +135,7 @@ const Slide = () => {
                     to="/film/da-quy-rung-sau-the-widow-2020"
                     className="btn btn-hover"
                   >
-                    {/* <i className="bx bxs-right-arrow"></i> */}
+                    <FaPlay />
                     <span>Xem ngay</span>
                   </Link>
                 </div>
