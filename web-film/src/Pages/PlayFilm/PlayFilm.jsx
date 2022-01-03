@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-// import { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 
@@ -12,7 +11,7 @@ import {
   ReplayControl,
   ForwardControl,
 } from "video-react";
-import { Link } from "react-router-dom";
+
 // Components
 import NewFilmList from "../../Components/NewItemList";
 import Slide3 from "../../Components/Slide/Slide3";
@@ -25,8 +24,6 @@ import "./PlayFilm.css";
 import "video-react/dist/video-react.css";
 
 // Actions
-import { getMovieByType, getMovieByGenre } from "../../db/NewFilm";
-import { getMovieByAlias } from "../../db/NewFilm";
 import { loadFilmAsync } from "../../redux/actions/filmlist";
 
 const PlayFilm = () => {
@@ -42,11 +39,11 @@ const PlayFilm = () => {
     }
 
     loadFilm();
-  }, []);
+  }, [dispatch, films.length]);
   // Error
 
   const film = films.find((p) => p.alias === param.alias);
-
+  // TODO: Set  loading, error
   if (loading) return <h1>Loading</h1>;
   if (!film) return <h1>404 Error</h1>;
 

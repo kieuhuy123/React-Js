@@ -2,11 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { getMovieByGenre } from "../../db/NewFilm";
-import useTitle from "../../Hook/useTitle";
 import FilmList from "../../Components/FilmList";
 
-import { addGenereAsync, loadFilmAsync } from "../../redux/actions/filmlist";
+import { loadFilmAsync } from "../../redux/actions/filmlist";
 
 const GenreFilm = () => {
   const dispatch = useDispatch();
@@ -22,16 +20,16 @@ const GenreFilm = () => {
     }
 
     loadFilmGenre();
-  }, []);
+  }, [dispatch, films.length]);
 
   const genreFilm = films.filter((p) => p.genre.url === param.genre);
-  // Set title
+  // TODO: Set title, loading, error
   if (genreFilm.length === 0) {
     document.title = "Error";
   } else {
     document.title = `${genreFilm[0].genre.label}`;
   }
-  // Set loading and error
+
   if (loading) return <h1>Loading...</h1>;
 
   if (genreFilm.length === 0) return <h1>404 Error</h1>;

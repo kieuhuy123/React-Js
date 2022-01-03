@@ -2,15 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import { getMovieByType } from "../../db/NewFilm";
+import { useEffect } from "react";
 import FilmList from "../../Components/FilmList";
-import useTitle from "../../Hook/useTitle";
-import { addTypeAsync, loadFilmAsync } from "../../redux/actions/filmlist";
+// import useTitle from "../../Hook/useTitle";
+
+import { loadFilmAsync } from "../../redux/actions/filmlist";
+
 const Cinema = () => {
   const dispatch = useDispatch();
   const param = useParams();
-  const { films, loading, type } = useSelector((state) => state.film);
+  const { films, loading } = useSelector((state) => state.film);
 
   //Add type film
   useEffect(() => {
@@ -21,10 +22,10 @@ const Cinema = () => {
     }
 
     loadFilmType();
-  }, []);
+  }, [dispatch, films.length]);
 
   const typeFilm = films.filter((p) => p.type.url === param.type);
-
+  // TODO: Set title, loading, error
   if (typeFilm.length === 0) {
     document.title = "Error";
   } else {
@@ -32,7 +33,6 @@ const Cinema = () => {
   }
 
   if (loading) return <h1>Loading...</h1>;
-
   if (typeFilm.length === 0) return <h1>404 Error</h1>;
 
   return (

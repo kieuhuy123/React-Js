@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(loadFilmAsync());
-  }, []);
+  }, [dispatch]);
 
   useTitle("CE FILM | Xem phim mới | Phim Online | Full HD - Vietsub");
 

@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import Search from "../../Components/ItemSearch/Search";
 import { loadFilmAsync } from "../../redux/actions/filmlist";
-import useTitle from "../../Hook/useTitle";
 
 const SearchFilm = () => {
   const dispatch = useDispatch();
@@ -20,14 +19,14 @@ const SearchFilm = () => {
     }
 
     loadFilm();
-  }, []);
+  }, [dispatch, films.length]);
 
   // Set title
-  // if (!films) {
-  //   document.title = "Error";
-  // } else {
-  //   document.title = "Tìm kiếm phim";
-  // }
+  if (!films) {
+    document.title = "Error";
+  } else {
+    document.title = "Tìm kiếm phim";
+  }
   // Set loading and error
 
   if (loading) return <h1>Loading...</h1>;

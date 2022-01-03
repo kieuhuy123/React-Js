@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
-import { getFilms } from "../../db/NewFilm";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -50,7 +49,6 @@ const Slide2 = () => {
 
   const { films } = useSelector((state) => state.film);
 
-  // const film = getFilms().slice(10, 18);
   return (
     <>
       <Slider {...settings}>

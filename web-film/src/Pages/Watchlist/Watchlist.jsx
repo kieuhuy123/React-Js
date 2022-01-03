@@ -17,7 +17,7 @@ const Watchlist = () => {
 
   useEffect(() => {
     dispatch(loadFilmAsync());
-  }, []);
+  }, [dispatch]);
   useTitle("Bộ sưu tập");
   if(loading) return <h1>Loading...</h1>
   if (films.length === 0) return <h1>Error</h1>;

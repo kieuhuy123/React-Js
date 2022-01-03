@@ -1,7 +1,7 @@
 import {
   LOAD_DONE,
   LOAD_REQUESTED,
-  ADD_FILM_BY_ALIAS,
+  
 } from "../actions/actions";
 
 const initalState = {
@@ -26,8 +26,6 @@ const filmReducer = (state = initalState, action) => {
         films: action.payload,
       };
     }
-
-  
 
     default:
       return state;

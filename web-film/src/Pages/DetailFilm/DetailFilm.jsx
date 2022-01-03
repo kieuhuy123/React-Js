@@ -5,11 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BtnDropDown from "../../Components/BtnDropDown/BtnDropDown";
 // Action
-import { getMovieByAlias } from "../../db/NewFilm";
-import { loadFilmAsync, addAliasAsync } from "../../redux/actions/filmlist";
 
-import useTitle from "../../Hook/useTitle";
-// import getMovie from "../../Hook/action";
+import { loadFilmAsync } from "../../redux/actions/filmlist";
 
 // Css
 import { BsFillTagsFill } from "react-icons/bs";
@@ -30,18 +27,18 @@ const DetailFilm = () => {
     }
 
     loadFilm();
-  }, []);
+  }, [dispatch, films.length]);
 
   const filmAlias = films.find((p) => p.alias === params.alias);
 
-  // Set title
+  // TODO: Set title, loading, error
   if (!filmAlias) {
     document.title = "Error";
   } else {
     document.title = `${filmAlias.title} | Xem phim`;
   }
-  // Set loading and error
-  if(loading) return <h1>Loading...</h1>
+
+  if (loading) return <h1>Loading...</h1>;
   if (!filmAlias) return <h1>404 Error</h1>;
 
   return (
