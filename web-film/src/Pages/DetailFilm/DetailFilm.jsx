@@ -32,9 +32,16 @@ const DetailFilm = () => {
     loadFilm();
   }, []);
 
-  // const movie = getMovieByAlias(params.alias);
   const filmAlias = films.find((p) => p.alias === params.alias);
 
+  // Set title
+  if (!filmAlias) {
+    document.title = "Error";
+  } else {
+    document.title = `${filmAlias.title} | Xem phim`;
+  }
+  // Set loading and error
+  if(loading) return <h1>Loading...</h1>
   if (!filmAlias) return <h1>404 Error</h1>;
 
   return (

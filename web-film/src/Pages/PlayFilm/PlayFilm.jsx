@@ -44,17 +44,15 @@ const PlayFilm = () => {
     loadFilm();
   }, []);
   // Error
-  if (loading) return <h1>Loading</h1>;
 
   const film = films.find((p) => p.alias === param.alias);
 
+  if (loading) return <h1>Loading</h1>;
   if (!film) return <h1>404 Error</h1>;
 
-  const typeFilm = films.filter((p) => (p.type.url === film.type.url));
-  console.log(typeFilm);
+  const typeFilm = films.filter((p) => p.type.url === film.type.url);
+
   const genreFilm = films.filter((p) => p.genre.url === film.genre.url);
-  console.log(film.type.url);
-  
 
   return (
     <>

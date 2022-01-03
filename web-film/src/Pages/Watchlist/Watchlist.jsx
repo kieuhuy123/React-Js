@@ -12,13 +12,15 @@ import "./Watchlist.css";
 
 const Watchlist = () => {
   const { watchlist, watched } = useSelector((state) => state.watchlist);
+  const { films, loading } = useSelector((state) => state.film);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(loadFilmAsync());
   }, []);
   useTitle("Bộ sưu tập");
-
+  if(loading) return <h1>Loading...</h1>
+  if (films.length === 0) return <h1>Error</h1>;
   return (
     <Container>
       <Row>

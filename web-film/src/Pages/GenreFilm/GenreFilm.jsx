@@ -23,15 +23,18 @@ const GenreFilm = () => {
 
     loadFilmGenre();
   }, []);
+
   const genreFilm = films.filter((p) => p.genre.url === param.genre);
-  console.log(genreFilm);
+  // Set title
+  if (genreFilm.length === 0) {
+    document.title = "Error";
+  } else {
+    document.title = `${genreFilm[0].genre.label}`;
+  }
+  // Set loading and error
   if (loading) return <h1>Loading...</h1>;
 
-  if (films.length === 0) return <h1>404 Error</h1>;
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-
-  // useTitle(`Thể loại  - ${films[0].genre.label} - CE FILM`);
+  if (genreFilm.length === 0) return <h1>404 Error</h1>;
 
   return (
     <Container>

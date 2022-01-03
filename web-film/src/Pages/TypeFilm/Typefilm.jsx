@@ -19,20 +19,21 @@ const Cinema = () => {
         await dispatch(loadFilmAsync());
       }
     }
-    if (films.length === 0) {
-      document.title = "Error";
-    } else {
-       (document.title = `${films[0].type.label}`);
-    }
 
     loadFilmType();
   }, []);
 
   const typeFilm = films.filter((p) => p.type.url === param.type);
+
+  if (typeFilm.length === 0) {
+    document.title = "Error";
+  } else {
+    document.title = `${typeFilm[0].type.label}`;
+  }
+
   if (loading) return <h1>Loading...</h1>;
 
   if (typeFilm.length === 0) return <h1>404 Error</h1>;
-  console.log(typeFilm);
 
   return (
     <Container>

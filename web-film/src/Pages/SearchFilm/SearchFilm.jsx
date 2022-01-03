@@ -4,20 +4,35 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import Search from "../../Components/ItemSearch/Search";
 import { loadFilmAsync } from "../../redux/actions/filmlist";
-import { getFilms } from "../../db/NewFilm";
 import useTitle from "../../Hook/useTitle";
+
 const SearchFilm = () => {
   const dispatch = useDispatch();
-  const { films } = useSelector((state) => state.film);
-  const { loading } = useSelector((state) => state.film);
+  const { films, loading } = useSelector((state) => state.film);
+
   const [searchTerm, setSearchTerm] = useState("");
+
   useEffect(() => {
-    dispatch(loadFilmAsync());
+    async function loadFilm() {
+      if (films.length === 0) {
+        await dispatch(loadFilmAsync());
+      }
+    }
+
+    loadFilm();
   }, []);
 
-  useTitle("Tìm kiếm phim");
+  // Set title
+  // if (!films) {
+  //   document.title = "Error";
+  // } else {
+  //   document.title = "Tìm kiếm phim";
+  // }
+  // Set loading and error
 
   if (loading) return <h1>Loading...</h1>;
+  if (films.length === 0) return <h1>Error</h1>;
+
   return (
     <Container>
       <div className="section-title-wrapper">
@@ -38,7 +53,6 @@ const SearchFilm = () => {
 
       <div className="search-list">
         {films
-          // eslint-disable-next-line array-callback-return
           .filter((val) => {
             if (searchTerm === "") {
               return "";
