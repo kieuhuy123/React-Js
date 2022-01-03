@@ -30,20 +30,16 @@ const GenreFilm = () => {
   if (films.length === 0) return <h1>404 Error</h1>;
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
+
   // useTitle(`Thể loại  - ${films[0].genre.label} - CE FILM`);
 
   return (
     <Container>
       <Row>
         <Col>
-          {/* <div className="section-title-wrapper">
-            <h2 className="section-title">{param.genre} </h2>
-          </div> */}
-          {/* {films.map((f) => (
-            <div className="section-title-wrapper">
-              <h2 className="section-title">{f.genre.label} </h2>
-            </div>
-          ))} */}
+          <div className="section-title-wrapper">
+            <h2 className="section-title">{`${genreFilm[0].genre.label}`} </h2>
+          </div>
 
           <div className="tabs">
             <div className="tabs-content">

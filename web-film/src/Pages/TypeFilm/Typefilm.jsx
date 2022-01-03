@@ -19,6 +19,11 @@ const Cinema = () => {
         await dispatch(loadFilmAsync());
       }
     }
+    if (films.length === 0) {
+      document.title = "Error";
+    } else {
+       (document.title = `${films[0].type.label}`);
+    }
 
     loadFilmType();
   }, []);
@@ -33,9 +38,9 @@ const Cinema = () => {
     <Container>
       <Row>
         <Col>
-          {/* <div className="section-title-wrapper">
-            <h2 className="section-title">{cinema[0].type.label} </h2>
-          </div> */}
+          <div className="section-title-wrapper">
+            <h2 className="section-title">{`${typeFilm[0].type.label} `}</h2>
+          </div>
           <div className="tabs">
             <div className="tabs-content">
               <FilmList film={typeFilm} />

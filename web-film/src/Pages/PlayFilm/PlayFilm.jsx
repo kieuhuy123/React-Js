@@ -43,16 +43,18 @@ const PlayFilm = () => {
 
     loadFilm();
   }, []);
+  // Error
+  if (loading) return <h1>Loading</h1>;
 
   const film = films.find((p) => p.alias === param.alias);
 
-  console.log(film);
-  // const typeFilm = films.filter((p) => (p.type.url = param.type));
-  // const genreFilm = films.filter((p) => p.genre.url === param.genre);
-
-  // Error
-  if (loading) return <h1>Loading</h1>;
   if (!film) return <h1>404 Error</h1>;
+
+  const typeFilm = films.filter((p) => (p.type.url === film.type.url));
+  console.log(typeFilm);
+  const genreFilm = films.filter((p) => p.genre.url === film.genre.url);
+  console.log(film.type.url);
+  
 
   return (
     <>
@@ -118,7 +120,7 @@ const PlayFilm = () => {
             </div>
           </Col>
 
-          {/* <Col md="3" className="sidebar">
+          <Col md="3" className="sidebar">
             <div className="sidenav-block-title sub-title">
               {film.type.label + " hot"}
             </div>
@@ -135,7 +137,7 @@ const PlayFilm = () => {
             <div className="movies-slide">
               <Slide3 listFilm={genreFilm} />
             </div>
-          </div> */}
+          </div>
         </Row>
       </Container>
     </>

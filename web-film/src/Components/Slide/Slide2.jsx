@@ -3,6 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import { getFilms } from "../../db/NewFilm";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Slide2 = () => {
   const settings = {
@@ -46,12 +47,14 @@ const Slide2 = () => {
       },
     ],
   };
-  const film = getFilms().slice(10, 18);
 
+  const { films } = useSelector((state) => state.film);
+
+  // const film = getFilms().slice(10, 18);
   return (
     <>
       <Slider {...settings}>
-        {film.map((f) => (
+        {films.slice(10, 18).map((f) => (
           <div className="movie-item" key={f.id}>
             <img src={f.image} alt="" />
 
