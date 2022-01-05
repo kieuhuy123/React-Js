@@ -1,6 +1,7 @@
 .relative {
   position: relative;
   width: max-content;
+  margin: 0 auto;
 }
 .watchlist-tab .item-control {
   display: inline;

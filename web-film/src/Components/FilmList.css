@@ -9,7 +9,7 @@
   padding-right: 10px;
   padding-left: 10px;
   text-align: left;
-  width: 168px;
+  /* width: 168px; */
 }
 
 .item-block a:hover {
@@ -35,6 +35,9 @@
   margin-top: 5px;
   text-decoration: none;
   text-transform: capitalize;
+  width: 168px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-number {
@@ -55,7 +58,11 @@
   font-weight: 500;
   text-align: center;
 }
-
+.info-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 168px;
+}
 .info-block-icon {
   position: relative;
   top: -1px;
@@ -87,6 +94,15 @@
     height: 170px;
   }
   .item-block {
+    padding: 0;
+  }
+  .info-block-icon {
+    margin-right: 5px;
+  }
+  .item-block-title {
+    width: 125px;
+  }
+  .info-wrapper {
     width: 125px;
   }
 }

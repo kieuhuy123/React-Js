@@ -45,7 +45,7 @@
 .info-block {
   display: inline-block;
   margin-top: 3px;
-  margin-right: 6px;
+  /* margin-right: 6px; */
   float: none;
   line-height: 20px;
 }
@@ -54,6 +54,7 @@
   display: inline-block;
   color: #cad3da;
   text-decoration: underline;
+  margin-right: 5px;
 }
 .info-title-link:hover {
   color: var(--main-color);
@@ -134,7 +135,6 @@
   height: 100%;
 }
 
-
 @media screen and (max-width: 768px) {
   .background-page-header {
     height: auto;
@@ -149,7 +149,6 @@
     text-align: center;
     margin-left: 0;
   }
-  
 
   .review-wrapper {
     width: 100%;
@@ -163,5 +162,8 @@
   }
   .header-thumnail-img {
     max-width: 100%;
+  }
+  .info-title-link {
+    font-size: 13px;
   }
 }

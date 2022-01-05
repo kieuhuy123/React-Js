@@ -34,7 +34,9 @@
   border-bottom-right-radius: 6px;
   border: 0;
 }
-
+.search-item {
+  margin-bottom: 20px;
+}
 .search-img {
   display: inline-block;
   position: relative;
@@ -89,5 +91,20 @@
   .search-title {
     max-height: 72px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .search-title {
+    font-size: 20px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  .search-img {
+    width: 75px;
+    height: 125px;
+  }
+  .search-item .dropdown {
+    margin-top: 10px;
   }
 }

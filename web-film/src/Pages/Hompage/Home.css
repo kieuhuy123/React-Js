@@ -113,7 +113,7 @@
   line-height: 24px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .sidebar {
     display: none;
   }

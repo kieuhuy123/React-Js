@@ -44,7 +44,7 @@ function Home() {
 
       <Container>
         <Row>
-          <Col lg="9">
+          <Col lg="12" xl="9">
             <div className="section-title-wrapper">
               <h2 className="section-title">Phim mới</h2>
             </div>
@@ -55,7 +55,7 @@ function Home() {
             </div>
           </Col>
 
-          <Col lg="3" className="sidebar">
+          <Col xl="3" className="sidebar">
             <div className="sidenav-block-title sub-title">Phim bộ hot</div>
 
             <div className="div-block">

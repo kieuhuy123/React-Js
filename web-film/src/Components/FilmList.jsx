@@ -6,7 +6,7 @@ const FilmList = ({ film, type }) => {
     <div className="item-list-wrapper">
       <Row className="item-list">
         {film.map((m) => (
-          <Col lg="3" xs="6" key={m.id} className="item">
+          <Col xs="6" lg="3" key={m.id} className="item">
             <FilmItem film={m} type={type}></FilmItem>
           </Col>
         ))}
